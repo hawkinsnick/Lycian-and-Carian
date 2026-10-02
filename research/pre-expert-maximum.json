@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "corpus": "Lycian, Carian and Milyan",
+  "target": "PRE_EXPERT_MAXIMUM",
+  "checked": "2026-10-02",
+  "established": [
+    {
+      "gate": "public_eDiAna_snapshot",
+      "status": "PASS",
+      "records": 453
+    },
+    {
+      "gate": "source_snapshot_reconciled",
+      "status": "PASS"
+    },
+    {
+      "gate": "language_partitions",
+      "status": "PASS",
+      "counts": {
+        "carian": 264,
+        "lycian": 187,
+        "milyan": 2
+      }
+    }
+  ],
+  "remaining_nonexpert_work": [
+    {
+      "id": "LC-PRE-001",
+      "scope": "453 catalogue entries",
+      "action": "Build document-level physical-object concordance and aliases.",
+      "blocked_by": "catalogue_access"
+    },
+    {
+      "id": "LC-PRE-002",
+      "scope": "Lycian editions",
+      "action": "Compare newer source-attributed editions and record differences.",
+      "blocked_by": "edition_access"
+    },
+    {
+      "id": "LC-PRE-003",
+      "scope": "script inventories",
+      "action": "Build authority-cited inventories preserving uncertainty.",
+      "blocked_by": "source_access"
+    }
+  ],
+  "human_only_boundary": [
+    {
+      "id": "LC-HUM-001",
+      "decision": "adjudicate disputed readings and directions"
+    },
+    {
+      "id": "LC-HUM-002",
+      "decision": "independently review source readings and object identity conflicts"
+    },
+    {
+      "id": "LC-HUM-003",
+      "decision": "validate linguistic benchmark annotations"
+    }
+  ],
+  "completion_rule": "Catalogue completeness is not world-corpus completeness; machine-reconcilable work is completed or explicitly blocked before human adjudication."
+}
