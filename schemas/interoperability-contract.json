@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "contract": "hawkinsnick-epigraphic-corpus-interoperability",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "profile": "digital_catalogue_entry",
   "principles": {
     "source_attribution_required": true,
     "source_integrity_hash_required": true,
@@ -12,17 +13,8 @@
     "language_or_script_identity_inferred_from_links": false,
     "decipherment_claimed": false
   },
-  "shared_record_fields": [
-    "record_id", "source_id", "authority", "language", "label", "category",
-    "unit", "object_id", "independent_witness_count", "source", "lines"
-  ],
-  "shared_line_fields": [
-    "source_row", "source_locator", "label", "text", "representation",
-    "partition", "partition_evidence", "analysis_eligible", "annotations", "tokens"
-  ],
-  "record_units": {
-    "digital_catalogue_entry": "A source catalogue entry; not necessarily one physical object or independent witness.",
-    "attributed_reading_version": "One source-attributed reading version; alternate readings of one object are not independent witnesses."
-  },
-  "admission_rule": "Analysis eligibility is explicit and conservative; source inclusion alone does not establish linguistic correctness, object identity, language identity, sign equivalence, or independent attestation."
+  "compatibility": {
+    "profile_specific_records": true,
+    "rule": "Consumers MUST preserve each corpus's native record unit and MUST NOT infer object identity, witness independence, language identity, sign equivalence, or decipherment from cross-project compatibility."
+  }
 }
