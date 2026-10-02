@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "checked": "2026-10-01",
+  "source": {
+    "name": "eDiAna",
+    "institution": "LMU Munich cooperative DFG project",
+    "interface_license": "CC BY-SA 4.0 (documented on corpus interface)"
+  },
+  "lineage": {
+    "lycian": "Adaptation of Melchert 2001b, itself largely based on Kalinka 1901, Friedrich 1932, Neumann 1979; later inscriptions and newer readings added by eDiAna.",
+    "carian": "Digitalized/annotated by eDiAna; numbering and transliteration based on Adiego 2007, with later published inscriptions added.",
+    "milyan": "Separate Lycian B partition; must not be merged into Lycian A statistics."
+  },
+  "project_policy": "eDiAna rows remain source-attributed digital edition evidence. Edition ancestry must be represented as dependence, not independent confirmation. New readings supplied by project scholars remain attributed readings until separately collated."
+}
