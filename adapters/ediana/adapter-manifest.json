@@ -1,0 +1,26 @@
+{
+  "adapter": "ediana",
+  "version": "0.1.0",
+  "reference_implementation": "corpuskit/core.py",
+  "reusable_components": [
+    "catalogue_index_replay",
+    "batched_acquisition_ledger",
+    "raw_checksum_verification",
+    "source_locator_preservation",
+    "annotation_matrix_preservation",
+    "deterministic_exports"
+  ],
+  "language_specific_components": [
+    "language_ids",
+    "transliteration_conventions",
+    "script_parallel_screen",
+    "token_eligibility",
+    "catalogue_completeness_expectations"
+  ],
+  "safeguards": [
+    "no_cross_language_pooling_by_default",
+    "no_inferred_sign_equivalence",
+    "catalogue_entry_not_physical_witness",
+    "source_license_preserved"
+  ]
+}
