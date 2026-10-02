@@ -1,0 +1,107 @@
+{
+  "scope": "Pinned native status reports; each native report retains its own units and gates. These are historical snapshots, not live status.",
+  "native_snapshots": [
+    {
+      "repository": "Linear-A",
+      "commit": "9cea3341cad60a2ae149dfdbb899e87f8c1c8943",
+      "source_url": "https://github.com/hawkinsnick/Linear-A/blob/9cea3341cad60a2ae149dfdbb899e87f8c1c8943/analysis/current-status.json",
+      "report_path": "research/family/native/Linear-A.json",
+      "report_sha256": "c9c5df5142329472e3e1f9e45655dc633539c2c058e5de9005e8414165e7ff2a",
+      "native_gate_fields": {
+        "prospective_outcomes_inspected": false,
+        "calibration_executed": false,
+        "descriptive_sigla_delta_executed": true,
+        "multiverse_2_5": "QUARANTINED",
+        "statistical_repair_v1": "EXECUTED_CONDITIONAL_HISTORICAL_SENSITIVITY"
+      },
+      "count_boundary": "Counts refer to committed native records only; separately authenticated upstream inputs are reported in source verification artifacts."
+    },
+    {
+      "repository": "Linear-B",
+      "commit": "3d797abbaf8757fb392673e0af792dbc3ae35d6b",
+      "source_url": "https://github.com/hawkinsnick/Linear-B/blob/3d797abbaf8757fb392673e0af792dbc3ae35d6b/analysis/current-status.json",
+      "report_path": "research/family/native/Linear-B.json",
+      "report_sha256": "cd088e335aceeb4dac006ab50ff03ba6dd36d1988f8cc105fc3687ee06d1c82f",
+      "native_gate_fields": {
+        "calibration_executed": false,
+        "gold_revealed": false,
+        "authenticated_document_count_smoke": "PASS_CORRECTED_SOURCE_MAPPING_REPEAT_IDENTICAL"
+      },
+      "count_boundary": "Counts refer to committed native records only; separately authenticated upstream inputs are reported in source verification artifacts."
+    },
+    {
+      "repository": "Cypro-Minoan",
+      "commit": "0800542c5fcb963a8e4d2fb616556ec3e76d8612",
+      "source_url": "https://github.com/hawkinsnick/Cypro-Minoan/blob/0800542c5fcb963a8e4d2fb616556ec3e76d8612/analysis/current-status.json",
+      "report_path": "research/family/native/Cypro-Minoan.json",
+      "report_sha256": "7a027cf4cb7ce0df28fa8887540ffb09726ae5b88e76a94fbd7350b69a442c30",
+      "native_gate_fields": {
+        "corpus_wide_frequency": "BLOCKED",
+        "cross_script_phonetic_test": "BLOCKED"
+      },
+      "count_boundary": "Counts refer to committed native records only; separately authenticated upstream inputs are reported in source verification artifacts."
+    },
+    {
+      "repository": "Cretan-hieroglpyhs",
+      "commit": "4c363c55888840874eb341f9dd010d0c9211d9d9",
+      "source_url": "https://github.com/hawkinsnick/Cretan-hieroglpyhs/blob/4c363c55888840874eb341f9dd010d0c9211d9d9/analysis/current-status.json",
+      "report_path": "research/family/native/Cretan-hieroglpyhs.json",
+      "report_sha256": "e04ac5753caa00b368c399fe2db9a2d4b878568310f8fcaeae5f3bbe63594394",
+      "native_gate_fields": {
+        "structural_analysis": "BLOCKED",
+        "comparative_analysis": "BLOCKED"
+      },
+      "count_boundary": "Counts refer to committed native records only; separately authenticated upstream inputs are reported in source verification artifacts."
+    },
+    {
+      "repository": "Phaistos-Disc",
+      "commit": "631f8140331a5c60b37e449f0e19c61bd4eaf679",
+      "source_url": "https://github.com/hawkinsnick/Phaistos-Disc/blob/631f8140331a5c60b37e449f0e19c61bd4eaf679/analysis/acceptance-2.0.json",
+      "report_path": "research/family/native/Phaistos-Disc.json",
+      "report_sha256": "aa6f1db547d5a90a04a8bc4ed8a79334a7db4fe152fd757817ef32878ad85b19",
+      "native_gate_fields": {
+        "status": "BLOCKED_FOR_FINAL_2_0",
+        "final_2_0_allowed": false
+      },
+      "count_boundary": "Acceptance is conditional on recorded human review and source adequacy, not a version number or a schema-valid declaration. No native correction, language, phonetic value or decipherment is automatically established."
+    },
+    {
+      "repository": "Byblos-syllabary",
+      "commit": "4428c59c73534b40876dba5840cb0ad9d726e4f4",
+      "source_url": "https://github.com/hawkinsnick/Byblos-syllabary/blob/4428c59c73534b40876dba5840cb0ad9d726e4f4/exports/audit.json",
+      "report_path": "research/family/native/Byblos-syllabary.json",
+      "report_sha256": "7d2b99acf149a736030694b744adca3572e23921f427b47ecd04aac87c827155",
+      "native_gate_fields": {
+        "admission_evidence": false,
+        "core_sequences": false,
+        "exhaustiveness_audit": false,
+        "external_crosswalk": false,
+        "independent_core_review": false,
+        "nonempty_core": true,
+        "object_identity": false,
+        "research_gaps_resolved": false,
+        "structure": true,
+        "surface_inventory": false
+      },
+      "count_boundary": "Passing software checks validates recorded structure, not archaeological truth, licence validity or completeness."
+    },
+    {
+      "repository": "Eteocypriot",
+      "commit": "9c0060168d687ffd20b8ae3eaa43a6f3c54f0433",
+      "source_url": "https://github.com/hawkinsnick/Eteocypriot/blob/9c0060168d687ffd20b8ae3eaa43a6f3c54f0433/exports/audit.json",
+      "report_path": "research/family/native/Eteocypriot.json",
+      "report_sha256": "b80801d9b00c9e11092092cb3814dcb1e065137fac60bfe9a4ab54d1f325db89",
+      "native_gate_fields": [],
+      "count_boundary": "Native digital entries and explicitly admitted components only; shared source IDs are not independent witnesses."
+    },
+    {
+      "repository": "Cypriot-syllabic-Greek",
+      "commit": "e3d9e027e9c61e742e4a82fee07e2266595e6a69",
+      "source_url": "https://github.com/hawkinsnick/Cypriot-syllabic-Greek/blob/e3d9e027e9c61e742e4a82fee07e2266595e6a69/exports/audit.json",
+      "report_path": "research/family/native/Cypriot-syllabic-Greek.json",
+      "report_sha256": "9b3152aa0c75af858db2a5a5e731cf874bb634dd0aa46ad72f09ef1432f5bc7a",
+      "native_gate_fields": [],
+      "count_boundary": "Native digital entries and explicitly admitted components only; shared source IDs are not independent witnesses."
+    }
+  ]
+}

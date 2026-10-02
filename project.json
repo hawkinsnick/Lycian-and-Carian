@@ -1,0 +1,8 @@
+{
+  "project": "Lycian-and-Carian",
+  "adapter": "ediana",
+  "scope": "Complete 2026-10-01 public eDiAna catalogue snapshot of Lycian (2017 archival), Carian (2022) and separate Milyan (2021) partitions.",
+  "record_unit": "digital_catalogue_entry",
+  "python_minimum": "3.10",
+  "data_license": "CC-BY-SA-4.0"
+}

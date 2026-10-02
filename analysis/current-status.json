@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "scope": "Complete 2026-10-01 public eDiAna catalogue snapshot of Lycian (2017 archival), Carian (2022) and separate Milyan (2021) partitions.",
+  "records": 453,
+  "record_unit": "digital_catalogue_entry",
+  "categories": {
+    "aggregated_source_group": 1,
+    "deleted_by_source": 1,
+    "source_attributed_transcription": 445,
+    "uncertain_reading_or_direction": 6
+  },
+  "languages": {
+    "carian": {
+      "records": 264,
+      "source_text_rows": 448,
+      "analysis_eligible_rows": 442,
+      "excluded_greek_script_rows": 0,
+      "conservative_source_string_tokens": 681
+    },
+    "lycian": {
+      "records": 187,
+      "source_text_rows": 1412,
+      "analysis_eligible_rows": 1122,
+      "excluded_greek_script_rows": 18,
+      "conservative_source_string_tokens": 3433
+    },
+    "milyan": {
+      "records": 2,
+      "source_text_rows": 114,
+      "analysis_eligible_rows": 114,
+      "excluded_greek_script_rows": 0,
+      "conservative_source_string_tokens": 546
+    }
+  },
+  "blocked_claims": [
+    "exhaustive_world_corpus",
+    "independently_verified_critical_edition",
+    "linguistic_gold_standard",
+    "cross_script_phonetic_equivalence",
+    "decipherment",
+    "unique_physical_monument_total"
+  ],
+  "independent_human_epigraphic_review": false,
+  "source_snapshot_reconciled": true
+}

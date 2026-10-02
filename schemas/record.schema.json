@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hawkinsnick/Lycian-and-Carian/blob/main/schemas/record.schema.json",
+  "title": "Source-attributed epigraphic reading or catalogue entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "source_id",
+    "authority",
+    "language",
+    "label",
+    "category",
+    "unit",
+    "object_id",
+    "independent_witness_count",
+    "source",
+    "lines"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "string"
+    },
+    "language": {
+      "enum": [
+        "lycian",
+        "carian",
+        "milyan",
+        "ecr"
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "category": {
+      "enum": [
+        "source_attributed_transcription",
+        "uncertain_reading_or_direction",
+        "deleted_by_source",
+        "aggregated_source_group",
+        "historical_edition",
+        "secondary_reference"
+      ]
+    },
+    "unit": {
+      "enum": [
+        "digital_catalogue_entry",
+        "attributed_reading_version"
+      ]
+    },
+    "object_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "independent_witness_count": {
+      "type": "null"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "url",
+        "sha256",
+        "license"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "license": {
+          "enum": [
+            "CC-BY-SA-4.0",
+            "public_domain_original"
+          ]
+        }
+      }
+    },
+    "lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_row",
+          "source_locator",
+          "label",
+          "text",
+          "representation",
+          "partition",
+          "partition_evidence",
+          "analysis_eligible",
+          "annotations",
+          "tokens"
+        ],
+        "properties": {
+          "source_row": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "source_locator": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "representation": {
+            "type": "string"
+          },
+          "partition": {
+            "enum": [
+              "lycian",
+              "carian",
+              "milyan",
+              "ecr",
+              "grc",
+              "greek_script_parallel_candidate"
+            ]
+          },
+          "partition_evidence": {
+            "type": "string"
+          },
+          "analysis_eligible": {
+            "type": "boolean"
+          },
+          "annotations": {
+            "type": "object"
+          },
+          "tokens": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "text",
+                "start",
+                "end",
+                "eligible",
+                "reason"
+              ],
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "eligible": {
+                  "type": "boolean"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "source_level": {
+      "enum": [
+        "primary_historical_edition",
+        "secondary_reference"
+      ]
+    },
+    "default_reading": {
+      "type": "boolean"
+    }
+  }
+}

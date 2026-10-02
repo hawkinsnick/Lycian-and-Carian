@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "license": "CC-BY-SA-4.0",
+  "files": [
+    {
+      "path": "ATTRIBUTION.md",
+      "sha256": "eaee4c2a291fdbcc39e37e1d674962020cf904124db5c0b71d1215e9549bfc55"
+    },
+    {
+      "path": "audit.json",
+      "sha256": "f51e90f6532b62a9fbec0d77e751326a239c23208760403ae8a39e2371509ae8"
+    },
+    {
+      "path": "corpus.json",
+      "sha256": "8695b36b906fad403330eb8c1c79a1e4938723d69ff56ec4929d6691f06ac247"
+    },
+    {
+      "path": "corpus.jsonl",
+      "sha256": "91768f22d96815fccfb0793fd45d3b0a20e2c3a2c6085dd54c0efe87c511f6cb"
+    },
+    {
+      "path": "frequency-carian.json",
+      "sha256": "383e083d638fce9c8e3c5df77e15389763a67a6faa89db95fabe7567f01e9620"
+    },
+    {
+      "path": "frequency-lycian.json",
+      "sha256": "7039cd9bdcc8d0de4ddaa5baad6cd0c57ac33f3d8c2e9f3d139ea52fdc9315ec"
+    },
+    {
+      "path": "frequency-milyan.json",
+      "sha256": "92cea2e153260c6654a763c01396e78a03228ebdb068efaa80d64b4e1fb1e3f7"
+    },
+    {
+      "path": "lines.csv",
+      "sha256": "49012524f323a8c7242dd08a1144ade75a28f6821d11f9215963bc63ba2f6b4e"
+    }
+  ]
+}

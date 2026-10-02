@@ -1,0 +1,11 @@
+{
+  "authority": "eDiAna",
+  "url": "https://www.ediana.gwi.uni-muenchen.de/assets/pdfs/citation.pdf",
+  "full_pdf_sha256": "8d77b2dcb5259398302436b3787738e8067b648913612ed118a31a52171ff400",
+  "license": "CC-BY-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "statement_locator": "Citation Guidelines, p. 2, Imprint",
+  "statement": "eDiAna is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.",
+  "citation": "Miller, Jared; Rieken, Elisabeth; Hackstein, Olav; Yakubovich, Ilya (eds.), 2017–. eDiAna. Digital Philological-Etymological Dictionary of the Minor Ancient Anatolian Corpus Languages. https://www.ediana.gwi.uni-muenchen.de",
+  "changes": "Public catalogue and corpus responses archived; structured lines, annotation matrices, conservative token filters and audit added. No source reading silently corrected."
+}

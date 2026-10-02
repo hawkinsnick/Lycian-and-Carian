@@ -1,0 +1,2267 @@
+[
+  {
+    "docid": "182",
+    "label": "Coin Legends",
+    "language": "lycian"
+  },
+  {
+    "docid": "186",
+    "label": "Fragment A of N 324/5 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "184",
+    "label": "Fragment B of N 324/5",
+    "language": "lycian"
+  },
+  {
+    "docid": "10",
+    "label": "N 301 (Egypt)",
+    "language": "lycian"
+  },
+  {
+    "docid": "31",
+    "label": "N 302 (Korydalla)",
+    "language": "lycian"
+  },
+  {
+    "docid": "108",
+    "label": "N 303 (Phellos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "130",
+    "label": "N 304 (Sura)",
+    "language": "lycian"
+  },
+  {
+    "docid": "7",
+    "label": "N 306 (Ҫağman)",
+    "language": "lycian"
+  },
+  {
+    "docid": "11",
+    "label": "N 307 (Egypt)",
+    "language": "lycian"
+  },
+  {
+    "docid": "104",
+    "label": "N 308 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "105",
+    "label": "N 309 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "109",
+    "label": "N 310 (Phellos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "170",
+    "label": "N 311 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "171",
+    "label": "N 312 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "172",
+    "label": "N 313 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "30",
+    "label": "N 314 (Kızılca)",
+    "language": "lycian"
+  },
+  {
+    "docid": "126",
+    "label": "N 315 (Seyret)",
+    "language": "lycian"
+  },
+  {
+    "docid": "88",
+    "label": "N 316 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "89",
+    "label": "N 317 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "173",
+    "label": "N 318 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "174",
+    "label": "N 320 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "29",
+    "label": "N 321 (Kaş)",
+    "language": "lycian"
+  },
+  {
+    "docid": "121",
+    "label": "N 322 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "18",
+    "label": "N 323 (Istanbul)",
+    "language": "lycian"
+  },
+  {
+    "docid": "175",
+    "label": "N 324 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "176",
+    "label": "N 325 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "177",
+    "label": "N 326 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "178",
+    "label": "N 327 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "181",
+    "label": "N 330 Tüse",
+    "language": "lycian"
+  },
+  {
+    "docid": "183",
+    "label": "N 331 (Korba)",
+    "language": "lycian"
+  },
+  {
+    "docid": "147",
+    "label": "N 333 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "148",
+    "label": "N 334 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "6",
+    "label": "N 335 (Asartaş)",
+    "language": "lycian"
+  },
+  {
+    "docid": "122",
+    "label": "N 336 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "90",
+    "label": "N 337 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "179",
+    "label": "N 341 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "180",
+    "label": "N 344 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "185",
+    "label": "N 351 (Beybonak)",
+    "language": "lycian"
+  },
+  {
+    "docid": "38",
+    "label": "TL 099 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "131",
+    "label": "TL 1 (Telmessos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "110",
+    "label": "TL 10 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "39",
+    "label": "TL 100 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "40",
+    "label": "TL 101 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "41",
+    "label": "TL 102 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "42",
+    "label": "TL 103 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "43",
+    "label": "TL 104 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "44",
+    "label": "TL 105 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "45",
+    "label": "TL 106 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "46",
+    "label": "TL 107 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "47",
+    "label": "TL 108 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "48",
+    "label": "TL 109 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "111",
+    "label": "TL 11 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "49",
+    "label": "TL 110 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "50",
+    "label": "TL 111 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "51",
+    "label": "TL 112 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "52",
+    "label": "TL 113 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "53",
+    "label": "TL 114 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "54",
+    "label": "TL 115 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "55",
+    "label": "TL 116 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "56",
+    "label": "TL 117 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "57",
+    "label": "TL 118 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "58",
+    "label": "TL 119 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "112",
+    "label": "TL 12 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "59",
+    "label": "TL 120 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "60",
+    "label": "TL 121 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "61",
+    "label": "TL 122 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "62",
+    "label": "TL 123 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "63",
+    "label": "TL 124 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "64",
+    "label": "TL 125 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "65",
+    "label": "TL 126 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "66",
+    "label": "TL 127 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "67",
+    "label": "TL 128 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "68",
+    "label": "TL 129 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "113",
+    "label": "TL 13 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "69",
+    "label": "TL 130 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "70",
+    "label": "TL 131 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "71",
+    "label": "TL 132 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "72",
+    "label": "TL 133 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "73",
+    "label": "TL 134 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "74",
+    "label": "TL 135 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "75",
+    "label": "TL 136 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "76",
+    "label": "TL 137 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "77",
+    "label": "TL 138 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "78",
+    "label": "TL 139 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "114",
+    "label": "TL 14 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "79",
+    "label": "TL 140 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "80",
+    "label": "TL 141 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "81",
+    "label": "TL 142 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "82",
+    "label": "TL 143 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "83",
+    "label": "TL 144 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "84",
+    "label": "TL 145 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "85",
+    "label": "TL 146 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "86",
+    "label": "TL 147 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "87",
+    "label": "TL 148 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "123",
+    "label": "TL 149 (Rhodiapolis)",
+    "language": "lycian"
+  },
+  {
+    "docid": "115",
+    "label": "TL 15 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "124",
+    "label": "TL 150 (Rhodiapolis)",
+    "language": "lycian"
+  },
+  {
+    "docid": "116",
+    "label": "TL 16 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "117",
+    "label": "TL 17 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "118",
+    "label": "TL 18 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "119",
+    "label": "TL 19 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "132",
+    "label": "TL 2 (Telmessos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "120",
+    "label": "TL 20 (Pinara)",
+    "language": "lycian"
+  },
+  {
+    "docid": "138",
+    "label": "TL 21 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "139",
+    "label": "TL 22 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "140",
+    "label": "TL 23 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "141",
+    "label": "TL 24 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "142",
+    "label": "TL 25 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "143",
+    "label": "TL 26 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "9",
+    "label": "TL 27 (Düwer)",
+    "language": "lycian"
+  },
+  {
+    "docid": "144",
+    "label": "TL 28 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "145",
+    "label": "TL 29 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "133",
+    "label": "TL 3 (Telmessos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "146",
+    "label": "TL 30 (Tlos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "19",
+    "label": "TL 31 (Kadyanda)",
+    "language": "lycian"
+  },
+  {
+    "docid": "20",
+    "label": "TL 32 (Kadyanda)",
+    "language": "lycian"
+  },
+  {
+    "docid": "21",
+    "label": "TL 33 (Kadyanda)",
+    "language": "lycian"
+  },
+  {
+    "docid": "22",
+    "label": "TL 34 (Kadyanda)",
+    "language": "lycian"
+  },
+  {
+    "docid": "153",
+    "label": "TL 35 (Üsümlü)",
+    "language": "lycian"
+  },
+  {
+    "docid": "154",
+    "label": "TL 36 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "155",
+    "label": "TL 37 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "156",
+    "label": "TL 38 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "157",
+    "label": "TL 39 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "134",
+    "label": "TL 4 (Telmessos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "158",
+    "label": "TL 40 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "159",
+    "label": "TL 41 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "160",
+    "label": "TL 42 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "161",
+    "label": "TL 43 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "162",
+    "label": "TL 44 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "163",
+    "label": "TL 45 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "164",
+    "label": "TL 46 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "165",
+    "label": "TL 47 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "166",
+    "label": "TL 48 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "167",
+    "label": "TL 49 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "135",
+    "label": "TL 5 (Telmessos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "168",
+    "label": "TL 50 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "169",
+    "label": "TL 51 (Xanthos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "127",
+    "label": "TL 52 (Sidek-Yayla)",
+    "language": "lycian"
+  },
+  {
+    "docid": "125",
+    "label": "TL 53 (Seyret)",
+    "language": "lycian"
+  },
+  {
+    "docid": "106",
+    "label": "TL 54 (Phellos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "0",
+    "label": "TL 56 (Antiphellos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "1",
+    "label": "TL 57 (Antiphellos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "2",
+    "label": "TL 58 (Antiphellos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "3",
+    "label": "TL 59 (Antiphellos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "25",
+    "label": "TL 6 (Karmylessos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "4",
+    "label": "TL 60 (Antiphellos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "107",
+    "label": "TL 61 (Phellos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "14",
+    "label": "TL 62 (Isinda)",
+    "language": "lycian"
+  },
+  {
+    "docid": "15",
+    "label": "TL 63 (Isinda)",
+    "language": "lycian"
+  },
+  {
+    "docid": "16",
+    "label": "TL 64 (Isinda)",
+    "language": "lycian"
+  },
+  {
+    "docid": "17",
+    "label": "TL 65 (Isinda)",
+    "language": "lycian"
+  },
+  {
+    "docid": "136",
+    "label": "TL 66 (Timiusa)",
+    "language": "lycian"
+  },
+  {
+    "docid": "137",
+    "label": "TL 67 (Timiusa)",
+    "language": "lycian"
+  },
+  {
+    "docid": "128",
+    "label": "TL 68 (Simena)",
+    "language": "lycian"
+  },
+  {
+    "docid": "32",
+    "label": "TL 69 (Kyana)",
+    "language": "lycian"
+  },
+  {
+    "docid": "26",
+    "label": "TL 7 (Karmylessos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "33",
+    "label": "TL 70 (Kyana)",
+    "language": "lycian"
+  },
+  {
+    "docid": "34",
+    "label": "TL 71 (Kyana)",
+    "language": "lycian"
+  },
+  {
+    "docid": "35",
+    "label": "TL 72 (Kyana)",
+    "language": "lycian"
+  },
+  {
+    "docid": "36",
+    "label": "TL 73 (Kyana)",
+    "language": "lycian"
+  },
+  {
+    "docid": "13",
+    "label": "TL 74 (Hoiran)",
+    "language": "lycian"
+  },
+  {
+    "docid": "149",
+    "label": "TL 75 (Tyberisos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "150",
+    "label": "TL 76 (Tyberisos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "8",
+    "label": "TL 77 (Ҫindam)",
+    "language": "lycian"
+  },
+  {
+    "docid": "151",
+    "label": "TL 78 (Tyssa)",
+    "language": "lycian"
+  },
+  {
+    "docid": "152",
+    "label": "TL 79 (Tyssa)",
+    "language": "lycian"
+  },
+  {
+    "docid": "27",
+    "label": "TL 8 (Karmylessos)",
+    "language": "lycian"
+  },
+  {
+    "docid": "28",
+    "label": "TL 80 (Kaş)",
+    "language": "lycian"
+  },
+  {
+    "docid": "23",
+    "label": "TL 81 (Kandyba)",
+    "language": "lycian"
+  },
+  {
+    "docid": "24",
+    "label": "TL 82 (Kandyba)",
+    "language": "lycian"
+  },
+  {
+    "docid": "5",
+    "label": "TL 83 (Arneai)",
+    "language": "lycian"
+  },
+  {
+    "docid": "129",
+    "label": "TL 84 (Sura)",
+    "language": "lycian"
+  },
+  {
+    "docid": "91",
+    "label": "TL 85 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "92",
+    "label": "TL 86 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "93",
+    "label": "TL 87 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "94",
+    "label": "TL 88 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "95",
+    "label": "TL 89 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "12",
+    "label": "TL 9 (Gülme)",
+    "language": "lycian"
+  },
+  {
+    "docid": "96",
+    "label": "TL 90 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "97",
+    "label": "TL 91 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "98",
+    "label": "TL 92 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "99",
+    "label": "TL 93 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "100",
+    "label": "TL 94 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "101",
+    "label": "TL 95 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "102",
+    "label": "TL 96 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "103",
+    "label": "TL 97 (Myra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "37",
+    "label": "TL 98 (Limyra)",
+    "language": "lycian"
+  },
+  {
+    "docid": "611",
+    "label": "C.Al 1",
+    "language": "carian"
+  },
+  {
+    "docid": "623",
+    "label": "C.Di 1",
+    "language": "carian"
+  },
+  {
+    "docid": "612",
+    "label": "C.Eu 1",
+    "language": "carian"
+  },
+  {
+    "docid": "613",
+    "label": "C.Eu 2",
+    "language": "carian"
+  },
+  {
+    "docid": "663",
+    "label": "C.Eu 3 (Kızıl & Adiego 2021)",
+    "language": "carian"
+  },
+  {
+    "docid": "622",
+    "label": "C.Ha 1",
+    "language": "carian"
+  },
+  {
+    "docid": "646",
+    "label": "C.Hd 1 (Türkteki & Tekoğlu 2012)",
+    "language": "carian"
+  },
+  {
+    "docid": "615",
+    "label": "C.Hy 1 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "648",
+    "label": "C.I 1 + C.I 5 (Adiego 2019)",
+    "language": "carian"
+  },
+  {
+    "docid": "649",
+    "label": "C.I 2 (Adiego 2019)",
+    "language": "carian"
+  },
+  {
+    "docid": "650",
+    "label": "C.I 3 (Adiego 2019)",
+    "language": "carian"
+  },
+  {
+    "docid": "651",
+    "label": "C.I 4 (Adiego 2019)",
+    "language": "carian"
+  },
+  {
+    "docid": "652",
+    "label": "C.I 6 [reading direction unknown] (Adiego 2019)",
+    "language": "carian"
+  },
+  {
+    "docid": "653",
+    "label": "C.I 7 (Adiego 2019)",
+    "language": "carian"
+  },
+  {
+    "docid": "624",
+    "label": "C.Ia 1",
+    "language": "carian"
+  },
+  {
+    "docid": "625",
+    "label": "C.Ia 2",
+    "language": "carian"
+  },
+  {
+    "docid": "626",
+    "label": "C.Ia 3",
+    "language": "carian"
+  },
+  {
+    "docid": "627",
+    "label": "C.Ia 4",
+    "language": "carian"
+  },
+  {
+    "docid": "628",
+    "label": "C.Ia 5",
+    "language": "carian"
+  },
+  {
+    "docid": "629",
+    "label": "C.Ia 6",
+    "language": "carian"
+  },
+  {
+    "docid": "632",
+    "label": "C.Ka 1",
+    "language": "carian"
+  },
+  {
+    "docid": "641",
+    "label": "C.Ka 10 (Kunnert & Schürr & Zingg 2010)",
+    "language": "carian"
+  },
+  {
+    "docid": "642",
+    "label": "C.Ka 11 (Çörtük & Gander & Holler 2018)",
+    "language": "carian"
+  },
+  {
+    "docid": "633",
+    "label": "C.Ka 2 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "634",
+    "label": "C.Ka 3 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "635",
+    "label": "C.Ka 4 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "636",
+    "label": "C.Ka 5 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "637",
+    "label": "C.Ka 6 [deleted – not a Carian text]",
+    "language": "carian"
+  },
+  {
+    "docid": "638",
+    "label": "C.Ka 7",
+    "language": "carian"
+  },
+  {
+    "docid": "639",
+    "label": "C.Ka 8",
+    "language": "carian"
+  },
+  {
+    "docid": "640",
+    "label": "C.Ka 9",
+    "language": "carian"
+  },
+  {
+    "docid": "647",
+    "label": "C.Kal 1 (Schürr 2019)",
+    "language": "carian"
+  },
+  {
+    "docid": "630",
+    "label": "C.Ke 1",
+    "language": "carian"
+  },
+  {
+    "docid": "631",
+    "label": "C.Ke 2",
+    "language": "carian"
+  },
+  {
+    "docid": "619",
+    "label": "C.Ki 1 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "614",
+    "label": "C.Kn 1",
+    "language": "carian"
+  },
+  {
+    "docid": "643",
+    "label": "C.Kr 1 (scriptio continua",
+    "language": "carian"
+  },
+  {
+    "docid": "644",
+    "label": "C.La 1 (Karlsson & Henry 2008)",
+    "language": "carian"
+  },
+  {
+    "docid": "645",
+    "label": "C.Mi 1 (Herda & Sauter 2009)",
+    "language": "carian"
+  },
+  {
+    "docid": "616",
+    "label": "C.My 1 (partly scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "617",
+    "label": "C.Si 1",
+    "language": "carian"
+  },
+  {
+    "docid": "618",
+    "label": "C.Si 2 (partly scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "620",
+    "label": "C.St 1 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "621",
+    "label": "C.St 2 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "609",
+    "label": "C.Tr 1",
+    "language": "carian"
+  },
+  {
+    "docid": "610",
+    "label": "C.Tr 2",
+    "language": "carian"
+  },
+  {
+    "docid": "654",
+    "label": "C.xx 1",
+    "language": "carian"
+  },
+  {
+    "docid": "655",
+    "label": "C.xx 2",
+    "language": "carian"
+  },
+  {
+    "docid": "656",
+    "label": "C.xx 3",
+    "language": "carian"
+  },
+  {
+    "docid": "657",
+    "label": "C.xx 4",
+    "language": "carian"
+  },
+  {
+    "docid": "658",
+    "label": "C.xx 5",
+    "language": "carian"
+  },
+  {
+    "docid": "468",
+    "label": "E.Ab 1",
+    "language": "carian"
+  },
+  {
+    "docid": "477",
+    "label": "E.Ab 10",
+    "language": "carian"
+  },
+  {
+    "docid": "478",
+    "label": "E.Ab 11",
+    "language": "carian"
+  },
+  {
+    "docid": "479",
+    "label": "E.Ab 12 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "480",
+    "label": "E.Ab 13",
+    "language": "carian"
+  },
+  {
+    "docid": "481",
+    "label": "E.Ab 14",
+    "language": "carian"
+  },
+  {
+    "docid": "482",
+    "label": "E.Ab 15 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "483",
+    "label": "E.Ab 16",
+    "language": "carian"
+  },
+  {
+    "docid": "484",
+    "label": "E.Ab 17",
+    "language": "carian"
+  },
+  {
+    "docid": "485",
+    "label": "E.Ab 18",
+    "language": "carian"
+  },
+  {
+    "docid": "486",
+    "label": "E.Ab 19 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "469",
+    "label": "E.Ab 2",
+    "language": "carian"
+  },
+  {
+    "docid": "487",
+    "label": "E.Ab 20",
+    "language": "carian"
+  },
+  {
+    "docid": "488",
+    "label": "E.Ab 21 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "489",
+    "label": "E.Ab 22",
+    "language": "carian"
+  },
+  {
+    "docid": "490",
+    "label": "E.Ab 23",
+    "language": "carian"
+  },
+  {
+    "docid": "491",
+    "label": "E.Ab 24",
+    "language": "carian"
+  },
+  {
+    "docid": "492",
+    "label": "E.Ab 25 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "493",
+    "label": "E.Ab 26",
+    "language": "carian"
+  },
+  {
+    "docid": "494",
+    "label": "E.Ab 27",
+    "language": "carian"
+  },
+  {
+    "docid": "495",
+    "label": "E.Ab 28 [reading direction uncertain]",
+    "language": "carian"
+  },
+  {
+    "docid": "496",
+    "label": "E.Ab 29",
+    "language": "carian"
+  },
+  {
+    "docid": "470",
+    "label": "E.Ab 3",
+    "language": "carian"
+  },
+  {
+    "docid": "497",
+    "label": "E.Ab 30",
+    "language": "carian"
+  },
+  {
+    "docid": "498",
+    "label": "E.Ab 31",
+    "language": "carian"
+  },
+  {
+    "docid": "499",
+    "label": "E.Ab 32",
+    "language": "carian"
+  },
+  {
+    "docid": "500",
+    "label": "E.Ab 33",
+    "language": "carian"
+  },
+  {
+    "docid": "501",
+    "label": "E.Ab 34 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "502",
+    "label": "E.Ab 35",
+    "language": "carian"
+  },
+  {
+    "docid": "503",
+    "label": "E.Ab 36",
+    "language": "carian"
+  },
+  {
+    "docid": "504",
+    "label": "E.Ab 37",
+    "language": "carian"
+  },
+  {
+    "docid": "505",
+    "label": "E.Ab 38",
+    "language": "carian"
+  },
+  {
+    "docid": "506",
+    "label": "E.Ab 39",
+    "language": "carian"
+  },
+  {
+    "docid": "471",
+    "label": "E.Ab 4 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "507",
+    "label": "E.Ab 40",
+    "language": "carian"
+  },
+  {
+    "docid": "508",
+    "label": "E.Ab 41",
+    "language": "carian"
+  },
+  {
+    "docid": "509",
+    "label": "E.Ab 42",
+    "language": "carian"
+  },
+  {
+    "docid": "510",
+    "label": "E.Ab 43",
+    "language": "carian"
+  },
+  {
+    "docid": "511",
+    "label": "E.Ab 44 (Bárta & Adiego 2021)",
+    "language": "carian"
+  },
+  {
+    "docid": "472",
+    "label": "E.Ab 5 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "473",
+    "label": "E.Ab 6",
+    "language": "carian"
+  },
+  {
+    "docid": "474",
+    "label": "E.Ab 7",
+    "language": "carian"
+  },
+  {
+    "docid": "475",
+    "label": "E.Ab 8 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "476",
+    "label": "E.Ab 9 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "586",
+    "label": "E.AS 1",
+    "language": "carian"
+  },
+  {
+    "docid": "587",
+    "label": "E.AS 2",
+    "language": "carian"
+  },
+  {
+    "docid": "588",
+    "label": "E.AS 3",
+    "language": "carian"
+  },
+  {
+    "docid": "589",
+    "label": "E.AS 4",
+    "language": "carian"
+  },
+  {
+    "docid": "590",
+    "label": "E.AS 5",
+    "language": "carian"
+  },
+  {
+    "docid": "591",
+    "label": "E.AS 6",
+    "language": "carian"
+  },
+  {
+    "docid": "592",
+    "label": "E.AS 7",
+    "language": "carian"
+  },
+  {
+    "docid": "593",
+    "label": "E.AS 8",
+    "language": "carian"
+  },
+  {
+    "docid": "594",
+    "label": "E.AS 9",
+    "language": "carian"
+  },
+  {
+    "docid": "595",
+    "label": "E.Bu 1",
+    "language": "carian"
+  },
+  {
+    "docid": "596",
+    "label": "E.Bu 2",
+    "language": "carian"
+  },
+  {
+    "docid": "597",
+    "label": "E.Bu 3",
+    "language": "carian"
+  },
+  {
+    "docid": "598",
+    "label": "E.Bu 4",
+    "language": "carian"
+  },
+  {
+    "docid": "599",
+    "label": "E.Bu 5",
+    "language": "carian"
+  },
+  {
+    "docid": "600",
+    "label": "E.Bu 6",
+    "language": "carian"
+  },
+  {
+    "docid": "567",
+    "label": "E.Lu 1",
+    "language": "carian"
+  },
+  {
+    "docid": "568",
+    "label": "E.Lu 2",
+    "language": "carian"
+  },
+  {
+    "docid": "569",
+    "label": "E.Lu 3",
+    "language": "carian"
+  },
+  {
+    "docid": "570",
+    "label": "E.Lu 4",
+    "language": "carian"
+  },
+  {
+    "docid": "571",
+    "label": "E.Lu 5",
+    "language": "carian"
+  },
+  {
+    "docid": "572",
+    "label": "E.Lu 6",
+    "language": "carian"
+  },
+  {
+    "docid": "573",
+    "label": "E.Lu 7",
+    "language": "carian"
+  },
+  {
+    "docid": "402",
+    "label": "E.Me 1",
+    "language": "carian"
+  },
+  {
+    "docid": "411",
+    "label": "E.Me 10",
+    "language": "carian"
+  },
+  {
+    "docid": "412",
+    "label": "E.Me 11",
+    "language": "carian"
+  },
+  {
+    "docid": "413",
+    "label": "E.Me 12",
+    "language": "carian"
+  },
+  {
+    "docid": "414",
+    "label": "E.Me 13",
+    "language": "carian"
+  },
+  {
+    "docid": "415",
+    "label": "E.Me 14",
+    "language": "carian"
+  },
+  {
+    "docid": "416",
+    "label": "E.Me 15",
+    "language": "carian"
+  },
+  {
+    "docid": "417",
+    "label": "E.Me 16",
+    "language": "carian"
+  },
+  {
+    "docid": "418",
+    "label": "E.Me 17",
+    "language": "carian"
+  },
+  {
+    "docid": "419",
+    "label": "E.Me 18",
+    "language": "carian"
+  },
+  {
+    "docid": "420",
+    "label": "E.Me 19",
+    "language": "carian"
+  },
+  {
+    "docid": "403",
+    "label": "E.Me 2",
+    "language": "carian"
+  },
+  {
+    "docid": "421",
+    "label": "E.Me 20",
+    "language": "carian"
+  },
+  {
+    "docid": "422",
+    "label": "E.Me 21",
+    "language": "carian"
+  },
+  {
+    "docid": "423",
+    "label": "E.Me 22",
+    "language": "carian"
+  },
+  {
+    "docid": "424",
+    "label": "E.Me 23",
+    "language": "carian"
+  },
+  {
+    "docid": "425",
+    "label": "E.Me 24",
+    "language": "carian"
+  },
+  {
+    "docid": "426",
+    "label": "E.Me 25",
+    "language": "carian"
+  },
+  {
+    "docid": "427",
+    "label": "E.Me 26",
+    "language": "carian"
+  },
+  {
+    "docid": "428",
+    "label": "E.Me 27",
+    "language": "carian"
+  },
+  {
+    "docid": "429",
+    "label": "E.Me 28",
+    "language": "carian"
+  },
+  {
+    "docid": "430",
+    "label": "E.Me 29",
+    "language": "carian"
+  },
+  {
+    "docid": "404",
+    "label": "E.Me 3",
+    "language": "carian"
+  },
+  {
+    "docid": "431",
+    "label": "E.Me 30",
+    "language": "carian"
+  },
+  {
+    "docid": "432",
+    "label": "E.Me 31",
+    "language": "carian"
+  },
+  {
+    "docid": "433",
+    "label": "E.Me 32",
+    "language": "carian"
+  },
+  {
+    "docid": "434",
+    "label": "E.Me 33",
+    "language": "carian"
+  },
+  {
+    "docid": "435",
+    "label": "E.Me 34",
+    "language": "carian"
+  },
+  {
+    "docid": "436",
+    "label": "E.Me 35",
+    "language": "carian"
+  },
+  {
+    "docid": "437",
+    "label": "E.Me 36",
+    "language": "carian"
+  },
+  {
+    "docid": "438",
+    "label": "E.Me 37",
+    "language": "carian"
+  },
+  {
+    "docid": "439",
+    "label": "E.Me 38",
+    "language": "carian"
+  },
+  {
+    "docid": "440",
+    "label": "E.Me 39",
+    "language": "carian"
+  },
+  {
+    "docid": "405",
+    "label": "E.Me 4",
+    "language": "carian"
+  },
+  {
+    "docid": "441",
+    "label": "E.Me 40",
+    "language": "carian"
+  },
+  {
+    "docid": "442",
+    "label": "E.Me 41",
+    "language": "carian"
+  },
+  {
+    "docid": "443",
+    "label": "E.Me 42",
+    "language": "carian"
+  },
+  {
+    "docid": "444",
+    "label": "E.Me 43",
+    "language": "carian"
+  },
+  {
+    "docid": "445",
+    "label": "E.Me 44",
+    "language": "carian"
+  },
+  {
+    "docid": "446",
+    "label": "E.Me 45",
+    "language": "carian"
+  },
+  {
+    "docid": "447",
+    "label": "E.Me 46",
+    "language": "carian"
+  },
+  {
+    "docid": "448",
+    "label": "E.Me 47",
+    "language": "carian"
+  },
+  {
+    "docid": "449",
+    "label": "E.Me 48",
+    "language": "carian"
+  },
+  {
+    "docid": "450",
+    "label": "E.Me 49",
+    "language": "carian"
+  },
+  {
+    "docid": "406",
+    "label": "E.Me 5",
+    "language": "carian"
+  },
+  {
+    "docid": "451",
+    "label": "E.Me 50",
+    "language": "carian"
+  },
+  {
+    "docid": "452",
+    "label": "E.Me 51",
+    "language": "carian"
+  },
+  {
+    "docid": "453",
+    "label": "E.Me 52",
+    "language": "carian"
+  },
+  {
+    "docid": "454",
+    "label": "E.Me 53",
+    "language": "carian"
+  },
+  {
+    "docid": "455",
+    "label": "E.Me 54",
+    "language": "carian"
+  },
+  {
+    "docid": "456",
+    "label": "E.Me 55",
+    "language": "carian"
+  },
+  {
+    "docid": "457",
+    "label": "E.Me 56",
+    "language": "carian"
+  },
+  {
+    "docid": "458",
+    "label": "E.Me 57",
+    "language": "carian"
+  },
+  {
+    "docid": "459",
+    "label": "E.Me 58",
+    "language": "carian"
+  },
+  {
+    "docid": "460",
+    "label": "E.Me 59",
+    "language": "carian"
+  },
+  {
+    "docid": "407",
+    "label": "E.Me 6",
+    "language": "carian"
+  },
+  {
+    "docid": "461",
+    "label": "E.Me 60",
+    "language": "carian"
+  },
+  {
+    "docid": "462",
+    "label": "E.Me 61",
+    "language": "carian"
+  },
+  {
+    "docid": "463",
+    "label": "E.Me 62",
+    "language": "carian"
+  },
+  {
+    "docid": "464",
+    "label": "E.Me 63",
+    "language": "carian"
+  },
+  {
+    "docid": "465",
+    "label": "E.Me 64",
+    "language": "carian"
+  },
+  {
+    "docid": "466",
+    "label": "E.Me 65",
+    "language": "carian"
+  },
+  {
+    "docid": "467",
+    "label": "E.Me 66",
+    "language": "carian"
+  },
+  {
+    "docid": "408",
+    "label": "E.Me 7 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "409",
+    "label": "E.Me 8",
+    "language": "carian"
+  },
+  {
+    "docid": "410",
+    "label": "E.Me 9",
+    "language": "carian"
+  },
+  {
+    "docid": "574",
+    "label": "E.Mu 1",
+    "language": "carian"
+  },
+  {
+    "docid": "400",
+    "label": "E.Sa 1",
+    "language": "carian"
+  },
+  {
+    "docid": "401",
+    "label": "E.Sa 2",
+    "language": "carian"
+  },
+  {
+    "docid": "575",
+    "label": "E.Si 1",
+    "language": "carian"
+  },
+  {
+    "docid": "584",
+    "label": "E.Si 10",
+    "language": "carian"
+  },
+  {
+    "docid": "585",
+    "label": "E.Si 11",
+    "language": "carian"
+  },
+  {
+    "docid": "576",
+    "label": "E.Si 2",
+    "language": "carian"
+  },
+  {
+    "docid": "577",
+    "label": "E.Si 3",
+    "language": "carian"
+  },
+  {
+    "docid": "578",
+    "label": "E.Si 4",
+    "language": "carian"
+  },
+  {
+    "docid": "579",
+    "label": "E.Si 5",
+    "language": "carian"
+  },
+  {
+    "docid": "580",
+    "label": "E.Si 6",
+    "language": "carian"
+  },
+  {
+    "docid": "581",
+    "label": "E.Si 7",
+    "language": "carian"
+  },
+  {
+    "docid": "582",
+    "label": "E.Si 8",
+    "language": "carian"
+  },
+  {
+    "docid": "583",
+    "label": "E.Si 9",
+    "language": "carian"
+  },
+  {
+    "docid": "601",
+    "label": "E.SS 1",
+    "language": "carian"
+  },
+  {
+    "docid": "512",
+    "label": "E.Th 1",
+    "language": "carian"
+  },
+  {
+    "docid": "521",
+    "label": "E.Th 10 (scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "522",
+    "label": "E.Th 11",
+    "language": "carian"
+  },
+  {
+    "docid": "523",
+    "label": "E.Th 12 (partly scriptio continua)",
+    "language": "carian"
+  },
+  {
+    "docid": "524",
+    "label": "E.Th 13",
+    "language": "carian"
+  },
+  {
+    "docid": "525",
+    "label": "E.Th 14",
+    "language": "carian"
+  },
+  {
+    "docid": "526",
+    "label": "E.Th 15 [reading very uncertain]",
+    "language": "carian"
+  },
+  {
+    "docid": "527",
+    "label": "E.Th 16",
+    "language": "carian"
+  },
+  {
+    "docid": "528",
+    "label": "E.Th 17",
+    "language": "carian"
+  },
+  {
+    "docid": "529",
+    "label": "E.Th 18",
+    "language": "carian"
+  },
+  {
+    "docid": "530",
+    "label": "E.Th 19",
+    "language": "carian"
+  },
+  {
+    "docid": "513",
+    "label": "E.Th 2",
+    "language": "carian"
+  },
+  {
+    "docid": "531",
+    "label": "E.Th 20",
+    "language": "carian"
+  },
+  {
+    "docid": "532",
+    "label": "E.Th 21 [reading direction uncertain]",
+    "language": "carian"
+  },
+  {
+    "docid": "533",
+    "label": "E.Th 22",
+    "language": "carian"
+  },
+  {
+    "docid": "534",
+    "label": "E.Th 23",
+    "language": "carian"
+  },
+  {
+    "docid": "535",
+    "label": "E.Th 24",
+    "language": "carian"
+  },
+  {
+    "docid": "536",
+    "label": "E.Th 25",
+    "language": "carian"
+  },
+  {
+    "docid": "537",
+    "label": "E.Th 26",
+    "language": "carian"
+  },
+  {
+    "docid": "538",
+    "label": "E.Th 27",
+    "language": "carian"
+  },
+  {
+    "docid": "539",
+    "label": "E.Th 28",
+    "language": "carian"
+  },
+  {
+    "docid": "540",
+    "label": "E.Th 29",
+    "language": "carian"
+  },
+  {
+    "docid": "514",
+    "label": "E.Th 3",
+    "language": "carian"
+  },
+  {
+    "docid": "541",
+    "label": "E.Th 30",
+    "language": "carian"
+  },
+  {
+    "docid": "542",
+    "label": "E.Th 31 [very uncertain reading]",
+    "language": "carian"
+  },
+  {
+    "docid": "543",
+    "label": "E.Th 32 [reading direction uncertain]",
+    "language": "carian"
+  },
+  {
+    "docid": "544",
+    "label": "E.Th 33",
+    "language": "carian"
+  },
+  {
+    "docid": "545",
+    "label": "E.Th 34",
+    "language": "carian"
+  },
+  {
+    "docid": "546",
+    "label": "E.Th 35",
+    "language": "carian"
+  },
+  {
+    "docid": "547",
+    "label": "E.Th 36",
+    "language": "carian"
+  },
+  {
+    "docid": "548",
+    "label": "E.Th 37",
+    "language": "carian"
+  },
+  {
+    "docid": "549",
+    "label": "E.Th 38",
+    "language": "carian"
+  },
+  {
+    "docid": "550",
+    "label": "E.Th 39",
+    "language": "carian"
+  },
+  {
+    "docid": "515",
+    "label": "E.Th 4",
+    "language": "carian"
+  },
+  {
+    "docid": "551",
+    "label": "E.Th 40",
+    "language": "carian"
+  },
+  {
+    "docid": "552",
+    "label": "E.Th 41",
+    "language": "carian"
+  },
+  {
+    "docid": "553",
+    "label": "E.Th 42",
+    "language": "carian"
+  },
+  {
+    "docid": "554",
+    "label": "E.Th 43",
+    "language": "carian"
+  },
+  {
+    "docid": "555",
+    "label": "E.Th 44",
+    "language": "carian"
+  },
+  {
+    "docid": "556",
+    "label": "E.Th 45",
+    "language": "carian"
+  },
+  {
+    "docid": "557",
+    "label": "E.Th 46",
+    "language": "carian"
+  },
+  {
+    "docid": "558",
+    "label": "E.Th 47",
+    "language": "carian"
+  },
+  {
+    "docid": "559",
+    "label": "E.Th 48",
+    "language": "carian"
+  },
+  {
+    "docid": "560",
+    "label": "E.Th 49",
+    "language": "carian"
+  },
+  {
+    "docid": "516",
+    "label": "E.Th 5",
+    "language": "carian"
+  },
+  {
+    "docid": "561",
+    "label": "E.Th 50",
+    "language": "carian"
+  },
+  {
+    "docid": "562",
+    "label": "E.Th 51",
+    "language": "carian"
+  },
+  {
+    "docid": "563",
+    "label": "E.Th 52",
+    "language": "carian"
+  },
+  {
+    "docid": "564",
+    "label": "E.Th 53",
+    "language": "carian"
+  },
+  {
+    "docid": "565",
+    "label": "E.Th 54 (Villalba Varneda 2007:No. 17)",
+    "language": "carian"
+  },
+  {
+    "docid": "566",
+    "label": "E.Th 55 (Villalba Varneda 2007:No. 26)",
+    "language": "carian"
+  },
+  {
+    "docid": "517",
+    "label": "E.Th 6",
+    "language": "carian"
+  },
+  {
+    "docid": "518",
+    "label": "E.Th 7",
+    "language": "carian"
+  },
+  {
+    "docid": "519",
+    "label": "E.Th 8",
+    "language": "carian"
+  },
+  {
+    "docid": "520",
+    "label": "E.Th 9",
+    "language": "carian"
+  },
+  {
+    "docid": "602",
+    "label": "E.xx 1",
+    "language": "carian"
+  },
+  {
+    "docid": "603",
+    "label": "E.xx 2",
+    "language": "carian"
+  },
+  {
+    "docid": "604",
+    "label": "E.xx 3",
+    "language": "carian"
+  },
+  {
+    "docid": "605",
+    "label": "E.xx 4",
+    "language": "carian"
+  },
+  {
+    "docid": "606",
+    "label": "E.xx 5",
+    "language": "carian"
+  },
+  {
+    "docid": "607",
+    "label": "E.xx 6",
+    "language": "carian"
+  },
+  {
+    "docid": "608",
+    "label": "E.xx 7",
+    "language": "carian"
+  },
+  {
+    "docid": "659",
+    "label": "G1",
+    "language": "carian"
+  },
+  {
+    "docid": "660",
+    "label": "G2",
+    "language": "carian"
+  },
+  {
+    "docid": "661",
+    "label": "G3 (Adiego & Tiverios & Manakidou & Tsiafakis 2012)",
+    "language": "carian"
+  },
+  {
+    "docid": "662",
+    "label": "G4 (Adiego & Tiverios & Manakidou & Tsiafakis 2012)",
+    "language": "carian"
+  },
+  {
+    "docid": "1",
+    "label": "TL 44 (Xanthos)",
+    "language": "milyan"
+  },
+  {
+    "docid": "0",
+    "label": "TL 55 (Antiphellos)",
+    "language": "milyan"
+  }
+]

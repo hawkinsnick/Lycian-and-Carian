@@ -1,0 +1,1186 @@
+<title>eDiAna – Corpora</title>
+
+<!doctype html>
+<html lang="de">
+<head>
+    <title>eDiAna</title>
+
+   <!--  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+        
+    <link rel="icon" type="assets/image/png" href="assets/images/sing_gloss.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+    <!-- Other CSS -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.bootstrap4.min.css"> -->
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/general_style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/lemma_beta.css">
+
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src=" https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+     <script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.5/js/responsive.bootstrap4.min.js"></script> 
+
+
+
+    <script src="assets/js/main.js"></script>
+
+	
+
+	
+	
+	
+	
+</head>
+<body>
+
+<div id="page-container">
+
+<div id="content-wrap">
+
+<div id="cookieBox">
+<div class="cookie-notification">
+            <div class="container">
+                <div class="form-group row">
+                    <div class="col-lg-7">
+                        <label for="colFormLabelSm" class="col-sm col-form-label col-form-label">
+                            This site uses cookies. By clicking "Yes", you agree to our use of cookies.
+                        </label>
+                    </div>
+                    <div class="col-lg-1">
+                        <a class="btn btn-outline-success form-control" onclick="setCookie()" role="button">Yes</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a class="btn btn-outline-danger form-control" href="privacy.php" role="button">Privacy Statement</a>
+                    </div>
+                </div>
+            </div>
+          </div></div>
+
+
+<div class="top-button">
+        <div class="js-top"><i class="fa fa-chevron-circle-up fa-3x pull-left"></i></div>
+    </div>
+
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark" style="z-index: 1030;">
+    <a class="navbar-brand" href="index.php">
+        <img src="assets/images/sing_gloss_white.png" width="20" height="20" alt=""><!--TODO Bildausrichtung im collapse menü-->
+    </a>
+
+    <a class="navbar-brand" href="index.php">eDiAna </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+			
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto" id="left-nav-links">
+            <li class="nav-item">
+                <a class="nav-link" href="project.php">Project</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="staff.php">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search.php">Dictionary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="corpus.php">Corpora</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="literature.php">Literature</a>
+            </li>
+         <!--    <li class="nav-item">
+                <a class="nav-link" href="resources.php">Resources</a>
+            </li> -->
+			
+			 <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Versions
+                </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <a class="dropdown-item" href="../old">2015-2021</a>
+                </div>
+
+    </li>
+
+							
+			 <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle disabled" href="http://example.com" id="dropdown01" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Internal
+               
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href='internal_wp_converter.php'>WP Converter</a>
+						<a class="dropdown-item" href='internal_excerpt.php'>Excerpt+</a>
+						<a class="dropdown-item" href='internal_literature_plus.php'>Literature+</a>
+						<a class="dropdown-item" href='internal_corpus_plus.php'>Corpus+</a>
+						<!--<a class="dropdown-item" href="#">API</a>
+                        <a class="dropdown-item" href='logout.php'>Logout</a> -->
+                </div> 
+            </li>
+			
+             <!-- Displays Logged In - Badge, if a logged in session is active -->
+                
+        </ul>
+       <!--  <a class="navbar-brand" href="https://www.uni-muenchen.de/index.html" target="_new"><img src="assets/images/LMU-Logo.svg" style="height:30px; margin: 0px; padding: 0px;" alt="Responsive image"></a> -->
+        <ul class="navbar-nav">
+         <li class="nav-item js-login-container">
+            <button type="submit" class="btn btn-outline-success" data-toggle="modal" data-target=".bd-login-modal-sm">Login »</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+      <div id="login-modal" class="modal fade bd-login-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                           <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Internal Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                
+
+                            <div class="modal-body">
+                                
+                            <form class="login-form">
+    <div class="form-group">
+        <label for="username" class="col-form-label">Username</label>
+        <input type="text" class="form-control" ID="user" placeholder="Username ..." name="user">
+    </div>
+    <div class="form-group">
+        <label for="password" class="col-form-label">Password</label>
+        <input type="password" class="form-control" ID="password" placeholder="Password ..." name="password">
+    </div>
+    <div class="modal-footer">
+        <button type="reset" class="btn btn-outline-secondary" value="Reset">Reset</button>      
+        <button id="login-btn" type="submit" class="btn btn-outline-success"  value="Login" class="pure-button">Login</button>                              
+    </div>
+</form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<div class="jumbotron jumbotron-fluid" style="position:relative; margin-top: -16px;background-image: url(assets/images/CORPUS_2.JPG);">
+     <div class="bg-cover"></div>
+        <div class="container" style="z-index: 1;position: relative;">
+            <h1 class="display-3">eDiAna Corpora</h1>
+            <h5>Searchable Corpora </h5>
+        </div>
+    </div>
+
+
+
+ <div class="container-fluid">
+
+<div class="row">
+
+    <div class="col col-lg-12">
+	
+	<div class="card" style="margin-bottom:15px;"> 
+	 
+	<div class="card-body">
+		  <h3>Corpora: Overview & Acknowledgments</h3>
+	<div id="module">
+	  <div class="collapse" id="collapseExample" aria-expanded="false" style="margin-bottom: 0px; padding-left: 30px; padding-right: 30px;">
+	  This section contains an overview of the corpora offered by the <i>eDiAna</i> project and our acknowledgments of the scholars who contributed to their preparation beyond their call of duty.<br>
+
+		<div class="text-paragraph">For the corpus of Luwian cuneiform texts, Starke 1985 and Melchert 2001a were used as starting points. The initial corpus annotation is based on <i>ACLT</i><sub>1</sub>. Newly published fragments and recent joins were added within the framework of the project. The periodical transliteration updates of Luwian cuneiform texts came from the workshop of the <a href="https://luwili.wordpress.com/">Luwili partner project</a>.</div>
+
+		<div class="text-paragraph">The Palaic corpus was digitalized and annotated entirely by our team. While most texts and transliterations are taken from Carruba 1970, newly discovered fragments were transliterated by the project members. Our preparation of the cuneiform corpora (Luwian and Palaic) was facilitated by the materials and information available at the <i>HPM</i> website.<br></div>
+
+		<div class="text-paragraph">In the instance of the Luwian hieroglyphic texts, Hawkins 1995 and Hawkins 2000 were used as the basic corpora of the Empire and Post-Empire periods respectively. The inscriptions that were not included in either of these publications were added within the framework of the eDiAna project. The hieroglyphic transliterations were adjusted according to modern conventions and more recent findings. The initial corpus annotation of the Post-Empire corpus is based on <i>ACLT</i><sub>1</sub>. David J. Hawkins was kind enough to provide us with his new readings, especially those of the Empire period inscriptions.</div>
+
+		<div class="text-paragraph">Our Lycian corpus represents an adaptation of Melchert 2001b, which is in turn mostly based on the readings of Kalinka 1901, Friedrich 1932, and Neumann 1979. The recently published inscriptions not included in Melchert’s corpus were added by our project members, who are also responsible for corpus annotation. Birgit Christiansen kindly shared with us a number of her new readings prior to their publication (see now Christiansen 2019, 2020a, 2020b) and helped us with the new numbering of the recent inscriptions.</div>
+
+		<div class="text-paragraph">The Carian corpus was digitalized and annotated by our team. The corpus, the numbering of the inscriptions, and the transliteration system are based on the edition of Adiego 2007. Additionally, inscriptions discovered or identified in publications after Adiego 2007 have also been added in the framework of the eDiAna project.</div>
+
+		<div class="text-paragraph">Our Lydian corpus represents an adaptation of Melchert 2001c, which is in turn mostly based on Gusmani 1964 and Gusmani 1980–1986. Its transliteration was adjusted according to modern conventions by our team, who is also responsible for corpus annotation. The inscriptions not included in Melchert’s corpus were assigned numbers in collaboration with Annick Payne and added to the corpus by our project members.</div>
+
+		<div class="text-paragraph">The Sidetic corpus was digitalized and annotated by our team. The corpus and the numbering of the inscriptions follow the edition of Nollé 2001: 625-646 (but also referring to the Zinko numbering system, as in e.g., Zinko & Zinko 2019: 418). The transliteration system is based on Pérez Orozco 2007, but the reader should consult the “Graphic Features” section of each entries for a detailed discussion. Additionally, an inscription discovered after Nollé 2001 has also been added in the framework of the eDiAna project. Further newly discovered inscriptions could not have been included lacking publication (as of 2021) or authenticity.</div>
+
+		<div class="text-paragraph">The Pisidian corpus is based entirely on Brixhe 2016, but it was digitalized and annotated by our team.</div>
+
+		<div class="text-paragraph">Specific information regarding the choice of individual readings and of word interpretations is found in the relevant dictionary lemmata. The corpus will be regularly improved and updated until the completion of the <i>eDiAna</i> project.</div>
+
+		<div style="text-align:center;margin-bottom: 5px;margin-top: 5px;"><b>BIBLIOGRAPHY</b></div> 
+
+		<div class="hangingindent">ACLT<sub>1</sub>: Annotated Corpus of Luwian Texts, compiled by Ilya Yakubovich in collaboration with Timofey Arkhangelsky, Sergey Boroday, and Alexei Kassian. URL: http://web-corpora.net/LuwianCorpus/search/. Last modification: 2015. </div>
+
+		<div class="hangingindent">Adiego, Ignacio J. (2007): <i>The Carian Language.</i> Handbuch der Orientalistik I.86. Leiden – Boston: Brill.</div>
+
+		<div class="hangingindent">Brixhe, Claude (2016): <i>Stèles et langue de Pisidie.</i> Paris: De Boccard.</div>
+
+		<div class="hangingindent">Carruba, Onofrio (1970): <i>Das Palaische. Texte, Grammatik, Lexikon.</i> Studien zu den Boğazköy-Texten 10. Wiesbaden: Harrassowitz.</div>
+
+		<div class="hangingindent">Christiansen, Birgit (2019): “Editions of Lycian Inscriptions not Included in Melchert’s Corpus from 2001.” In: Adiego, Ignasi-Xavier / García Trabazo, José Virgilio / Vernet, Mariona / Obrador-Cursach, Bartomeu / Martínez Rodríguez, Elena (eds.), <i>Luwic Dialects and Anatolian Inheritance and diffusion.</i> Barcelona: Edicions de la Universitat de Barcelona, 65–134.</div>
+
+		<div class="hangingindent">Christiansen, Birgit (2020a): <i>Grave Matters: Legal Provisions for a Proper Final Rest in Classical Lycia.</i> In: Martin Zimmermann (ed.), Das Xanthostal Lykiens in archaisch-klassischer Zeit. Eine Archäologisch-historische Bestandsaufnahme. Goettingen: Vandenhoeck & Ruprecht, 166–261.</div>
+
+		<div class="hangingindent">Christiansen, Birgit (2020b): Eine neue lykisch-griechische Bilingue aus Tlos: Eine Dedikation oder Ehreninschrift der Polis von Tlos. In: Martin Zimmermann (ed.), <i>Das Xanthostal Lykiens in archaisch-klassischer Zeit. Eine Archäologisch-historische Bestandsaufnahme.</i> Goettingen: Vandenhoeck & Ruprecht, 262–272.</div>
+
+		<div class="hangingindent">Gusmani, Roberto (1964): <i>Lydisches Wörterbuch, mit grammatischer Skizze und Inschriftensammlung.</i> Heidelberg: Winter.
+		Gusmani, Roberto (1980–1986): <i>Lydisches Wörterbuch, mit grammatischer Skizze und Inschriftensammlung. Ergänzungsband.</i> Heidelberg: Winter. <br></div>
+		
+		<div class="hangingindent">Friedrich, Johannes (1932): “Lykische Texte.” In: Friedrich, Johannes, Kleinasiatische Sprachdenkmäler, Berlin: de Gruyter, 52–90.<br></div>
+		 
+		<div class="hangingindent">Hawkins, J. David (1995): <i>The Hieroglyphic Inscription of the Sacred Pool Complex at Hattusa.</i> With an Archaeological Introduction by Peter Neve. Studien zu den Boğazköy-Texten, Beiheft 3. Wiesbaden: Harrassowitz.</div>
+
+		<div class="hangingindent">Hawkins, J. David (2000): Corpus of Hieroglyphic Luwian Inscriptions. Volume I: Inscriptions of the Iron Ages. Untersuchungen zur indogermanischen Sprach- und Kulturwissenschaft. Neue Folge, 8/1. Berlin / New York: de Gruyter.</div>
+
+		<div class="hangingindent">HPM: <i>Hethitologie Portal Mainz.</i> URL: https://www.hethport.uni-wuerzburg.de/HPM/index.php.<br>
+		Kalinka, Ernst (2001): <i>Tituli Lyciae lingua Lycia conscripti.</i> Vienna: Hoelder.</div> 
+
+		<div class="hangingindent">Melchert, H. Craig (2001a): <i>Cuneiform Luvian Corpus.</i> Version: 07/20/2001. URL: https://linguistics.ucla.edu/people/Melchert/CLUVIAN.pdf.</div>
+
+		<div class="hangingindent">Melchert, H. Craig (2001b): <i>Lycian Corpus.</i> Version: 07/06/2001. URL: https://linguistics.ucla.edu/people/Melchert/lyciancorpus.pdf.</div>
+
+		<div class="hangingindent">Melchert, H. Craig (2001c): <i>Lydian Corpus.</i> Version: 07/02/2001.URL: https://linguistics.ucla.edu/people/Melchert/lydiancorpus.pdf.</div>
+
+		<div class="hangingindent">Neumann, Günter (1979): <i>Neufunde lykischer Inschriften seit 1901.</i> Vienna: Österreichische Akademie der Wissenschaften.</div>   
+		<div class="hangingindent">Nollé, Johannes (2001): <i>Side im Altertum. Geschichte und Zeugnisse II.</i> Inschriften griechischer Städte aus Kleinasien 44. Bonn: Habelt.</div>
+
+		<div class="hangingindent">Pérez Orozco, Santiago (2007): La lengua sidética. Ensayo de síntesis. <i>Kadmos 46:</i> 125-142.</div>
+
+		<div class="hangingindent">Starke, Frank (1985): Die keilschrift-luwischen Texte in Umschrift. Studien zu den Boğazköy-Texten 30. Wiesbaden: Harrassowitz.</div>
+
+		<div class="hangingindent">Zinko, Christian – Zinko, Michaela (2019): Sidetisch – Ein Update zu Schrift und Sprache. In: Ronald I. Kim – Jana Mynářová – Peter Pavúk (eds.): <i>Hrozný and Hittite: The First Hundred Years. Proceedings of the International Conference Held at Charles University, Prague, 11–14 November 2015.</i> Culture and History of the Ancient Near East 107. Leiden – Boston: Brill, 416-432.</div>
+
+	  </div>
+
+
+	  	<a role="button" style="padding-left: 30px; padding-right: 30px;" class="collapsed" id="collapse-btn" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class='fa fa-chevron-down'></i> Read More</a>
+	</div>
+
+    <div class="card bg-light" style="margin-bottom: 15px;margin-top: 15px;" >
+    	<div class="card-header">Search</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-4">
+                	<label> Lemma </label>
+                    <input class="form-control corpus_input" column="lem" searchterm="" autocomplete="off" style="margin-bottom: 1rem;" type="text" id="corpus_FLS" list="optionsQuickSearch" placeholder="Type at least one character and select lemma">
+                    <!--TODO 1rem margin nur beim small Bildschirmen-->
+                    <div class="dropdown-menu suggestions_dropdown" id="corpus_FLS_suggestions">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                	<label> Syllabic String </label>
+
+                    <input class="form-control corpus_input" column="indexword" searchterm="" autocomplete="off" style="margin-bottom: 1rem;" type="text" id="corpus_SYL" list="optionsQuickSearch" placeholder="Type at least one character and select syllabic string">
+                    <!--TODO 1rem margin nur beim small Bildschirmen-->
+                    <div class="dropdown-menu suggestions_dropdown" id="corpus_SYL_suggestions">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                	<label> Logogram </label>
+
+                    <input class="form-control corpus_input" column="logogram" searchterm="" autocomplete="off" style="margin-bottom: 1rem;" type="text" id="corpus_LOG" list="optionsQuickSearch" placeholder="Type at least one character and select logogram">
+                    <!--TODO 1rem margin nur beim small Bildschirmen-->
+                    <div class="dropdown-menu suggestions_dropdown" id="corpus_LOG_suggestions">
+                    </div>
+                </div>
+    </div>
+
+             <div class="row">
+                <div class="col-lg-4">
+                	<label> Translation </label>
+                    <input class="form-control corpus_input" column="trans" searchterm="" autocomplete="off" style="margin-bottom: 1rem;" type="text" id="corpus_TRANS" list="optionsQuickSearch" placeholder="Type at least one character and select translation">
+                    <!--TODO 1rem margin nur beim small Bildschirmen-->
+                    <div class="dropdown-menu suggestions_dropdown" id="corpus_TRANS_suggestions">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+					<label> Morphological Analysis</label>
+                    <input class="form-control corpus_input" column="gram" searchterm="" autocomplete="off" style="margin-bottom: 1rem;" type="text" id="corpus_GRA" list="optionsQuickSearch" placeholder="Type at least one character and select grammatical features">
+                    <!--TODO 1rem margin nur beim small Bildschirmen-->
+                    <div class="dropdown-menu suggestions_dropdown" id="corpus_GRA_suggestions">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+					<label> Part of Speech</label>
+                    <input class="form-control corpus_input" column="lex" searchterm="" autocomplete="off" style="margin-bottom: 1rem;" type="text" id="corpus_POS" list="optionsQuickSearch" placeholder="Type at least one character and select part of speech">
+                    <!--TODO 1rem margin nur beim small Bildschirmen-->
+                    <div class="dropdown-menu suggestions_dropdown" id="corpus_POS_suggestions">
+                    </div>
+                </div>
+    </div>
+   </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+
+
+  <div class="col-md-3" id="left-col" style="margin-bottom:10px;">
+
+
+	<div id="loading-div3" class="loading-parent" style=" display: none; ">
+      <div class="loading-text-parent">
+        </div>
+    </div>
+
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action" id="list-1-list" data-toggle="list" language="carian" ref_table="carian_table" href="#list-car" role="tab" aria-controls="1">Carian (2022)</a>   
+      <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" language="cuneiform" ref_table="c_luwian_table" href="#list-cuneluw" role="tab" aria-controls="home">Cuneiform Luwian (2017, archival)</a> 
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" language="hieroglyphic" ref_table="h_luwian_table" href="#list-hierluw" role="tab" aria-controls="profile">Hieroglyphic Luwian (2025)</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" language="lycian"  ref_table="a_lycian_table" href="#list-lyc" role="tab" aria-controls="messages">Lycian (2017, archival)</a>
+      <a class="list-group-item list-group-item-action active" id="list-3-list" data-toggle="list" language="milyan" ref_table="b_lycian_table" href="#list-lycb" role="tab" aria-controls="3">Lycian B (2021)</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" language="lydian" ref_table="lydian_table" href="#list-lyd" role="tab" aria-controls="settings">Lydian (2023)</a>
+      <a class="list-group-item list-group-item-action" id="list-2-list" data-toggle="list" language="palaic" ref_table="palaic_table" href="#list-pala" role="tab" aria-controls="2">Palaic (2017, archival)</a> 
+	  <a class="list-group-item list-group-item-action" id="list-1-list" data-toggle="list" language="pisidian" ref_table="pisidian_table" href="#list-pisi" role="tab" aria-controls="1">Pisidian (2017, archival)</a>
+	     <a class="list-group-item list-group-item-action" id="list-1-list" data-toggle="list" language="sidetic" ref_table="sidetic_table" href="#list-side" role="tab" aria-controls="1">Sidetic (2021)</a>
+    </div>
+
+ <div class="tab-content" id="nav-tabContent" style="margin-top: 15px;">
+
+
+
+      <div class="tab-pane " id="list-cuneluw" role="tabpanel" aria-labelledby="list-home-list">
+	   								<label><i class="fas fa-search"></i> Search</label>
+      								<input type="text" id="searchText_cuneluw" class="form-control">
+
+									<table id="c_luwian_table" class="table table-striped table-hover table-bordered">
+									  <thead>
+										<tr>
+										  <th scope="col">#</th>
+										  <th scope="col">Text</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr><th scope='row'>1260</th><td><span docid='1260' langid='cuneiform' >ABoT 2.239</span></td></tr><tr><th scope='row'>1155</th><td><span docid='1155' langid='cuneiform' >FHL 109</span></td></tr><tr><th scope='row'>1060</th><td><span docid='1060' langid='cuneiform' >HFAC 18</span></td></tr><tr><th scope='row'>1008</th><td><span docid='1008' langid='cuneiform' >HT 01</span></td></tr><tr><th scope='row'>1182</th><td><span docid='1182' langid='cuneiform' >HT 78</span></td></tr><tr><th scope='row'>1011</th><td><span docid='1011' langid='cuneiform' >IBoT 3.96</span></td></tr><tr><th scope='row'>1183</th><td><span docid='1183' langid='cuneiform' >KBo 004.011</span></td></tr><tr><th scope='row'>1190</th><td><span docid='1190' langid='cuneiform' >KBo 007.066</span></td></tr><tr><th scope='row'>1174</th><td><span docid='1174' langid='cuneiform' >KBo 007.067</span></td></tr><tr><th scope='row'>1191</th><td><span docid='1191' langid='cuneiform' >KBo 007.068+</span></td></tr><tr><th scope='row'>1196</th><td><span docid='1196' langid='cuneiform' >KBo 008.017</span></td></tr><tr><th scope='row'>1000</th><td><span docid='1000' langid='cuneiform' >KBo 008.074+</span></td></tr><tr><th scope='row'>1110</th><td><span docid='1110' langid='cuneiform' >KBo 008.129</span></td></tr><tr><th scope='row'>1125</th><td><span docid='1125' langid='cuneiform' >KBo 008.130</span></td></tr><tr><th scope='row'>1135</th><td><span docid='1135' langid='cuneiform' >KBo 009.127+</span></td></tr><tr><th scope='row'>1048</th><td><span docid='1048' langid='cuneiform' >KBo 009.141</span></td></tr><tr><th scope='row'>1044</th><td><span docid='1044' langid='cuneiform' >KBo 009.143</span></td></tr><tr><th scope='row'>1052</th><td><span docid='1052' langid='cuneiform' >KBo 009.145</span></td></tr><tr><th scope='row'>1065</th><td><span docid='1065' langid='cuneiform' >KBo 009.147</span></td></tr><tr><th scope='row'>1199</th><td><span docid='1199' langid='cuneiform' >KBo 009.148</span></td></tr><tr><th scope='row'>1069</th><td><span docid='1069' langid='cuneiform' >KBo 010.042</span></td></tr><tr><th scope='row'>1136</th><td><span docid='1136' langid='cuneiform' >KBo 012.089</span></td></tr><tr><th scope='row'>1137</th><td><span docid='1137' langid='cuneiform' >KBo 012.100</span></td></tr><tr><th scope='row'>1153</th><td><span docid='1153' langid='cuneiform' >KBo 013.260</span></td></tr><tr><th scope='row'>1200</th><td><span docid='1200' langid='cuneiform' >KBo 013.261</span></td></tr><tr><th scope='row'>1111</th><td><span docid='1111' langid='cuneiform' >KBo 013.262</span></td></tr><tr><th scope='row'>1150</th><td><span docid='1150' langid='cuneiform' >KBo 013.263</span></td></tr><tr><th scope='row'>1201</th><td><span docid='1201' langid='cuneiform' >KBo 013.264</span></td></tr><tr><th scope='row'>1175</th><td><span docid='1175' langid='cuneiform' >KBo 013.268</span></td></tr><tr><th scope='row'>1151</th><td><span docid='1151' langid='cuneiform' >KBo 014.114</span></td></tr><tr><th scope='row'>1176</th><td><span docid='1176' langid='cuneiform' >KBo 014.121</span></td></tr><tr><th scope='row'>1166</th><td><span docid='1166' langid='cuneiform' >KBo 017.033+</span></td></tr><tr><th scope='row'>1165</th><td><span docid='1165' langid='cuneiform' >KBo 017.036+</span></td></tr><tr><th scope='row'>1002</th><td><span docid='1002' langid='cuneiform' >KBo 019.152 + KBo 027.77</span></td></tr><tr><th scope='row'>1001</th><td><span docid='1001' langid='cuneiform' >KBo 019.155</span></td></tr><tr><th scope='row'>1185</th><td><span docid='1185' langid='cuneiform' >KBo 020.056</span></td></tr><tr><th scope='row'>1202</th><td><span docid='1202' langid='cuneiform' >KBo 021.012</span></td></tr><tr><th scope='row'>1014</th><td><span docid='1014' langid='cuneiform' >KBo 022.137</span></td></tr><tr><th scope='row'>1034</th><td><span docid='1034' langid='cuneiform' >KBo 022.143</span></td></tr><tr><th scope='row'>1112</th><td><span docid='1112' langid='cuneiform' >KBo 022.254</span></td></tr><tr><th scope='row'>1203</th><td><span docid='1203' langid='cuneiform' >KBo 024.056</span></td></tr><tr><th scope='row'>1204</th><td><span docid='1204' langid='cuneiform' >KBo 027.061</span></td></tr><tr><th scope='row'>1015</th><td><span docid='1015' langid='cuneiform' >KBo 029.001</span></td></tr><tr><th scope='row'>1012</th><td><span docid='1012' langid='cuneiform' >KBo 029.002</span></td></tr><tr><th scope='row'>1031</th><td><span docid='1031' langid='cuneiform' >KBo 029.003</span></td></tr><tr><th scope='row'>1222</th><td><span docid='1222' langid='cuneiform' >KBo 029.003</span></td></tr><tr><th scope='row'>1025</th><td><span docid='1025' langid='cuneiform' >KBo 029.005</span></td></tr><tr><th scope='row'>1050</th><td><span docid='1050' langid='cuneiform' >KBo 029.006</span></td></tr><tr><th scope='row'>1035</th><td><span docid='1035' langid='cuneiform' >KBo 029.007</span></td></tr><tr><th scope='row'>1046</th><td><span docid='1046' langid='cuneiform' >KBo 029.009</span></td></tr><tr><th scope='row'>1064</th><td><span docid='1064' langid='cuneiform' >KBo 029.010</span></td></tr><tr><th scope='row'>1068</th><td><span docid='1068' langid='cuneiform' >KBo 029.011</span></td></tr><tr><th scope='row'>1070</th><td><span docid='1070' langid='cuneiform' >KBo 029.012</span></td></tr><tr><th scope='row'>1077</th><td><span docid='1077' langid='cuneiform' >KBo 029.014</span></td></tr><tr><th scope='row'>1078</th><td><span docid='1078' langid='cuneiform' >KBo 029.015</span></td></tr><tr><th scope='row'>1113</th><td><span docid='1113' langid='cuneiform' >KBo 029.016</span></td></tr><tr><th scope='row'>1114</th><td><span docid='1114' langid='cuneiform' >KBo 029.017</span></td></tr><tr><th scope='row'>1115</th><td><span docid='1115' langid='cuneiform' >KBo 029.018</span></td></tr><tr><th scope='row'>1116</th><td><span docid='1116' langid='cuneiform' >KBo 029.019</span></td></tr><tr><th scope='row'>1117</th><td><span docid='1117' langid='cuneiform' >KBo 029.020</span></td></tr><tr><th scope='row'>1118</th><td><span docid='1118' langid='cuneiform' >KBo 029.021</span></td></tr><tr><th scope='row'>1119</th><td><span docid='1119' langid='cuneiform' >KBo 029.022</span></td></tr><tr><th scope='row'>1120</th><td><span docid='1120' langid='cuneiform' >KBo 029.023</span></td></tr><tr><th scope='row'>1121</th><td><span docid='1121' langid='cuneiform' >KBo 029.024</span></td></tr><tr><th scope='row'>1126</th><td><span docid='1126' langid='cuneiform' >KBo 029.025</span></td></tr><tr><th scope='row'>1154</th><td><span docid='1154' langid='cuneiform' >KBo 029.027</span></td></tr><tr><th scope='row'>1152</th><td><span docid='1152' langid='cuneiform' >KBo 029.028+</span></td></tr><tr><th scope='row'>1156</th><td><span docid='1156' langid='cuneiform' >KBo 029.030</span></td></tr><tr><th scope='row'>1192</th><td><span docid='1192' langid='cuneiform' >KBo 029.031</span></td></tr><tr><th scope='row'>1177</th><td><span docid='1177' langid='cuneiform' >KBo 029.032</span></td></tr><tr><th scope='row'>1193</th><td><span docid='1193' langid='cuneiform' >KBo 029.033(+)</span></td></tr><tr><th scope='row'>1205</th><td><span docid='1205' langid='cuneiform' >KBo 029.034+</span></td></tr><tr><th scope='row'>1206</th><td><span docid='1206' langid='cuneiform' >KBo 029.035</span></td></tr><tr><th scope='row'>1207</th><td><span docid='1207' langid='cuneiform' >KBo 029.036</span></td></tr><tr><th scope='row'>1079</th><td><span docid='1079' langid='cuneiform' >KBo 029.037</span></td></tr><tr><th scope='row'>1197</th><td><span docid='1197' langid='cuneiform' >KBo 029.038</span></td></tr><tr><th scope='row'>1208</th><td><span docid='1208' langid='cuneiform' >KBo 029.039</span></td></tr><tr><th scope='row'>1209</th><td><span docid='1209' langid='cuneiform' >KBo 029.040</span></td></tr><tr><th scope='row'>1210</th><td><span docid='1210' langid='cuneiform' >KBo 029.041</span></td></tr><tr><th scope='row'>1211</th><td><span docid='1211' langid='cuneiform' >KBo 029.042</span></td></tr><tr><th scope='row'>1212</th><td><span docid='1212' langid='cuneiform' >KBo 029.043</span></td></tr><tr><th scope='row'>1213</th><td><span docid='1213' langid='cuneiform' >KBo 029.044</span></td></tr><tr><th scope='row'>1214</th><td><span docid='1214' langid='cuneiform' >KBo 029.045</span></td></tr><tr><th scope='row'>1215</th><td><span docid='1215' langid='cuneiform' >KBo 029.046</span></td></tr><tr><th scope='row'>1216</th><td><span docid='1216' langid='cuneiform' >KBo 029.047</span></td></tr><tr><th scope='row'>1217</th><td><span docid='1217' langid='cuneiform' >KBo 029.048</span></td></tr><tr><th scope='row'>1218</th><td><span docid='1218' langid='cuneiform' >KBo 029.049</span></td></tr><tr><th scope='row'>1219</th><td><span docid='1219' langid='cuneiform' >KBo 029.050</span></td></tr><tr><th scope='row'>1220</th><td><span docid='1220' langid='cuneiform' >KBo 029.051</span></td></tr><tr><th scope='row'>1221</th><td><span docid='1221' langid='cuneiform' >KBo 029.052</span></td></tr><tr><th scope='row'>1223</th><td><span docid='1223' langid='cuneiform' >KBo 029.054</span></td></tr><tr><th scope='row'>1224</th><td><span docid='1224' langid='cuneiform' >KBo 029.056</span></td></tr><tr><th scope='row'>1225</th><td><span docid='1225' langid='cuneiform' >KBo 029.057</span></td></tr><tr><th scope='row'>1226</th><td><span docid='1226' langid='cuneiform' >KBo 029.058</span></td></tr><tr><th scope='row'>1227</th><td><span docid='1227' langid='cuneiform' >KBo 029.059</span></td></tr><tr><th scope='row'>1228</th><td><span docid='1228' langid='cuneiform' >KBo 029.060</span></td></tr><tr><th scope='row'>1229</th><td><span docid='1229' langid='cuneiform' >KBo 029.061</span></td></tr><tr><th scope='row'>1230</th><td><span docid='1230' langid='cuneiform' >KBo 029.062</span></td></tr><tr><th scope='row'>1101</th><td><span docid='1101' langid='cuneiform' >KBo 029.063</span></td></tr><tr><th scope='row'>1173</th><td><span docid='1173' langid='cuneiform' >KBo 030.167</span></td></tr><tr><th scope='row'>1122</th><td><span docid='1122' langid='cuneiform' >KBo 030.190</span></td></tr><tr><th scope='row'>1195</th><td><span docid='1195' langid='cuneiform' >KBo 032.126</span></td></tr><tr><th scope='row'>1010</th><td><span docid='1010' langid='cuneiform' >KUB 007.014</span></td></tr><tr><th scope='row'>1004</th><td><span docid='1004' langid='cuneiform' >KUB 007.053+</span></td></tr><tr><th scope='row'>1039</th><td><span docid='1039' langid='cuneiform' >KUB 009.006+</span></td></tr><tr><th scope='row'>1080</th><td><span docid='1080' langid='cuneiform' >KUB 009.007</span></td></tr><tr><th scope='row'>1007</th><td><span docid='1007' langid='cuneiform' >KUB 009.031</span></td></tr><tr><th scope='row'>1132</th><td><span docid='1132' langid='cuneiform' >KUB 017.015</span></td></tr><tr><th scope='row'>1184</th><td><span docid='1184' langid='cuneiform' >KUB 025.037+</span></td></tr><tr><th scope='row'>1178</th><td><span docid='1178' langid='cuneiform' >KUB 025.038</span></td></tr><tr><th scope='row'>1172</th><td><span docid='1172' langid='cuneiform' >KUB 025.039</span></td></tr><tr><th scope='row'>1081</th><td><span docid='1081' langid='cuneiform' >KUB 027.026</span></td></tr><tr><th scope='row'>1198</th><td><span docid='1198' langid='cuneiform' >KUB 029.044+</span></td></tr><tr><th scope='row'>1076</th><td><span docid='1076' langid='cuneiform' >KUB 032.004</span></td></tr><tr><th scope='row'>1066</th><td><span docid='1066' langid='cuneiform' >KUB 032.006</span></td></tr><tr><th scope='row'>1053</th><td><span docid='1053' langid='cuneiform' >KUB 032.007</span></td></tr><tr><th scope='row'>1043</th><td><span docid='1043' langid='cuneiform' >KUB 032.008+</span></td></tr><tr><th scope='row'>1022</th><td><span docid='1022' langid='cuneiform' >KUB 032.009+</span></td></tr><tr><th scope='row'>1023</th><td><span docid='1023' langid='cuneiform' >KUB 032.009+</span></td></tr><tr><th scope='row'>1071</th><td><span docid='1071' langid='cuneiform' >KUB 032.010+</span></td></tr><tr><th scope='row'>1186</th><td><span docid='1186' langid='cuneiform' >KUB 032.013</span></td></tr><tr><th scope='row'>1059</th><td><span docid='1059' langid='cuneiform' >KUB 032.014+</span></td></tr><tr><th scope='row'>1124</th><td><span docid='1124' langid='cuneiform' >KUB 032.015</span></td></tr><tr><th scope='row'>1082</th><td><span docid='1082' langid='cuneiform' >KUB 032.070</span></td></tr><tr><th scope='row'>1083</th><td><span docid='1083' langid='cuneiform' >KUB 032.079</span></td></tr><tr><th scope='row'>1084</th><td><span docid='1084' langid='cuneiform' >KUB 032.124</span></td></tr><tr><th scope='row'>1188</th><td><span docid='1188' langid='cuneiform' >KUB 035.001</span></td></tr><tr><th scope='row'>1189</th><td><span docid='1189' langid='cuneiform' >KUB 035.002+</span></td></tr><tr><th scope='row'>1085</th><td><span docid='1085' langid='cuneiform' >KUB 035.003</span></td></tr><tr><th scope='row'>1086</th><td><span docid='1086' langid='cuneiform' >KUB 035.005</span></td></tr><tr><th scope='row'>1087</th><td><span docid='1087' langid='cuneiform' >KUB 035.006</span></td></tr><tr><th scope='row'>1194</th><td><span docid='1194' langid='cuneiform' >KUB 035.007</span></td></tr><tr><th scope='row'>1003</th><td><span docid='1003' langid='cuneiform' >KUB 035.008</span></td></tr><tr><th scope='row'>1009</th><td><span docid='1009' langid='cuneiform' >KUB 035.009</span></td></tr><tr><th scope='row'>1072</th><td><span docid='1072' langid='cuneiform' >KUB 035.011</span></td></tr><tr><th scope='row'>1073</th><td><span docid='1073' langid='cuneiform' >KUB 035.012</span></td></tr><tr><th scope='row'>1054</th><td><span docid='1054' langid='cuneiform' >KUB 035.013</span></td></tr><tr><th scope='row'>1047</th><td><span docid='1047' langid='cuneiform' >KUB 035.014</span></td></tr><tr><th scope='row'>1049</th><td><span docid='1049' langid='cuneiform' >KUB 035.015</span></td></tr><tr><th scope='row'>1026</th><td><span docid='1026' langid='cuneiform' >KUB 035.016</span></td></tr><tr><th scope='row'>1027</th><td><span docid='1027' langid='cuneiform' >KUB 035.017</span></td></tr><tr><th scope='row'>1024</th><td><span docid='1024' langid='cuneiform' >KUB 035.023</span></td></tr><tr><th scope='row'>1021</th><td><span docid='1021' langid='cuneiform' >KUB 035.024+</span></td></tr><tr><th scope='row'>1037</th><td><span docid='1037' langid='cuneiform' >KUB 035.026</span></td></tr><tr><th scope='row'>1231</th><td><span docid='1231' langid='cuneiform' >KUB 035.027</span></td></tr><tr><th scope='row'>1029</th><td><span docid='1029' langid='cuneiform' >KUB 035.028</span></td></tr><tr><th scope='row'>1030</th><td><span docid='1030' langid='cuneiform' >KUB 035.029</span></td></tr><tr><th scope='row'>1036</th><td><span docid='1036' langid='cuneiform' >KUB 035.030+</span></td></tr><tr><th scope='row'>1232</th><td><span docid='1232' langid='cuneiform' >KUB 035.032</span></td></tr><tr><th scope='row'>1028</th><td><span docid='1028' langid='cuneiform' >KUB 035.033</span></td></tr><tr><th scope='row'>1088</th><td><span docid='1088' langid='cuneiform' >KUB 035.034</span></td></tr><tr><th scope='row'>1089</th><td><span docid='1089' langid='cuneiform' >KUB 035.035</span></td></tr><tr><th scope='row'>1051</th><td><span docid='1051' langid='cuneiform' >KUB 035.036</span></td></tr><tr><th scope='row'>1038</th><td><span docid='1038' langid='cuneiform' >KUB 035.037</span></td></tr><tr><th scope='row'>1042</th><td><span docid='1042' langid='cuneiform' >KUB 035.038</span></td></tr><tr><th scope='row'>1041</th><td><span docid='1041' langid='cuneiform' >KUB 035.040+</span></td></tr><tr><th scope='row'>1040</th><td><span docid='1040' langid='cuneiform' >KUB 035.041</span></td></tr><tr><th scope='row'>1057</th><td><span docid='1057' langid='cuneiform' >KUB 035.042</span></td></tr><tr><th scope='row'>1056</th><td><span docid='1056' langid='cuneiform' >KUB 035.043</span></td></tr><tr><th scope='row'>1058</th><td><span docid='1058' langid='cuneiform' >KUB 035.044</span></td></tr><tr><th scope='row'>1062</th><td><span docid='1062' langid='cuneiform' >KUB 035.045</span></td></tr><tr><th scope='row'>1067</th><td><span docid='1067' langid='cuneiform' >KUB 035.046+</span></td></tr><tr><th scope='row'>1019</th><td><span docid='1019' langid='cuneiform' >KUB 035.047</span></td></tr><tr><th scope='row'>1063</th><td><span docid='1063' langid='cuneiform' >KUB 035.048</span></td></tr><tr><th scope='row'>1061</th><td><span docid='1061' langid='cuneiform' >KUB 035.049</span></td></tr><tr><th scope='row'>1090</th><td><span docid='1090' langid='cuneiform' >KUB 035.050</span></td></tr><tr><th scope='row'>1091</th><td><span docid='1091' langid='cuneiform' >KUB 035.051</span></td></tr><tr><th scope='row'>1013</th><td><span docid='1013' langid='cuneiform' >KUB 035.052</span></td></tr><tr><th scope='row'>1016</th><td><span docid='1016' langid='cuneiform' >KUB 035.054</span></td></tr><tr><th scope='row'>1018</th><td><span docid='1018' langid='cuneiform' >KUB 035.055</span></td></tr><tr><th scope='row'>1020</th><td><span docid='1020' langid='cuneiform' >KUB 035.056</span></td></tr><tr><th scope='row'>1017</th><td><span docid='1017' langid='cuneiform' >KUB 035.057</span></td></tr><tr><th scope='row'>1074</th><td><span docid='1074' langid='cuneiform' >KUB 035.058</span></td></tr><tr><th scope='row'>1075</th><td><span docid='1075' langid='cuneiform' >KUB 035.059+</span></td></tr><tr><th scope='row'>1092</th><td><span docid='1092' langid='cuneiform' >KUB 035.060</span></td></tr><tr><th scope='row'>1233</th><td><span docid='1233' langid='cuneiform' >KUB 035.061</span></td></tr><tr><th scope='row'>1093</th><td><span docid='1093' langid='cuneiform' >KUB 035.062</span></td></tr><tr><th scope='row'>1094</th><td><span docid='1094' langid='cuneiform' >KUB 035.063</span></td></tr><tr><th scope='row'>1095</th><td><span docid='1095' langid='cuneiform' >KUB 035.064</span></td></tr><tr><th scope='row'>1096</th><td><span docid='1096' langid='cuneiform' >KUB 035.065</span></td></tr><tr><th scope='row'>1097</th><td><span docid='1097' langid='cuneiform' >KUB 035.066</span></td></tr><tr><th scope='row'>1098</th><td><span docid='1098' langid='cuneiform' >KUB 035.067</span></td></tr><tr><th scope='row'>1234</th><td><span docid='1234' langid='cuneiform' >KUB 035.068</span></td></tr><tr><th scope='row'>1099</th><td><span docid='1099' langid='cuneiform' >KUB 035.069</span></td></tr><tr><th scope='row'>1100</th><td><span docid='1100' langid='cuneiform' >KUB 035.070</span></td></tr><tr><th scope='row'>1102</th><td><span docid='1102' langid='cuneiform' >KUB 035.071</span></td></tr><tr><th scope='row'>1235</th><td><span docid='1235' langid='cuneiform' >KUB 035.072</span></td></tr><tr><th scope='row'>1032</th><td><span docid='1032' langid='cuneiform' >KUB 035.073</span></td></tr><tr><th scope='row'>1033</th><td><span docid='1033' langid='cuneiform' >KUB 035.074</span></td></tr><tr><th scope='row'>1236</th><td><span docid='1236' langid='cuneiform' >KUB 035.076</span></td></tr><tr><th scope='row'>1103</th><td><span docid='1103' langid='cuneiform' >KUB 035.077</span></td></tr><tr><th scope='row'>1055</th><td><span docid='1055' langid='cuneiform' >KUB 035.078</span></td></tr><tr><th scope='row'>1237</th><td><span docid='1237' langid='cuneiform' >KUB 035.079</span></td></tr><tr><th scope='row'>1104</th><td><span docid='1104' langid='cuneiform' >KUB 035.080</span></td></tr><tr><th scope='row'>1105</th><td><span docid='1105' langid='cuneiform' >KUB 035.081</span></td></tr><tr><th scope='row'>1106</th><td><span docid='1106' langid='cuneiform' >KUB 035.082</span></td></tr><tr><th scope='row'>1238</th><td><span docid='1238' langid='cuneiform' >KUB 035.083</span></td></tr><tr><th scope='row'>1157</th><td><span docid='1157' langid='cuneiform' >KUB 035.084</span></td></tr><tr><th scope='row'>1239</th><td><span docid='1239' langid='cuneiform' >KUB 035.085</span></td></tr><tr><th scope='row'>1158</th><td><span docid='1158' langid='cuneiform' >KUB 035.086</span></td></tr><tr><th scope='row'>1138</th><td><span docid='1138' langid='cuneiform' >KUB 035.087</span></td></tr><tr><th scope='row'>1127</th><td><span docid='1127' langid='cuneiform' >KUB 035.088</span></td></tr><tr><th scope='row'>1128</th><td><span docid='1128' langid='cuneiform' >KUB 035.089</span></td></tr><tr><th scope='row'>1139</th><td><span docid='1139' langid='cuneiform' >KUB 035.090</span></td></tr><tr><th scope='row'>1240</th><td><span docid='1240' langid='cuneiform' >KUB 035.091</span></td></tr><tr><th scope='row'>1241</th><td><span docid='1241' langid='cuneiform' >KUB 035.092+</span></td></tr><tr><th scope='row'>1242</th><td><span docid='1242' langid='cuneiform' >KUB 035.094</span></td></tr><tr><th scope='row'>1243</th><td><span docid='1243' langid='cuneiform' >KUB 035.095</span></td></tr><tr><th scope='row'>1140</th><td><span docid='1140' langid='cuneiform' >KUB 035.096</span></td></tr><tr><th scope='row'>1141</th><td><span docid='1141' langid='cuneiform' >KUB 035.097</span></td></tr><tr><th scope='row'>1142</th><td><span docid='1142' langid='cuneiform' >KUB 035.098</span></td></tr><tr><th scope='row'>1143</th><td><span docid='1143' langid='cuneiform' >KUB 035.099</span></td></tr><tr><th scope='row'>1244</th><td><span docid='1244' langid='cuneiform' >KUB 035.100</span></td></tr><tr><th scope='row'>1245</th><td><span docid='1245' langid='cuneiform' >KUB 035.101</span></td></tr><tr><th scope='row'>1123</th><td><span docid='1123' langid='cuneiform' >KUB 035.102 (+) KUB 035.103</span></td></tr><tr><th scope='row'>1246</th><td><span docid='1246' langid='cuneiform' >KUB 035.104+</span></td></tr><tr><th scope='row'>1144</th><td><span docid='1144' langid='cuneiform' >KUB 035.105</span></td></tr><tr><th scope='row'>1247</th><td><span docid='1247' langid='cuneiform' >KUB 035.106</span></td></tr><tr><th scope='row'>1134</th><td><span docid='1134' langid='cuneiform' >KUB 035.107+</span></td></tr><tr><th scope='row'>1159</th><td><span docid='1159' langid='cuneiform' >KUB 035.109</span></td></tr><tr><th scope='row'>1248</th><td><span docid='1248' langid='cuneiform' >KUB 035.110</span></td></tr><tr><th scope='row'>1145</th><td><span docid='1145' langid='cuneiform' >KUB 035.111</span></td></tr><tr><th scope='row'>1107</th><td><span docid='1107' langid='cuneiform' >KUB 035.112</span></td></tr><tr><th scope='row'>1249</th><td><span docid='1249' langid='cuneiform' >KUB 035.113</span></td></tr><tr><th scope='row'>1160</th><td><span docid='1160' langid='cuneiform' >KUB 035.114</span></td></tr><tr><th scope='row'>1161</th><td><span docid='1161' langid='cuneiform' >KUB 035.115</span></td></tr><tr><th scope='row'>1108</th><td><span docid='1108' langid='cuneiform' >KUB 035.116</span></td></tr><tr><th scope='row'>1045</th><td><span docid='1045' langid='cuneiform' >KUB 035.117</span></td></tr><tr><th scope='row'>1250</th><td><span docid='1250' langid='cuneiform' >KUB 035.118</span></td></tr><tr><th scope='row'>1251</th><td><span docid='1251' langid='cuneiform' >KUB 035.119</span></td></tr><tr><th scope='row'>1252</th><td><span docid='1252' langid='cuneiform' >KUB 035.121</span></td></tr><tr><th scope='row'>1253</th><td><span docid='1253' langid='cuneiform' >KUB 035.122</span></td></tr><tr><th scope='row'>1146</th><td><span docid='1146' langid='cuneiform' >KUB 035.123+</span></td></tr><tr><th scope='row'>1254</th><td><span docid='1254' langid='cuneiform' >KUB 035.124</span></td></tr><tr><th scope='row'>1147</th><td><span docid='1147' langid='cuneiform' >KUB 035.125</span></td></tr><tr><th scope='row'>1148</th><td><span docid='1148' langid='cuneiform' >KUB 035.128</span></td></tr><tr><th scope='row'>1255</th><td><span docid='1255' langid='cuneiform' >KUB 035.129</span></td></tr><tr><th scope='row'>1256</th><td><span docid='1256' langid='cuneiform' >KUB 035.130</span></td></tr><tr><th scope='row'>1163</th><td><span docid='1163' langid='cuneiform' >KUB 035.133</span></td></tr><tr><th scope='row'>1164</th><td><span docid='1164' langid='cuneiform' >KUB 035.134</span></td></tr><tr><th scope='row'>1168</th><td><span docid='1168' langid='cuneiform' >KUB 035.135</span></td></tr><tr><th scope='row'>1171</th><td><span docid='1171' langid='cuneiform' >KUB 035.136+</span></td></tr><tr><th scope='row'>1179</th><td><span docid='1179' langid='cuneiform' >KUB 035.137</span></td></tr><tr><th scope='row'>1180</th><td><span docid='1180' langid='cuneiform' >KUB 035.138</span></td></tr><tr><th scope='row'>1181</th><td><span docid='1181' langid='cuneiform' >KUB 035.139</span></td></tr><tr><th scope='row'>1257</th><td><span docid='1257' langid='cuneiform' >KUB 035.141</span></td></tr><tr><th scope='row'>1170</th><td><span docid='1170' langid='cuneiform' >KUB 035.142+</span></td></tr><tr><th scope='row'>1130</th><td><span docid='1130' langid='cuneiform' >KUB 035.143</span></td></tr><tr><th scope='row'>1129</th><td><span docid='1129' langid='cuneiform' >KUB 035.144</span></td></tr><tr><th scope='row'>1131</th><td><span docid='1131' langid='cuneiform' >KUB 035.145</span></td></tr><tr><th scope='row'>1162</th><td><span docid='1162' langid='cuneiform' >KUB 035.146</span></td></tr><tr><th scope='row'>1258</th><td><span docid='1258' langid='cuneiform' >KUB 035.150</span></td></tr><tr><th scope='row'>1259</th><td><span docid='1259' langid='cuneiform' >KUB 035.152</span></td></tr><tr><th scope='row'>1133</th><td><span docid='1133' langid='cuneiform' >KUB 044.004+</span></td></tr><tr><th scope='row'>1169</th><td><span docid='1169' langid='cuneiform' >KUB 055.038</span></td></tr><tr><th scope='row'>1167</th><td><span docid='1167' langid='cuneiform' >KUB 055.065</span></td></tr><tr><th scope='row'>1261</th><td><span docid='1261' langid='cuneiform' >KUB 060.036</span></td></tr><tr><th scope='row'>1149</th><td><span docid='1149' langid='cuneiform' >KUB 060.059</span></td></tr><tr><th scope='row'>1109</th><td><span docid='1109' langid='cuneiform' >VBoT 43</span></td></tr>										</tbody>
+									</table>
+		
+		</div>
+      <div class="tab-pane " id="list-hierluw" role="tabpanel" aria-labelledby="list-profile-list">
+	   								<label><i class="fas fa-search"></i> Search</label>
+      								<input type="text" id="searchText_hierluw" class="form-control">
+
+	  								<table id="h_luwian_table" class="table table-striped table-hover table-bordered">
+									  <thead>
+										<tr>
+										  <th scope="col">#</th>
+										  <th scope="col">Text</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr><th scope='row'>64</th><td><span docid='64' langid='hieroglyphic' >ADANA 1 (KARKAMIŠ)</span></td></tr><tr><th scope='row'>147</th><td><span docid='147' langid='hieroglyphic' >ADIYAMAN 1</span></td></tr><tr><th scope='row'>154</th><td><span docid='154' langid='hieroglyphic' >ADIYAMAN 2</span></td></tr><tr><th scope='row'>168</th><td><span docid='168' langid='hieroglyphic' >AFRIN</span></td></tr><tr><th scope='row'>182</th><td><span docid='182' langid='hieroglyphic' >AKSARAY</span></td></tr><tr><th scope='row'>267</th><td><span docid='267' langid='hieroglyphic' >ALEPPO 1</span></td></tr><tr><th scope='row'>114</th><td><span docid='114' langid='hieroglyphic' >ALEPPO 2</span></td></tr><tr><th scope='row'>216</th><td><span docid='216' langid='hieroglyphic' >ALEPPO 3</span></td></tr><tr><th scope='row'>256</th><td><span docid='256' langid='hieroglyphic' >ALEPPO 4</span></td></tr><tr><th scope='row'>257</th><td><span docid='257' langid='hieroglyphic' >ALEPPO 5</span></td></tr><tr><th scope='row'>258</th><td><span docid='258' langid='hieroglyphic' >ALEPPO 6</span></td></tr><tr><th scope='row'>259</th><td><span docid='259' langid='hieroglyphic' >ALEPPO 7</span></td></tr><tr><th scope='row'>221</th><td><span docid='221' langid='hieroglyphic' >ALİŞAR</span></td></tr><tr><th scope='row'>243</th><td><span docid='243' langid='hieroglyphic' >ALTINTEPE pithos inscriptions</span></td></tr><tr><th scope='row'>148</th><td><span docid='148' langid='hieroglyphic' >ANCOZ 1</span></td></tr><tr><th scope='row'>161</th><td><span docid='161' langid='hieroglyphic' >ANCOZ 10</span></td></tr><tr><th scope='row'>251</th><td><span docid='251' langid='hieroglyphic' >ANCOZ 11</span></td></tr><tr><th scope='row'>252</th><td><span docid='252' langid='hieroglyphic' >ANCOZ 12</span></td></tr><tr><th scope='row'>149</th><td><span docid='149' langid='hieroglyphic' >ANCOZ 2</span></td></tr><tr><th scope='row'>150</th><td><span docid='150' langid='hieroglyphic' >ANCOZ 3</span></td></tr><tr><th scope='row'>151</th><td><span docid='151' langid='hieroglyphic' >ANCOZ 4</span></td></tr><tr><th scope='row'>152</th><td><span docid='152' langid='hieroglyphic' >ANCOZ 5 - full</span></td></tr><tr><th scope='row'>153</th><td><span docid='153' langid='hieroglyphic' >ANCOZ 6</span></td></tr><tr><th scope='row'>158</th><td><span docid='158' langid='hieroglyphic' >ANCOZ 7</span></td></tr><tr><th scope='row'>159</th><td><span docid='159' langid='hieroglyphic' >ANCOZ 8</span></td></tr><tr><th scope='row'>160</th><td><span docid='160' langid='hieroglyphic' >ANCOZ 9</span></td></tr><tr><th scope='row'>203</th><td><span docid='203' langid='hieroglyphic' >ANDAVAL</span></td></tr><tr><th scope='row'>214</th><td><span docid='214' langid='hieroglyphic' >ANKARA</span></td></tr><tr><th scope='row'>286</th><td><span docid='286' langid='hieroglyphic' >ANKARA 2</span></td></tr><tr><th scope='row'>118</th><td><span docid='118' langid='hieroglyphic' >ARSLANTAŞ</span></td></tr><tr><th scope='row'>260</th><td><span docid='260' langid='hieroglyphic' >ARSUZ 1 (AMUQ)</span></td></tr><tr><th scope='row'>261</th><td><span docid='261' langid='hieroglyphic' >ARSUZ 2 (AMUQ)</span></td></tr><tr><th scope='row'>218</th><td><span docid='218' langid='hieroglyphic' >ASMACIK</span></td></tr><tr><th scope='row'>99</th><td><span docid='99' langid='hieroglyphic' >ASSUR letter a</span></td></tr><tr><th scope='row'>100</th><td><span docid='100' langid='hieroglyphic' >ASSUR letter b</span></td></tr><tr><th scope='row'>101</th><td><span docid='101' langid='hieroglyphic' >ASSUR letter c</span></td></tr><tr><th scope='row'>102</th><td><span docid='102' langid='hieroglyphic' >ASSUR letter d</span></td></tr><tr><th scope='row'>103</th><td><span docid='103' langid='hieroglyphic' >ASSUR letter e</span></td></tr><tr><th scope='row'>104</th><td><span docid='104' langid='hieroglyphic' >ASSUR letter f+g</span></td></tr><tr><th scope='row'>82</th><td><span docid='82' langid='hieroglyphic' >BABYLON 1</span></td></tr><tr><th scope='row'>83</th><td><span docid='83' langid='hieroglyphic' >BABYLON 2</span></td></tr><tr><th scope='row'>84</th><td><span docid='84' langid='hieroglyphic' >BABYLON 3</span></td></tr><tr><th scope='row'>213</th><td><span docid='213' langid='hieroglyphic' >BEIRUT</span></td></tr><tr><th scope='row'>98</th><td><span docid='98' langid='hieroglyphic' >BOHÇA</span></td></tr><tr><th scope='row'>205</th><td><span docid='205' langid='hieroglyphic' >BOR</span></td></tr><tr><th scope='row'>211</th><td><span docid='211' langid='hieroglyphic' >BOROWSKI 1</span></td></tr><tr><th scope='row'>212</th><td><span docid='212' langid='hieroglyphic' >BOROWSKI 2</span></td></tr><tr><th scope='row'>111</th><td><span docid='111' langid='hieroglyphic' >BOROWSKI 3</span></td></tr><tr><th scope='row'>230</th><td><span docid='230' langid='hieroglyphic' >BOROWSKI seal 1</span></td></tr><tr><th scope='row'>238</th><td><span docid='238' langid='hieroglyphic' >BOROWSKI seal 2</span></td></tr><tr><th scope='row'>241</th><td><span docid='241' langid='hieroglyphic' >BOSSERT seal</span></td></tr><tr><th scope='row'>145</th><td><span docid='145' langid='hieroglyphic' >BOYBEYPINARI 1-2</span></td></tr><tr><th scope='row'>206</th><td><span docid='206' langid='hieroglyphic' >BULGARMADEN</span></td></tr><tr><th scope='row'>176</th><td><span docid='176' langid='hieroglyphic' >BURUNKAYA</span></td></tr><tr><th scope='row'>192</th><td><span docid='192' langid='hieroglyphic' >ÇALAPVERDİ 1</span></td></tr><tr><th scope='row'>22</th><td><span docid='22' langid='hieroglyphic' >CEKKE</span></td></tr><tr><th scope='row'>177</th><td><span docid='177' langid='hieroglyphic' >ÇİFTLİK</span></td></tr><tr><th scope='row'>250</th><td><span docid='250' langid='hieroglyphic' >ÇINEKÖY</span></td></tr><tr><th scope='row'>126</th><td><span docid='126' langid='hieroglyphic' >DARENDE</span></td></tr><tr><th scope='row'>229</th><td><span docid='229' langid='hieroglyphic' >DELAPORTE seal</span></td></tr><tr><th scope='row'>254</th><td><span docid='254' langid='hieroglyphic' >DÜLÜK BABA TEPESİ 1</span></td></tr><tr><th scope='row'>240</th><td><span docid='240' langid='hieroglyphic' >DÜLÜK/GAZİANTEP seals</span></td></tr><tr><th scope='row'>188</th><td><span docid='188' langid='hieroglyphic' >EĞREK</span></td></tr><tr><th scope='row'>190</th><td><span docid='190' langid='hieroglyphic' >EĞRİKÖY</span></td></tr><tr><th scope='row'>277</th><td><span docid='277' langid='hieroglyphic' >EMİRGAZİ 1A</span></td></tr><tr><th scope='row'>278</th><td><span docid='278' langid='hieroglyphic' >EMİRGAZİ 1B</span></td></tr><tr><th scope='row'>279</th><td><span docid='279' langid='hieroglyphic' >EMİRGAZİ 1C</span></td></tr><tr><th scope='row'>280</th><td><span docid='280' langid='hieroglyphic' >EMİRGAZİ 1D</span></td></tr><tr><th scope='row'>281</th><td><span docid='281' langid='hieroglyphic' >EMİRGAZİ 2</span></td></tr><tr><th scope='row'>282</th><td><span docid='282' langid='hieroglyphic' >EMİRGAZİ 3</span></td></tr><tr><th scope='row'>248</th><td><span docid='248' langid='hieroglyphic' >EREǦLİ 2</span></td></tr><tr><th scope='row'>189</th><td><span docid='189' langid='hieroglyphic' >ERKİLET 1</span></td></tr><tr><th scope='row'>266</th><td><span docid='266' langid='hieroglyphic' >FRAKTİN</span></td></tr><tr><th scope='row'>217</th><td><span docid='217' langid='hieroglyphic' >GAZİANTEP</span></td></tr><tr><th scope='row'>220</th><td><span docid='220' langid='hieroglyphic' >GELB</span></td></tr><tr><th scope='row'>235</th><td><span docid='235' langid='hieroglyphic' >GELB seals</span></td></tr><tr><th scope='row'>247</th><td><span docid='247' langid='hieroglyphic' >GEMEREK</span></td></tr><tr><th scope='row'>234</th><td><span docid='234' langid='hieroglyphic' >GULBENKIAN seal</span></td></tr><tr><th scope='row'>61</th><td><span docid='61' langid='hieroglyphic' >GÜRÇAY (KARKAMIŠ)</span></td></tr><tr><th scope='row'>123</th><td><span docid='123' langid='hieroglyphic' >GÜRÜN</span></td></tr><tr><th scope='row'>90</th><td><span docid='90' langid='hieroglyphic' >HAMA 1-3, 6-7</span></td></tr><tr><th scope='row'>85</th><td><span docid='85' langid='hieroglyphic' >HAMA 4</span></td></tr><tr><th scope='row'>86</th><td><span docid='86' langid='hieroglyphic' >HAMA 5</span></td></tr><tr><th scope='row'>88</th><td><span docid='88' langid='hieroglyphic' >HAMA 8</span></td></tr><tr><th scope='row'>89</th><td><span docid='89' langid='hieroglyphic' >HAMA 9 (NIMRUD)</span></td></tr><tr><th scope='row'>92</th><td><span docid='92' langid='hieroglyphic' >HAMA fragment 2</span></td></tr><tr><th scope='row'>93</th><td><span docid='93' langid='hieroglyphic' >HAMA fragment 5</span></td></tr><tr><th scope='row'>94</th><td><span docid='94' langid='hieroglyphic' >HAMA fragment 6</span></td></tr><tr><th scope='row'>95</th><td><span docid='95' langid='hieroglyphic' >HAMA fragment 7</span></td></tr><tr><th scope='row'>184</th><td><span docid='184' langid='hieroglyphic' >HİSARCIK 1</span></td></tr><tr><th scope='row'>191</th><td><span docid='191' langid='hieroglyphic' >HİSARCIK 2</span></td></tr><tr><th scope='row'>232</th><td><span docid='232' langid='hieroglyphic' >HOGARTH seal 1</span></td></tr><tr><th scope='row'>233</th><td><span docid='233' langid='hieroglyphic' >HOGARTH seal 2</span></td></tr><tr><th scope='row'>239</th><td><span docid='239' langid='hieroglyphic' >HOGARTH seal 3</span></td></tr><tr><th scope='row'>121</th><td><span docid='121' langid='hieroglyphic' >İSKENDERUN</span></td></tr><tr><th scope='row'>125</th><td><span docid='125' langid='hieroglyphic' >İSPEKÇÜR</span></td></tr><tr><th scope='row'>215</th><td><span docid='215' langid='hieroglyphic' >İSTANBUL (“ATHENS”)</span></td></tr><tr><th scope='row'>246</th><td><span docid='246' langid='hieroglyphic' >ISTANBUL 2</span></td></tr><tr><th scope='row'>204</th><td><span docid='204' langid='hieroglyphic' >İVRİZ 1</span></td></tr><tr><th scope='row'>210</th><td><span docid='210' langid='hieroglyphic' >İVRİZ fragments 1-3</span></td></tr><tr><th scope='row'>136</th><td><span docid='136' langid='hieroglyphic' >IZGIN 1 (B+C+A)</span></td></tr><tr><th scope='row'>137</th><td><span docid='137' langid='hieroglyphic' >IZGIN 2 (D)</span></td></tr><tr><th scope='row'>263</th><td><span docid='263' langid='hieroglyphic' >JISR EL HADID 4</span></td></tr><tr><th scope='row'>164</th><td><span docid='164' langid='hieroglyphic' >JISR EL HADID fragments 1-3</span></td></tr><tr><th scope='row'>253</th><td><span docid='253' langid='hieroglyphic' >KÂHTA 1</span></td></tr><tr><th scope='row'>76</th><td><span docid='76' langid='hieroglyphic' >KARABURÇLU</span></td></tr><tr><th scope='row'>183</th><td><span docid='183' langid='hieroglyphic' >KARABURUN</span></td></tr><tr><th scope='row'>174</th><td><span docid='174' langid='hieroglyphic' >KARADAĞ 1</span></td></tr><tr><th scope='row'>175</th><td><span docid='175' langid='hieroglyphic' >KARADAĞ 2</span></td></tr><tr><th scope='row'>122</th><td><span docid='122' langid='hieroglyphic' >KARAHÖYÜK (ELBİSTAN)</span></td></tr><tr><th scope='row'>285</th><td><span docid='285' langid='hieroglyphic' >KARAKUYU/KARABEL</span></td></tr><tr><th scope='row'>106</th><td><span docid='106' langid='hieroglyphic' >KARATEPE 1 Ho.</span></td></tr><tr><th scope='row'>105</th><td><span docid='105' langid='hieroglyphic' >KARATEPE 1 Hu.</span></td></tr><tr><th scope='row'>107</th><td><span docid='107' langid='hieroglyphic' >KARATEPE 2</span></td></tr><tr><th scope='row'>108</th><td><span docid='108' langid='hieroglyphic' >KARATEPE 3</span></td></tr><tr><th scope='row'>109</th><td><span docid='109' langid='hieroglyphic' >KARATEPE 4</span></td></tr><tr><th scope='row'>7</th><td><span docid='7' langid='hieroglyphic' >KARKAMIŠ A11a</span></td></tr><tr><th scope='row'>9</th><td><span docid='9' langid='hieroglyphic' >KARKAMIŠ A11b+c</span></td></tr><tr><th scope='row'>11</th><td><span docid='11' langid='hieroglyphic' >KARKAMIŠ A12</span></td></tr><tr><th scope='row'>30</th><td><span docid='30' langid='hieroglyphic' >KARKAMIŠ A13a—c</span></td></tr><tr><th scope='row'>12</th><td><span docid='12' langid='hieroglyphic' >KARKAMIŠ A13d</span></td></tr><tr><th scope='row'>3</th><td><span docid='3' langid='hieroglyphic' >KARKAMIŠ A14a</span></td></tr><tr><th scope='row'>2</th><td><span docid='2' langid='hieroglyphic' >KARKAMIŠ A14b</span></td></tr><tr><th scope='row'>43</th><td><span docid='43' langid='hieroglyphic' >KARKAMIŠ A15a</span></td></tr><tr><th scope='row'>18</th><td><span docid='18' langid='hieroglyphic' >KARKAMIŠ A15b</span></td></tr><tr><th scope='row'>44</th><td><span docid='44' langid='hieroglyphic' >KARKAMIŠ A15c</span></td></tr><tr><th scope='row'>52</th><td><span docid='52' langid='hieroglyphic' >KARKAMIŠ A15d</span></td></tr><tr><th scope='row'>32</th><td><span docid='32' langid='hieroglyphic' >KARKAMIŠ A15e</span></td></tr><tr><th scope='row'>45</th><td><span docid='45' langid='hieroglyphic' >KARKAMIŠ A16a</span></td></tr><tr><th scope='row'>15</th><td><span docid='15' langid='hieroglyphic' >KARKAMIŠ A16b</span></td></tr><tr><th scope='row'>53</th><td><span docid='53' langid='hieroglyphic' >KARKAMIŠ A16e</span></td></tr><tr><th scope='row'>46</th><td><span docid='46' langid='hieroglyphic' >KARKAMIŠ A17a</span></td></tr><tr><th scope='row'>35</th><td><span docid='35' langid='hieroglyphic' >KARKAMIŠ A17b</span></td></tr><tr><th scope='row'>47</th><td><span docid='47' langid='hieroglyphic' >KARKAMIŠ A17c</span></td></tr><tr><th scope='row'>48</th><td><span docid='48' langid='hieroglyphic' >KARKAMIŠ A18a</span></td></tr><tr><th scope='row'>54</th><td><span docid='54' langid='hieroglyphic' >KARKAMIŠ A18b</span></td></tr><tr><th scope='row'>1</th><td><span docid='1' langid='hieroglyphic' >KARKAMIŠ A18d</span></td></tr><tr><th scope='row'>49</th><td><span docid='49' langid='hieroglyphic' >KARKAMIŠ A18e</span></td></tr><tr><th scope='row'>41</th><td><span docid='41' langid='hieroglyphic' >KARKAMIŠ A18f</span></td></tr><tr><th scope='row'>38</th><td><span docid='38' langid='hieroglyphic' >KARKAMIŠ A18h</span></td></tr><tr><th scope='row'>55</th><td><span docid='55' langid='hieroglyphic' >KARKAMIŠ A18i</span></td></tr><tr><th scope='row'>50</th><td><span docid='50' langid='hieroglyphic' >KARKAMIŠ A18j</span></td></tr><tr><th scope='row'>4</th><td><span docid='4' langid='hieroglyphic' >KARKAMIŠ A1a</span></td></tr><tr><th scope='row'>5</th><td><span docid='5' langid='hieroglyphic' >KARKAMIŠ A1b</span></td></tr><tr><th scope='row'>10</th><td><span docid='10' langid='hieroglyphic' >KARKAMIŠ A2+3</span></td></tr><tr><th scope='row'>26</th><td><span docid='26' langid='hieroglyphic' >KARKAMIŠ A21</span></td></tr><tr><th scope='row'>27</th><td><span docid='27' langid='hieroglyphic' >KARKAMIŠ A22c (+A20b6+B35b)</span></td></tr><tr><th scope='row'>13</th><td><span docid='13' langid='hieroglyphic' >KARKAMIŠ A23 (with fragments A26a1+2, A20a1)</span></td></tr><tr><th scope='row'>19</th><td><span docid='19' langid='hieroglyphic' >KARKAMIŠ A24a2+3</span></td></tr><tr><th scope='row'>14</th><td><span docid='14' langid='hieroglyphic' >KARKAMIŠ A25a</span></td></tr><tr><th scope='row'>25</th><td><span docid='25' langid='hieroglyphic' >KARKAMIŠ A25b</span></td></tr><tr><th scope='row'>31</th><td><span docid='31' langid='hieroglyphic' >KARKAMIŠ A26f</span></td></tr><tr><th scope='row'>33</th><td><span docid='33' langid='hieroglyphic' >KARKAMIŠ A27c</span></td></tr><tr><th scope='row'>29</th><td><span docid='29' langid='hieroglyphic' >KARKAMIŠ A27e</span></td></tr><tr><th scope='row'>28</th><td><span docid='28' langid='hieroglyphic' >KARKAMIŠ A27u</span></td></tr><tr><th scope='row'>36</th><td><span docid='36' langid='hieroglyphic' >KARKAMIŠ A30h</span></td></tr><tr><th scope='row'>21</th><td><span docid='21' langid='hieroglyphic' >KARKAMIŠ A31+fragments A30b1-3</span></td></tr><tr><th scope='row'>23</th><td><span docid='23' langid='hieroglyphic' >KARKAMIŠ A4a</span></td></tr><tr><th scope='row'>0</th><td><span docid='0' langid='hieroglyphic' >KARKAMIŠ A4b</span></td></tr><tr><th scope='row'>42</th><td><span docid='42' langid='hieroglyphic' >KARKAMIŠ A4c</span></td></tr><tr><th scope='row'>8</th><td><span docid='8' langid='hieroglyphic' >KARKAMIŠ A4d</span></td></tr><tr><th scope='row'>39</th><td><span docid='39' langid='hieroglyphic' >KARKAMIŠ A5a</span></td></tr><tr><th scope='row'>40</th><td><span docid='40' langid='hieroglyphic' >KARKAMIŠ A5b</span></td></tr><tr><th scope='row'>16</th><td><span docid='16' langid='hieroglyphic' >KARKAMIŠ A6</span></td></tr><tr><th scope='row'>17</th><td><span docid='17' langid='hieroglyphic' >KARKAMIŠ A7</span></td></tr><tr><th scope='row'>51</th><td><span docid='51' langid='hieroglyphic' >KARKAMIŠ B33</span></td></tr><tr><th scope='row'>56</th><td><span docid='56' langid='hieroglyphic' >KARKAMIŠ B39a</span></td></tr><tr><th scope='row'>66</th><td><span docid='66' langid='hieroglyphic' >KARKAMIŠ fragments</span></td></tr><tr><th scope='row'>58</th><td><span docid='58' langid='hieroglyphic' >KARKAMIŠ fragments a/b</span></td></tr><tr><th scope='row'>59</th><td><span docid='59' langid='hieroglyphic' >KARKAMIŠ N1 (KARKAMIŠ)</span></td></tr><tr><th scope='row'>60</th><td><span docid='60' langid='hieroglyphic' >KARKAMIŠ N2 (KARKAMIŠ)</span></td></tr><tr><th scope='row'>57</th><td><span docid='57' langid='hieroglyphic' >KARKAMIŠ sherd</span></td></tr><tr><th scope='row'>20</th><td><span docid='20' langid='hieroglyphic' >KARKAMIŠ Stone Bowl</span></td></tr><tr><th scope='row'>181</th><td><span docid='181' langid='hieroglyphic' >KAYSERİ</span></td></tr><tr><th scope='row'>6</th><td><span docid='6' langid='hieroglyphic' >KELEKLİ</span></td></tr><tr><th scope='row'>237</th><td><span docid='237' langid='hieroglyphic' >KHORSABAD bullae</span></td></tr><tr><th scope='row'>167</th><td><span docid='167' langid='hieroglyphic' >KIRÇOĞLU</span></td></tr><tr><th scope='row'>244</th><td><span docid='244' langid='hieroglyphic' >KIRŞEHİR</span></td></tr><tr><th scope='row'>245</th><td><span docid='245' langid='hieroglyphic' >KIRŞEHİR fragment</span></td></tr><tr><th scope='row'>169</th><td><span docid='169' langid='hieroglyphic' >KIZILDAĞ 1</span></td></tr><tr><th scope='row'>170</th><td><span docid='170' langid='hieroglyphic' >KIZILDAĞ 2</span></td></tr><tr><th scope='row'>171</th><td><span docid='171' langid='hieroglyphic' >KIZILDAĞ 3</span></td></tr><tr><th scope='row'>173</th><td><span docid='173' langid='hieroglyphic' >KIZILDAĞ 4</span></td></tr><tr><th scope='row'>172</th><td><span docid='172' langid='hieroglyphic' >KIZILDAĞ 5</span></td></tr><tr><th scope='row'>284</th><td><span docid='284' langid='hieroglyphic' >KOCAOĞUZ</span></td></tr><tr><th scope='row'>34</th><td><span docid='34' langid='hieroglyphic' >KÖRKÜN</span></td></tr><tr><th scope='row'>124</th><td><span docid='124' langid='hieroglyphic' >KÖTÜKALE</span></td></tr><tr><th scope='row'>283</th><td><span docid='283' langid='hieroglyphic' >KÖYLÜTOLU YAYLA</span></td></tr><tr><th scope='row'>96</th><td><span docid='96' langid='hieroglyphic' >KULULU 1</span></td></tr><tr><th scope='row'>186</th><td><span docid='186' langid='hieroglyphic' >KULULU 2</span></td></tr><tr><th scope='row'>187</th><td><span docid='187' langid='hieroglyphic' >KULULU 3</span></td></tr><tr><th scope='row'>97</th><td><span docid='97' langid='hieroglyphic' >KULULU 4</span></td></tr><tr><th scope='row'>185</th><td><span docid='185' langid='hieroglyphic' >KULULU 5</span></td></tr><tr><th scope='row'>194</th><td><span docid='194' langid='hieroglyphic' >KULULU 6</span></td></tr><tr><th scope='row'>196</th><td><span docid='196' langid='hieroglyphic' >KULULU 7</span></td></tr><tr><th scope='row'>195</th><td><span docid='195' langid='hieroglyphic' >KULULU 8</span></td></tr><tr><th scope='row'>199</th><td><span docid='199' langid='hieroglyphic' >KULULU lead fragment 1</span></td></tr><tr><th scope='row'>200</th><td><span docid='200' langid='hieroglyphic' >KULULU lead fragment 3</span></td></tr><tr><th scope='row'>197</th><td><span docid='197' langid='hieroglyphic' >KULULU lead strip 1</span></td></tr><tr><th scope='row'>198</th><td><span docid='198' langid='hieroglyphic' >KULULU lead strip 2</span></td></tr><tr><th scope='row'>201</th><td><span docid='201' langid='hieroglyphic' >KULULU lead strip 3 (+ frag. 2)</span></td></tr><tr><th scope='row'>72</th><td><span docid='72' langid='hieroglyphic' >KÜRTÜL</span></td></tr><tr><th scope='row'>225</th><td><span docid='225' langid='hieroglyphic' >LİDAR bullae</span></td></tr><tr><th scope='row'>138</th><td><span docid='138' langid='hieroglyphic' >MALATYA 1</span></td></tr><tr><th scope='row'>132</th><td><span docid='132' langid='hieroglyphic' >MALATYA 10</span></td></tr><tr><th scope='row'>133</th><td><span docid='133' langid='hieroglyphic' >MALATYA 11</span></td></tr><tr><th scope='row'>134</th><td><span docid='134' langid='hieroglyphic' >MALATYA 12</span></td></tr><tr><th scope='row'>144</th><td><span docid='144' langid='hieroglyphic' >MALATYA 13</span></td></tr><tr><th scope='row'>135</th><td><span docid='135' langid='hieroglyphic' >MALATYA 14</span></td></tr><tr><th scope='row'>143</th><td><span docid='143' langid='hieroglyphic' >MALATYA 2</span></td></tr><tr><th scope='row'>140</th><td><span docid='140' langid='hieroglyphic' >MALATYA 3</span></td></tr><tr><th scope='row'>139</th><td><span docid='139' langid='hieroglyphic' >MALATYA 4</span></td></tr><tr><th scope='row'>127</th><td><span docid='127' langid='hieroglyphic' >MALATYA 5</span></td></tr><tr><th scope='row'>128</th><td><span docid='128' langid='hieroglyphic' >MALATYA 6</span></td></tr><tr><th scope='row'>129</th><td><span docid='129' langid='hieroglyphic' >MALATYA 7</span></td></tr><tr><th scope='row'>130</th><td><span docid='130' langid='hieroglyphic' >MALATYA 8</span></td></tr><tr><th scope='row'>131</th><td><span docid='131' langid='hieroglyphic' >MALATYA 9</span></td></tr><tr><th scope='row'>226</th><td><span docid='226' langid='hieroglyphic' >MALATYA bulla (MALATYA 15)</span></td></tr><tr><th scope='row'>62</th><td><span docid='62' langid='hieroglyphic' >MALATYA N1 (MALATYA)</span></td></tr><tr><th scope='row'>146</th><td><span docid='146' langid='hieroglyphic' >MALPINAR</span></td></tr><tr><th scope='row'>67</th><td><span docid='67' langid='hieroglyphic' >MARAŞ 1</span></td></tr><tr><th scope='row'>80</th><td><span docid='80' langid='hieroglyphic' >MARAŞ 10</span></td></tr><tr><th scope='row'>71</th><td><span docid='71' langid='hieroglyphic' >MARAŞ 11</span></td></tr><tr><th scope='row'>75</th><td><span docid='75' langid='hieroglyphic' >MARAŞ 12</span></td></tr><tr><th scope='row'>77</th><td><span docid='77' langid='hieroglyphic' >MARAŞ 13</span></td></tr><tr><th scope='row'>68</th><td><span docid='68' langid='hieroglyphic' >MARAŞ 14</span></td></tr><tr><th scope='row'>81</th><td><span docid='81' langid='hieroglyphic' >MARAŞ 15</span></td></tr><tr><th scope='row'>73</th><td><span docid='73' langid='hieroglyphic' >MARAŞ 2</span></td></tr><tr><th scope='row'>69</th><td><span docid='69' langid='hieroglyphic' >MARAŞ 3</span></td></tr><tr><th scope='row'>120</th><td><span docid='120' langid='hieroglyphic' >MARAŞ 4</span></td></tr><tr><th scope='row'>70</th><td><span docid='70' langid='hieroglyphic' >MARAŞ 5</span></td></tr><tr><th scope='row'>78</th><td><span docid='78' langid='hieroglyphic' >MARAŞ 6 (LENINGRAD)</span></td></tr><tr><th scope='row'>79</th><td><span docid='79' langid='hieroglyphic' >MARAŞ 7</span></td></tr><tr><th scope='row'>119</th><td><span docid='119' langid='hieroglyphic' >MARAŞ 8</span></td></tr><tr><th scope='row'>74</th><td><span docid='74' langid='hieroglyphic' >MARAŞ 9</span></td></tr><tr><th scope='row'>91</th><td><span docid='91' langid='hieroglyphic' >MEHARDE, SHEIZAR</span></td></tr><tr><th scope='row'>202</th><td><span docid='202' langid='hieroglyphic' >NİĞDE 1</span></td></tr><tr><th scope='row'>207</th><td><span docid='207' langid='hieroglyphic' >NİĞDE 2</span></td></tr><tr><th scope='row'>223</th><td><span docid='223' langid='hieroglyphic' >NIMRUD</span></td></tr><tr><th scope='row'>236</th><td><span docid='236' langid='hieroglyphic' >NINEVEH bullae 1-7</span></td></tr><tr><th scope='row'>231</th><td><span docid='231' langid='hieroglyphic' >NINEVEH seal</span></td></tr><tr><th scope='row'>142</th><td><span docid='142' langid='hieroglyphic' >PALANGA</span></td></tr><tr><th scope='row'>262</th><td><span docid='262' langid='hieroglyphic' >PANCARLI (AMUQ)</span></td></tr><tr><th scope='row'>224</th><td><span docid='224' langid='hieroglyphic' >PERSEPOLIS</span></td></tr><tr><th scope='row'>228</th><td><span docid='228' langid='hieroglyphic' >PORADA seal</span></td></tr><tr><th scope='row'>208</th><td><span docid='208' langid='hieroglyphic' >PORSUK</span></td></tr><tr><th scope='row'>249</th><td><span docid='249' langid='hieroglyphic' >POTOROO</span></td></tr><tr><th scope='row'>87</th><td><span docid='87' langid='hieroglyphic' >RESTAN, QAL‘AT EL MUDIQ, HINES</span></td></tr><tr><th scope='row'>155</th><td><span docid='155' langid='hieroglyphic' >SAMSAT 2</span></td></tr><tr><th scope='row'>156</th><td><span docid='156' langid='hieroglyphic' >SAMSAT 3</span></td></tr><tr><th scope='row'>157</th><td><span docid='157' langid='hieroglyphic' >SAMSAT fragments</span></td></tr><tr><th scope='row'>65</th><td><span docid='65' langid='hieroglyphic' >ŞARAGA (KARKAMIŠ)</span></td></tr><tr><th scope='row'>141</th><td><span docid='141' langid='hieroglyphic' >ŞIRZI</span></td></tr><tr><th scope='row'>265</th><td><span docid='265' langid='hieroglyphic' >SÜDBURG</span></td></tr><tr><th scope='row'>180</th><td><span docid='180' langid='hieroglyphic' >SULTANHAN</span></td></tr><tr><th scope='row'>179</th><td><span docid='179' langid='hieroglyphic' >SUVASA</span></td></tr><tr><th scope='row'>264</th><td><span docid='264' langid='hieroglyphic' >TALL ŠṬĪB</span></td></tr><tr><th scope='row'>193</th><td><span docid='193' langid='hieroglyphic' >TEKİRDERBENT 1</span></td></tr><tr><th scope='row'>115</th><td><span docid='115' langid='hieroglyphic' >TELL AHMAR 1</span></td></tr><tr><th scope='row'>110</th><td><span docid='110' langid='hieroglyphic' >TELL AHMAR 2</span></td></tr><tr><th scope='row'>116</th><td><span docid='116' langid='hieroglyphic' >TELL AHMAR 3 (LOUVRE)</span></td></tr><tr><th scope='row'>113</th><td><span docid='113' langid='hieroglyphic' >TELL AHMAR 4</span></td></tr><tr><th scope='row'>112</th><td><span docid='112' langid='hieroglyphic' >TELL AHMAR 5</span></td></tr><tr><th scope='row'>255</th><td><span docid='255' langid='hieroglyphic' >TELL AHMAR 6</span></td></tr><tr><th scope='row'>117</th><td><span docid='117' langid='hieroglyphic' >TELL AHMAR fragments 1—10</span></td></tr><tr><th scope='row'>162</th><td><span docid='162' langid='hieroglyphic' >TELL TAYINAT 1</span></td></tr><tr><th scope='row'>163</th><td><span docid='163' langid='hieroglyphic' >TELL TAYINAT 2</span></td></tr><tr><th scope='row'>37</th><td><span docid='37' langid='hieroglyphic' >TİLSEVET (alias EKİNVEREN)</span></td></tr><tr><th scope='row'>178</th><td><span docid='178' langid='hieroglyphic' >TOPADA</span></td></tr><tr><th scope='row'>222</th><td><span docid='222' langid='hieroglyphic' >TRAGANA (LOCRIS)</span></td></tr><tr><th scope='row'>165</th><td><span docid='165' langid='hieroglyphic' >TULEIL 1</span></td></tr><tr><th scope='row'>166</th><td><span docid='166' langid='hieroglyphic' >TULEIL 2</span></td></tr><tr><th scope='row'>24</th><td><span docid='24' langid='hieroglyphic' >TÜNP 1</span></td></tr><tr><th scope='row'>219</th><td><span docid='219' langid='hieroglyphic' >TÜNP 2</span></td></tr><tr><th scope='row'>209</th><td><span docid='209' langid='hieroglyphic' >VELİİSA</span></td></tr><tr><th scope='row'>268</th><td><span docid='268' langid='hieroglyphic' >YALBURT FRAGMENT 1</span></td></tr><tr><th scope='row'>269</th><td><span docid='269' langid='hieroglyphic' >YALBURT Fragment 2</span></td></tr><tr><th scope='row'>270</th><td><span docid='270' langid='hieroglyphic' >YALBURT Fragment 3</span></td></tr><tr><th scope='row'>274</th><td><span docid='274' langid='hieroglyphic' >YALBURT Fragment 4</span></td></tr><tr><th scope='row'>271</th><td><span docid='271' langid='hieroglyphic' >YALBURT Fragment A</span></td></tr><tr><th scope='row'>272</th><td><span docid='272' langid='hieroglyphic' >YALBURT Fragment B</span></td></tr><tr><th scope='row'>273</th><td><span docid='273' langid='hieroglyphic' >YALBURT Fragment C</span></td></tr><tr><th scope='row'>275</th><td><span docid='275' langid='hieroglyphic' >YALBURT Fragment D</span></td></tr><tr><th scope='row'>276</th><td><span docid='276' langid='hieroglyphic' >YALBURT Fragment E</span></td></tr><tr><th scope='row'>242</th><td><span docid='242' langid='hieroglyphic' >YALE seal</span></td></tr><tr><th scope='row'>63</th><td><span docid='63' langid='hieroglyphic' >YUNUS (KARKAMIŠ)</span></td></tr><tr><th scope='row'>227</th><td><span docid='227' langid='hieroglyphic' >ZİNCİRLİ signet</span></td></tr>										</tbody>
+									</table>
+		</div>
+      <div class="tab-pane " id="list-lyc" role="tabpanel" aria-labelledby="list-messages-list">
+	   								<label><i class="fas fa-search"></i> Search</label>
+      								<input type="text" id="searchText_lyc" class="form-control">
+
+	  	  							<table id="a_lycian_table" class="table table-striped table-hover table-bordered">
+									  <thead>
+										<tr>
+										  <th scope="col">#</th>
+										  <th scope="col">Text</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr><th scope='row'>182</th><td><span docid='182' langid='lycian' >Coin Legends</span></td></tr><tr><th scope='row'>186</th><td><span docid='186' langid='lycian' >Fragment A of N 324/5 (Xanthos)</span></td></tr><tr><th scope='row'>184</th><td><span docid='184' langid='lycian' >Fragment B of N 324/5</span></td></tr><tr><th scope='row'>10</th><td><span docid='10' langid='lycian' >N 301 (Egypt)</span></td></tr><tr><th scope='row'>31</th><td><span docid='31' langid='lycian' >N 302 (Korydalla)</span></td></tr><tr><th scope='row'>108</th><td><span docid='108' langid='lycian' >N 303 (Phellos)</span></td></tr><tr><th scope='row'>130</th><td><span docid='130' langid='lycian' >N 304 (Sura)</span></td></tr><tr><th scope='row'>7</th><td><span docid='7' langid='lycian' >N 306 (Ҫağman)</span></td></tr><tr><th scope='row'>11</th><td><span docid='11' langid='lycian' >N 307 (Egypt)</span></td></tr><tr><th scope='row'>104</th><td><span docid='104' langid='lycian' >N 308 (Myra)</span></td></tr><tr><th scope='row'>105</th><td><span docid='105' langid='lycian' >N 309 (Myra)</span></td></tr><tr><th scope='row'>109</th><td><span docid='109' langid='lycian' >N 310 (Phellos)</span></td></tr><tr><th scope='row'>170</th><td><span docid='170' langid='lycian' >N 311 (Xanthos)</span></td></tr><tr><th scope='row'>171</th><td><span docid='171' langid='lycian' >N 312 (Xanthos)</span></td></tr><tr><th scope='row'>172</th><td><span docid='172' langid='lycian' >N 313 (Xanthos)</span></td></tr><tr><th scope='row'>30</th><td><span docid='30' langid='lycian' >N 314 (Kızılca)</span></td></tr><tr><th scope='row'>126</th><td><span docid='126' langid='lycian' >N 315 (Seyret)</span></td></tr><tr><th scope='row'>88</th><td><span docid='88' langid='lycian' >N 316 (Limyra)</span></td></tr><tr><th scope='row'>89</th><td><span docid='89' langid='lycian' >N 317 (Limyra)</span></td></tr><tr><th scope='row'>173</th><td><span docid='173' langid='lycian' >N 318 (Xanthos)</span></td></tr><tr><th scope='row'>174</th><td><span docid='174' langid='lycian' >N 320 (Xanthos)</span></td></tr><tr><th scope='row'>29</th><td><span docid='29' langid='lycian' >N 321 (Kaş)</span></td></tr><tr><th scope='row'>121</th><td><span docid='121' langid='lycian' >N 322 (Pinara)</span></td></tr><tr><th scope='row'>18</th><td><span docid='18' langid='lycian' >N 323 (Istanbul)</span></td></tr><tr><th scope='row'>175</th><td><span docid='175' langid='lycian' >N 324 (Xanthos)</span></td></tr><tr><th scope='row'>176</th><td><span docid='176' langid='lycian' >N 325 (Xanthos)</span></td></tr><tr><th scope='row'>177</th><td><span docid='177' langid='lycian' >N 326 (Xanthos)</span></td></tr><tr><th scope='row'>178</th><td><span docid='178' langid='lycian' >N 327 (Xanthos)</span></td></tr><tr><th scope='row'>181</th><td><span docid='181' langid='lycian' >N 330 Tüse</span></td></tr><tr><th scope='row'>183</th><td><span docid='183' langid='lycian' >N 331 (Korba)</span></td></tr><tr><th scope='row'>147</th><td><span docid='147' langid='lycian' >N 333 (Tlos)</span></td></tr><tr><th scope='row'>148</th><td><span docid='148' langid='lycian' >N 334 (Tlos)</span></td></tr><tr><th scope='row'>6</th><td><span docid='6' langid='lycian' >N 335 (Asartaş)</span></td></tr><tr><th scope='row'>122</th><td><span docid='122' langid='lycian' >N 336 (Pinara)</span></td></tr><tr><th scope='row'>90</th><td><span docid='90' langid='lycian' >N 337 (Limyra)</span></td></tr><tr><th scope='row'>179</th><td><span docid='179' langid='lycian' >N 341 (Xanthos)</span></td></tr><tr><th scope='row'>180</th><td><span docid='180' langid='lycian' >N 344 (Xanthos)</span></td></tr><tr><th scope='row'>185</th><td><span docid='185' langid='lycian' >N 351 (Beybonak)</span></td></tr><tr><th scope='row'>38</th><td><span docid='38' langid='lycian' >TL 099 (Limyra)</span></td></tr><tr><th scope='row'>131</th><td><span docid='131' langid='lycian' >TL 1 (Telmessos)</span></td></tr><tr><th scope='row'>110</th><td><span docid='110' langid='lycian' >TL 10 (Pinara)</span></td></tr><tr><th scope='row'>39</th><td><span docid='39' langid='lycian' >TL 100 (Limyra)</span></td></tr><tr><th scope='row'>40</th><td><span docid='40' langid='lycian' >TL 101 (Limyra)</span></td></tr><tr><th scope='row'>41</th><td><span docid='41' langid='lycian' >TL 102 (Limyra)</span></td></tr><tr><th scope='row'>42</th><td><span docid='42' langid='lycian' >TL 103 (Limyra)</span></td></tr><tr><th scope='row'>43</th><td><span docid='43' langid='lycian' >TL 104 (Limyra)</span></td></tr><tr><th scope='row'>44</th><td><span docid='44' langid='lycian' >TL 105 (Limyra)</span></td></tr><tr><th scope='row'>45</th><td><span docid='45' langid='lycian' >TL 106 (Limyra)</span></td></tr><tr><th scope='row'>46</th><td><span docid='46' langid='lycian' >TL 107 (Limyra)</span></td></tr><tr><th scope='row'>47</th><td><span docid='47' langid='lycian' >TL 108 (Limyra)</span></td></tr><tr><th scope='row'>48</th><td><span docid='48' langid='lycian' >TL 109 (Limyra)</span></td></tr><tr><th scope='row'>111</th><td><span docid='111' langid='lycian' >TL 11 (Pinara)</span></td></tr><tr><th scope='row'>49</th><td><span docid='49' langid='lycian' >TL 110 (Limyra)</span></td></tr><tr><th scope='row'>50</th><td><span docid='50' langid='lycian' >TL 111 (Limyra)</span></td></tr><tr><th scope='row'>51</th><td><span docid='51' langid='lycian' >TL 112 (Limyra)</span></td></tr><tr><th scope='row'>52</th><td><span docid='52' langid='lycian' >TL 113 (Limyra)</span></td></tr><tr><th scope='row'>53</th><td><span docid='53' langid='lycian' >TL 114 (Limyra)</span></td></tr><tr><th scope='row'>54</th><td><span docid='54' langid='lycian' >TL 115 (Limyra)</span></td></tr><tr><th scope='row'>55</th><td><span docid='55' langid='lycian' >TL 116 (Limyra)</span></td></tr><tr><th scope='row'>56</th><td><span docid='56' langid='lycian' >TL 117 (Limyra)</span></td></tr><tr><th scope='row'>57</th><td><span docid='57' langid='lycian' >TL 118 (Limyra)</span></td></tr><tr><th scope='row'>58</th><td><span docid='58' langid='lycian' >TL 119 (Limyra)</span></td></tr><tr><th scope='row'>112</th><td><span docid='112' langid='lycian' >TL 12 (Pinara)</span></td></tr><tr><th scope='row'>59</th><td><span docid='59' langid='lycian' >TL 120 (Limyra)</span></td></tr><tr><th scope='row'>60</th><td><span docid='60' langid='lycian' >TL 121 (Limyra)</span></td></tr><tr><th scope='row'>61</th><td><span docid='61' langid='lycian' >TL 122 (Limyra)</span></td></tr><tr><th scope='row'>62</th><td><span docid='62' langid='lycian' >TL 123 (Limyra)</span></td></tr><tr><th scope='row'>63</th><td><span docid='63' langid='lycian' >TL 124 (Limyra)</span></td></tr><tr><th scope='row'>64</th><td><span docid='64' langid='lycian' >TL 125 (Limyra)</span></td></tr><tr><th scope='row'>65</th><td><span docid='65' langid='lycian' >TL 126 (Limyra)</span></td></tr><tr><th scope='row'>66</th><td><span docid='66' langid='lycian' >TL 127 (Limyra)</span></td></tr><tr><th scope='row'>67</th><td><span docid='67' langid='lycian' >TL 128 (Limyra)</span></td></tr><tr><th scope='row'>68</th><td><span docid='68' langid='lycian' >TL 129 (Limyra)</span></td></tr><tr><th scope='row'>113</th><td><span docid='113' langid='lycian' >TL 13 (Pinara)</span></td></tr><tr><th scope='row'>69</th><td><span docid='69' langid='lycian' >TL 130 (Limyra)</span></td></tr><tr><th scope='row'>70</th><td><span docid='70' langid='lycian' >TL 131 (Limyra)</span></td></tr><tr><th scope='row'>71</th><td><span docid='71' langid='lycian' >TL 132 (Limyra)</span></td></tr><tr><th scope='row'>72</th><td><span docid='72' langid='lycian' >TL 133 (Limyra)</span></td></tr><tr><th scope='row'>73</th><td><span docid='73' langid='lycian' >TL 134 (Limyra)</span></td></tr><tr><th scope='row'>74</th><td><span docid='74' langid='lycian' >TL 135 (Limyra)</span></td></tr><tr><th scope='row'>75</th><td><span docid='75' langid='lycian' >TL 136 (Limyra)</span></td></tr><tr><th scope='row'>76</th><td><span docid='76' langid='lycian' >TL 137 (Limyra)</span></td></tr><tr><th scope='row'>77</th><td><span docid='77' langid='lycian' >TL 138 (Limyra)</span></td></tr><tr><th scope='row'>78</th><td><span docid='78' langid='lycian' >TL 139 (Limyra)</span></td></tr><tr><th scope='row'>114</th><td><span docid='114' langid='lycian' >TL 14 (Pinara)</span></td></tr><tr><th scope='row'>79</th><td><span docid='79' langid='lycian' >TL 140 (Limyra)</span></td></tr><tr><th scope='row'>80</th><td><span docid='80' langid='lycian' >TL 141 (Limyra)</span></td></tr><tr><th scope='row'>81</th><td><span docid='81' langid='lycian' >TL 142 (Limyra)</span></td></tr><tr><th scope='row'>82</th><td><span docid='82' langid='lycian' >TL 143 (Limyra)</span></td></tr><tr><th scope='row'>83</th><td><span docid='83' langid='lycian' >TL 144 (Limyra)</span></td></tr><tr><th scope='row'>84</th><td><span docid='84' langid='lycian' >TL 145 (Limyra)</span></td></tr><tr><th scope='row'>85</th><td><span docid='85' langid='lycian' >TL 146 (Limyra)</span></td></tr><tr><th scope='row'>86</th><td><span docid='86' langid='lycian' >TL 147 (Limyra)</span></td></tr><tr><th scope='row'>87</th><td><span docid='87' langid='lycian' >TL 148 (Limyra)</span></td></tr><tr><th scope='row'>123</th><td><span docid='123' langid='lycian' >TL 149 (Rhodiapolis)</span></td></tr><tr><th scope='row'>115</th><td><span docid='115' langid='lycian' >TL 15 (Pinara)</span></td></tr><tr><th scope='row'>124</th><td><span docid='124' langid='lycian' >TL 150 (Rhodiapolis)</span></td></tr><tr><th scope='row'>116</th><td><span docid='116' langid='lycian' >TL 16 (Pinara)</span></td></tr><tr><th scope='row'>117</th><td><span docid='117' langid='lycian' >TL 17 (Pinara)</span></td></tr><tr><th scope='row'>118</th><td><span docid='118' langid='lycian' >TL 18 (Pinara)</span></td></tr><tr><th scope='row'>119</th><td><span docid='119' langid='lycian' >TL 19 (Pinara)</span></td></tr><tr><th scope='row'>132</th><td><span docid='132' langid='lycian' >TL 2 (Telmessos)</span></td></tr><tr><th scope='row'>120</th><td><span docid='120' langid='lycian' >TL 20 (Pinara)</span></td></tr><tr><th scope='row'>138</th><td><span docid='138' langid='lycian' >TL 21 (Tlos)</span></td></tr><tr><th scope='row'>139</th><td><span docid='139' langid='lycian' >TL 22 (Tlos)</span></td></tr><tr><th scope='row'>140</th><td><span docid='140' langid='lycian' >TL 23 (Tlos)</span></td></tr><tr><th scope='row'>141</th><td><span docid='141' langid='lycian' >TL 24 (Tlos)</span></td></tr><tr><th scope='row'>142</th><td><span docid='142' langid='lycian' >TL 25 (Tlos)</span></td></tr><tr><th scope='row'>143</th><td><span docid='143' langid='lycian' >TL 26 (Tlos)</span></td></tr><tr><th scope='row'>9</th><td><span docid='9' langid='lycian' >TL 27 (Düwer)</span></td></tr><tr><th scope='row'>144</th><td><span docid='144' langid='lycian' >TL 28 (Tlos)</span></td></tr><tr><th scope='row'>145</th><td><span docid='145' langid='lycian' >TL 29 (Tlos)</span></td></tr><tr><th scope='row'>133</th><td><span docid='133' langid='lycian' >TL 3 (Telmessos)</span></td></tr><tr><th scope='row'>146</th><td><span docid='146' langid='lycian' >TL 30 (Tlos)</span></td></tr><tr><th scope='row'>19</th><td><span docid='19' langid='lycian' >TL 31 (Kadyanda)</span></td></tr><tr><th scope='row'>20</th><td><span docid='20' langid='lycian' >TL 32 (Kadyanda)</span></td></tr><tr><th scope='row'>21</th><td><span docid='21' langid='lycian' >TL 33 (Kadyanda)</span></td></tr><tr><th scope='row'>22</th><td><span docid='22' langid='lycian' >TL 34 (Kadyanda)</span></td></tr><tr><th scope='row'>153</th><td><span docid='153' langid='lycian' >TL 35 (Üsümlü)</span></td></tr><tr><th scope='row'>154</th><td><span docid='154' langid='lycian' >TL 36 (Xanthos)</span></td></tr><tr><th scope='row'>155</th><td><span docid='155' langid='lycian' >TL 37 (Xanthos)</span></td></tr><tr><th scope='row'>156</th><td><span docid='156' langid='lycian' >TL 38 (Xanthos)</span></td></tr><tr><th scope='row'>157</th><td><span docid='157' langid='lycian' >TL 39 (Xanthos)</span></td></tr><tr><th scope='row'>134</th><td><span docid='134' langid='lycian' >TL 4 (Telmessos)</span></td></tr><tr><th scope='row'>158</th><td><span docid='158' langid='lycian' >TL 40 (Xanthos)</span></td></tr><tr><th scope='row'>159</th><td><span docid='159' langid='lycian' >TL 41 (Xanthos)</span></td></tr><tr><th scope='row'>160</th><td><span docid='160' langid='lycian' >TL 42 (Xanthos)</span></td></tr><tr><th scope='row'>161</th><td><span docid='161' langid='lycian' >TL 43 (Xanthos)</span></td></tr><tr><th scope='row'>162</th><td><span docid='162' langid='lycian' >TL 44 (Xanthos)</span></td></tr><tr><th scope='row'>163</th><td><span docid='163' langid='lycian' >TL 45 (Xanthos)</span></td></tr><tr><th scope='row'>164</th><td><span docid='164' langid='lycian' >TL 46 (Xanthos)</span></td></tr><tr><th scope='row'>165</th><td><span docid='165' langid='lycian' >TL 47 (Xanthos)</span></td></tr><tr><th scope='row'>166</th><td><span docid='166' langid='lycian' >TL 48 (Xanthos)</span></td></tr><tr><th scope='row'>167</th><td><span docid='167' langid='lycian' >TL 49 (Xanthos)</span></td></tr><tr><th scope='row'>135</th><td><span docid='135' langid='lycian' >TL 5 (Telmessos)</span></td></tr><tr><th scope='row'>168</th><td><span docid='168' langid='lycian' >TL 50 (Xanthos)</span></td></tr><tr><th scope='row'>169</th><td><span docid='169' langid='lycian' >TL 51 (Xanthos)</span></td></tr><tr><th scope='row'>127</th><td><span docid='127' langid='lycian' >TL 52 (Sidek-Yayla)</span></td></tr><tr><th scope='row'>125</th><td><span docid='125' langid='lycian' >TL 53 (Seyret)</span></td></tr><tr><th scope='row'>106</th><td><span docid='106' langid='lycian' >TL 54 (Phellos)</span></td></tr><tr><th scope='row'>0</th><td><span docid='0' langid='lycian' >TL 56 (Antiphellos)</span></td></tr><tr><th scope='row'>1</th><td><span docid='1' langid='lycian' >TL 57 (Antiphellos)</span></td></tr><tr><th scope='row'>2</th><td><span docid='2' langid='lycian' >TL 58 (Antiphellos)</span></td></tr><tr><th scope='row'>3</th><td><span docid='3' langid='lycian' >TL 59 (Antiphellos)</span></td></tr><tr><th scope='row'>25</th><td><span docid='25' langid='lycian' >TL 6 (Karmylessos)</span></td></tr><tr><th scope='row'>4</th><td><span docid='4' langid='lycian' >TL 60 (Antiphellos)</span></td></tr><tr><th scope='row'>107</th><td><span docid='107' langid='lycian' >TL 61 (Phellos)</span></td></tr><tr><th scope='row'>14</th><td><span docid='14' langid='lycian' >TL 62 (Isinda)</span></td></tr><tr><th scope='row'>15</th><td><span docid='15' langid='lycian' >TL 63 (Isinda)</span></td></tr><tr><th scope='row'>16</th><td><span docid='16' langid='lycian' >TL 64 (Isinda)</span></td></tr><tr><th scope='row'>17</th><td><span docid='17' langid='lycian' >TL 65 (Isinda)</span></td></tr><tr><th scope='row'>136</th><td><span docid='136' langid='lycian' >TL 66 (Timiusa)</span></td></tr><tr><th scope='row'>137</th><td><span docid='137' langid='lycian' >TL 67 (Timiusa)</span></td></tr><tr><th scope='row'>128</th><td><span docid='128' langid='lycian' >TL 68 (Simena)</span></td></tr><tr><th scope='row'>32</th><td><span docid='32' langid='lycian' >TL 69 (Kyana)</span></td></tr><tr><th scope='row'>26</th><td><span docid='26' langid='lycian' >TL 7 (Karmylessos)</span></td></tr><tr><th scope='row'>33</th><td><span docid='33' langid='lycian' >TL 70 (Kyana)</span></td></tr><tr><th scope='row'>34</th><td><span docid='34' langid='lycian' >TL 71 (Kyana)</span></td></tr><tr><th scope='row'>35</th><td><span docid='35' langid='lycian' >TL 72 (Kyana)</span></td></tr><tr><th scope='row'>36</th><td><span docid='36' langid='lycian' >TL 73 (Kyana)</span></td></tr><tr><th scope='row'>13</th><td><span docid='13' langid='lycian' >TL 74 (Hoiran)</span></td></tr><tr><th scope='row'>149</th><td><span docid='149' langid='lycian' >TL 75 (Tyberisos)</span></td></tr><tr><th scope='row'>150</th><td><span docid='150' langid='lycian' >TL 76 (Tyberisos)</span></td></tr><tr><th scope='row'>8</th><td><span docid='8' langid='lycian' >TL 77 (Ҫindam)</span></td></tr><tr><th scope='row'>151</th><td><span docid='151' langid='lycian' >TL 78 (Tyssa)</span></td></tr><tr><th scope='row'>152</th><td><span docid='152' langid='lycian' >TL 79 (Tyssa)</span></td></tr><tr><th scope='row'>27</th><td><span docid='27' langid='lycian' >TL 8 (Karmylessos)</span></td></tr><tr><th scope='row'>28</th><td><span docid='28' langid='lycian' >TL 80 (Kaş)</span></td></tr><tr><th scope='row'>23</th><td><span docid='23' langid='lycian' >TL 81 (Kandyba)</span></td></tr><tr><th scope='row'>24</th><td><span docid='24' langid='lycian' >TL 82 (Kandyba)</span></td></tr><tr><th scope='row'>5</th><td><span docid='5' langid='lycian' >TL 83 (Arneai)</span></td></tr><tr><th scope='row'>129</th><td><span docid='129' langid='lycian' >TL 84 (Sura)</span></td></tr><tr><th scope='row'>91</th><td><span docid='91' langid='lycian' >TL 85 (Myra)</span></td></tr><tr><th scope='row'>92</th><td><span docid='92' langid='lycian' >TL 86 (Myra)</span></td></tr><tr><th scope='row'>93</th><td><span docid='93' langid='lycian' >TL 87 (Myra)</span></td></tr><tr><th scope='row'>94</th><td><span docid='94' langid='lycian' >TL 88 (Myra)</span></td></tr><tr><th scope='row'>95</th><td><span docid='95' langid='lycian' >TL 89 (Myra)</span></td></tr><tr><th scope='row'>12</th><td><span docid='12' langid='lycian' >TL 9 (Gülme)</span></td></tr><tr><th scope='row'>96</th><td><span docid='96' langid='lycian' >TL 90 (Myra)</span></td></tr><tr><th scope='row'>97</th><td><span docid='97' langid='lycian' >TL 91 (Myra)</span></td></tr><tr><th scope='row'>98</th><td><span docid='98' langid='lycian' >TL 92 (Myra)</span></td></tr><tr><th scope='row'>99</th><td><span docid='99' langid='lycian' >TL 93 (Myra)</span></td></tr><tr><th scope='row'>100</th><td><span docid='100' langid='lycian' >TL 94 (Myra)</span></td></tr><tr><th scope='row'>101</th><td><span docid='101' langid='lycian' >TL 95 (Myra)</span></td></tr><tr><th scope='row'>102</th><td><span docid='102' langid='lycian' >TL 96 (Myra)</span></td></tr><tr><th scope='row'>103</th><td><span docid='103' langid='lycian' >TL 97 (Myra)</span></td></tr><tr><th scope='row'>37</th><td><span docid='37' langid='lycian' >TL 98 (Limyra)</span></td></tr>										</tbody>
+									</table>
+	  </div>
+      <div class="tab-pane " id="list-lyd" role="tabpanel" aria-labelledby="list-settings-list">
+	   								<label><i class="fas fa-search"></i> Search</label>
+      								<input type="text" id="searchText_lyd" class="form-control">
+
+	  	  							<table id="lydian_table" class="table table-striped table-hover table-bordered">
+									  <thead>
+										<tr>
+										  <th scope="col">#</th>
+										  <th scope="col">Text</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr><th scope='row'>95</th><td><span docid='95' langid='lydian' >LW 1 (Sardis)</span></td></tr><tr><th scope='row'>51</th><td><span docid='51' langid='lydian' >LW 10 (Sardis)</span></td></tr><tr><th scope='row'>101</th><td><span docid='101' langid='lydian' >LW 100 (Sardis)</span></td></tr><tr><th scope='row'>107</th><td><span docid='107' langid='lydian' >LW 101 (Sardis)</span></td></tr><tr><th scope='row'>26</th><td><span docid='26' langid='lydian' >LW 102</span></td></tr><tr><th scope='row'>108</th><td><span docid='108' langid='lydian' >LW 103 (Sardis)</span></td></tr><tr><th scope='row'>27</th><td><span docid='27' langid='lydian' >LW 104</span></td></tr><tr><th scope='row'>28</th><td><span docid='28' langid='lydian' >LW 105</span></td></tr><tr><th scope='row'>29</th><td><span docid='29' langid='lydian' >LW 106</span></td></tr><tr><th scope='row'>109</th><td><span docid='109' langid='lydian' >LW 107 (Sardis)</span></td></tr><tr><th scope='row'>102</th><td><span docid='102' langid='lydian' >LW 108 (Sardis)</span></td></tr><tr><th scope='row'>8</th><td><span docid='8' langid='lydian' >LW 109 (Sardis)</span></td></tr><tr><th scope='row'>52</th><td><span docid='52' langid='lydian' >LW 11 (Sardis)</span></td></tr><tr><th scope='row'>53</th><td><span docid='53' langid='lydian' >LW 12 (Sardis)</span></td></tr><tr><th scope='row'>54</th><td><span docid='54' langid='lydian' >LW 13 (Sardis)</span></td></tr><tr><th scope='row'>55</th><td><span docid='55' langid='lydian' >LW 14 (Sardis)</span></td></tr><tr><th scope='row'>56</th><td><span docid='56' langid='lydian' >LW 15 (Sardis)</span></td></tr><tr><th scope='row'>57</th><td><span docid='57' langid='lydian' >LW 16 (Sardis)</span></td></tr><tr><th scope='row'>90</th><td><span docid='90' langid='lydian' >LW 17 (Sardis)</span></td></tr><tr><th scope='row'>58</th><td><span docid='58' langid='lydian' >LW 18 (Sardis)</span></td></tr><tr><th scope='row'>59</th><td><span docid='59' langid='lydian' >LW 19 (Sardis)</span></td></tr><tr><th scope='row'>96</th><td><span docid='96' langid='lydian' >LW 2 (Sardis)</span></td></tr><tr><th scope='row'>60</th><td><span docid='60' langid='lydian' >LW 20 (Sardis)</span></td></tr><tr><th scope='row'>61</th><td><span docid='61' langid='lydian' >LW 21 (Sardis)</span></td></tr><tr><th scope='row'>62</th><td><span docid='62' langid='lydian' >LW 22 (Sardis)</span></td></tr><tr><th scope='row'>63</th><td><span docid='63' langid='lydian' >LW 23 (Sardis)</span></td></tr><tr><th scope='row'>64</th><td><span docid='64' langid='lydian' >LW 24 (Sardis)</span></td></tr><tr><th scope='row'>65</th><td><span docid='65' langid='lydian' >LW 25 (Sardis)</span></td></tr><tr><th scope='row'>66</th><td><span docid='66' langid='lydian' >LW 26 (Sardis)</span></td></tr><tr><th scope='row'>67</th><td><span docid='67' langid='lydian' >LW 27 (Sardis)</span></td></tr><tr><th scope='row'>68</th><td><span docid='68' langid='lydian' >LW 28 (Sardis)</span></td></tr><tr><th scope='row'>69</th><td><span docid='69' langid='lydian' >LW 29 (Sardis)</span></td></tr><tr><th scope='row'>99</th><td><span docid='99' langid='lydian' >LW 3 (Sardis)</span></td></tr><tr><th scope='row'>10</th><td><span docid='10' langid='lydian' >LW 30 (Sardis)</span></td></tr><tr><th scope='row'>11</th><td><span docid='11' langid='lydian' >LW 31 (Sardis)</span></td></tr><tr><th scope='row'>12</th><td><span docid='12' langid='lydian' >LW 32 (Sardis)</span></td></tr><tr><th scope='row'>70</th><td><span docid='70' langid='lydian' >LW 33 (Sardis)</span></td></tr><tr><th scope='row'>71</th><td><span docid='71' langid='lydian' >LW 34 (Sardis)</span></td></tr><tr><th scope='row'>72</th><td><span docid='72' langid='lydian' >LW 35 (Sardis)</span></td></tr><tr><th scope='row'>73</th><td><span docid='73' langid='lydian' >LW 36 (Sardis)</span></td></tr><tr><th scope='row'>74</th><td><span docid='74' langid='lydian' >LW 37 (Sardis)</span></td></tr><tr><th scope='row'>75</th><td><span docid='75' langid='lydian' >LW 38 (Sardis)</span></td></tr><tr><th scope='row'>76</th><td><span docid='76' langid='lydian' >LW 39 (Sardis)</span></td></tr><tr><th scope='row'>103</th><td><span docid='103' langid='lydian' >LW 40 (Pergamum)</span></td></tr><tr><th scope='row'>97</th><td><span docid='97' langid='lydian' >LW 41 (Middle Kaystros)</span></td></tr><tr><th scope='row'>82</th><td><span docid='82' langid='lydian' >LW 42 (Emre; Maionia)</span></td></tr><tr><th scope='row'>83</th><td><span docid='83' langid='lydian' >LW 43 (Magnesia on Mt. Sipylus)</span></td></tr><tr><th scope='row'>84</th><td><span docid='84' langid='lydian' >LW 44 (Magnesia on Mt. Sipylus), 1st column</span></td></tr><tr><th scope='row'>85</th><td><span docid='85' langid='lydian' >LW 44 (Magnesia on Mt. Sipylus), 2nd column</span></td></tr><tr><th scope='row'>87</th><td><span docid='87' langid='lydian' >LW 45 (Kogamos valley)</span></td></tr><tr><th scope='row'>86</th><td><span docid='86' langid='lydian' >LW 46 (Magnesia on Mt. Sipylus)</span></td></tr><tr><th scope='row'>81</th><td><span docid='81' langid='lydian' >LW 47 (Middle Kaystros)</span></td></tr><tr><th scope='row'>20</th><td><span docid='20' langid='lydian' >LW 48 (Ephesus)</span></td></tr><tr><th scope='row'>9</th><td><span docid='9' langid='lydian' >LW 49 (Silsilis; High Egypt)</span></td></tr><tr><th scope='row'>45</th><td><span docid='45' langid='lydian' >LW 4a (Sardis)</span></td></tr><tr><th scope='row'>46</th><td><span docid='46' langid='lydian' >LW 4b (Sardis)</span></td></tr><tr><th scope='row'>47</th><td><span docid='47' langid='lydian' >LW 5 (Sardis)</span></td></tr><tr><th scope='row'>100</th><td><span docid='100' langid='lydian' >LW 50 (Middle Kaystros)</span></td></tr><tr><th scope='row'>30</th><td><span docid='30' langid='lydian' >LW 51 (Sardis)</span></td></tr><tr><th scope='row'>3</th><td><span docid='3' langid='lydian' >LW 52 (Ephesus)</span></td></tr><tr><th scope='row'>88</th><td><span docid='88' langid='lydian' >LW 53 (High Hermos)</span></td></tr><tr><th scope='row'>31</th><td><span docid='31' langid='lydian' >LW 54 (Sardis)</span></td></tr><tr><th scope='row'>24</th><td><span docid='24' langid='lydian' >LW 55</span></td></tr><tr><th scope='row'>25</th><td><span docid='25' langid='lydian' >LW 56</span></td></tr><tr><th scope='row'>32</th><td><span docid='32' langid='lydian' >LW 57 (Sardis)</span></td></tr><tr><th scope='row'>5</th><td><span docid='5' langid='lydian' >LW 58 (Sardis)</span></td></tr><tr><th scope='row'>77</th><td><span docid='77' langid='lydian' >LW 59 (Sardis)</span></td></tr><tr><th scope='row'>48</th><td><span docid='48' langid='lydian' >LW 6 (Sardis)</span></td></tr><tr><th scope='row'>14</th><td><span docid='14' langid='lydian' >LW 60 (Sardis)</span></td></tr><tr><th scope='row'>78</th><td><span docid='78' langid='lydian' >LW 61 (Sardis)</span></td></tr><tr><th scope='row'>110</th><td><span docid='110' langid='lydian' >LW 62 (Middle Kaystros)</span></td></tr><tr><th scope='row'>6</th><td><span docid='6' langid='lydian' >LW 63 (Sardis)</span></td></tr><tr><th scope='row'>21</th><td><span docid='21' langid='lydian' >LW 64 (Sardis)</span></td></tr><tr><th scope='row'>104</th><td><span docid='104' langid='lydian' >LW 65 (Sardis)</span></td></tr><tr><th scope='row'>43</th><td><span docid='43' langid='lydian' >LW 66 (Sardis)</span></td></tr><tr><th scope='row'>2</th><td><span docid='2' langid='lydian' >LW 67 (Sardis)</span></td></tr><tr><th scope='row'>33</th><td><span docid='33' langid='lydian' >LW 68 (Sardis)</span></td></tr><tr><th scope='row'>4</th><td><span docid='4' langid='lydian' >LW 69 (Colophon)</span></td></tr><tr><th scope='row'>49</th><td><span docid='49' langid='lydian' >LW 7 (Sardis)</span></td></tr><tr><th scope='row'>79</th><td><span docid='79' langid='lydian' >LW 70 (Sardis)</span></td></tr><tr><th scope='row'>91</th><td><span docid='91' langid='lydian' >LW 71 (Sardis)</span></td></tr><tr><th scope='row'>7</th><td><span docid='7' langid='lydian' >LW 72 (Sardis)</span></td></tr><tr><th scope='row'>111</th><td><span docid='111' langid='lydian' >LW 73 (Kerč; Chersonesus Taurica)</span></td></tr><tr><th scope='row'>38</th><td><span docid='38' langid='lydian' >LW 74</span></td></tr><tr><th scope='row'>39</th><td><span docid='39' langid='lydian' >LW 75</span></td></tr><tr><th scope='row'>40</th><td><span docid='40' langid='lydian' >LW 76</span></td></tr><tr><th scope='row'>41</th><td><span docid='41' langid='lydian' >LW 77</span></td></tr><tr><th scope='row'>42</th><td><span docid='42' langid='lydian' >LW 78</span></td></tr><tr><th scope='row'>112</th><td><span docid='112' langid='lydian' >LW 79 (Aphrodisias)</span></td></tr><tr><th scope='row'>89</th><td><span docid='89' langid='lydian' >LW 8 (Sardis)</span></td></tr><tr><th scope='row'>92</th><td><span docid='92' langid='lydian' >LW 80 (Sardis)</span></td></tr><tr><th scope='row'>80</th><td><span docid='80' langid='lydian' >LW 81 (Sardis)</span></td></tr><tr><th scope='row'>93</th><td><span docid='93' langid='lydian' >LW 82 (Sardis)</span></td></tr><tr><th scope='row'>34</th><td><span docid='34' langid='lydian' >LW 83 (Sardis)</span></td></tr><tr><th scope='row'>35</th><td><span docid='35' langid='lydian' >LW 84 (Sardis)</span></td></tr><tr><th scope='row'>13</th><td><span docid='13' langid='lydian' >LW 85 (Sardis)</span></td></tr><tr><th scope='row'>105</th><td><span docid='105' langid='lydian' >LW 86 (Sardis)</span></td></tr><tr><th scope='row'>15</th><td><span docid='15' langid='lydian' >LW 87 (Sardis)</span></td></tr><tr><th scope='row'>16</th><td><span docid='16' langid='lydian' >LW 88 (Sardis)</span></td></tr><tr><th scope='row'>17</th><td><span docid='17' langid='lydian' >LW 89 (Sardis)</span></td></tr><tr><th scope='row'>50</th><td><span docid='50' langid='lydian' >LW 9 (Sardis)</span></td></tr><tr><th scope='row'>36</th><td><span docid='36' langid='lydian' >LW 90 (Sardis)</span></td></tr><tr><th scope='row'>44</th><td><span docid='44' langid='lydian' >LW 91 (Sardis)</span></td></tr><tr><th scope='row'>18</th><td><span docid='18' langid='lydian' >LW 92 (Sardis)</span></td></tr><tr><th scope='row'>106</th><td><span docid='106' langid='lydian' >LW 93 (Sardis)</span></td></tr><tr><th scope='row'>37</th><td><span docid='37' langid='lydian' >LW 94 (Sardis)</span></td></tr><tr><th scope='row'>113</th><td><span docid='113' langid='lydian' >LW 95</span></td></tr><tr><th scope='row'>0</th><td><span docid='0' langid='lydian' >LW 96 (Bayraklı; near Smyrna)</span></td></tr><tr><th scope='row'>22</th><td><span docid='22' langid='lydian' >LW 96 (Bayraklı; near Smyrna)</span></td></tr><tr><th scope='row'>23</th><td><span docid='23' langid='lydian' >LW 96 (Bayraklı; near Smyrna)</span></td></tr><tr><th scope='row'>19</th><td><span docid='19' langid='lydian' >LW 99 (Sardis)</span></td></tr><tr><th scope='row'>114</th><td><span docid='114' langid='lydian' >LW/N 110</span></td></tr><tr><th scope='row'>115</th><td><span docid='115' langid='lydian' >LW/N 111</span></td></tr><tr><th scope='row'>116</th><td><span docid='116' langid='lydian' >LW/N 113 (Miletus)</span></td></tr><tr><th scope='row'>1</th><td><span docid='1' langid='lydian' >LW/N 114</span></td></tr><tr><th scope='row'>98</th><td><span docid='98' langid='lydian' >LW/N 115 (Lake Koloe)</span></td></tr><tr><th scope='row'>94</th><td><span docid='94' langid='lydian' >LW/N 116</span></td></tr><tr><th scope='row'>117</th><td><span docid='117' langid='lydian' >LW/N 117</span></td></tr>										</tbody>
+									</table>
+	
+	  </div>
+	  <div class="tab-pane" id="list-pisi" role="tabpanel" aria-labelledby="list-1-list">
+	   								<label><i class="fas fa-search"></i> Search</label>
+      								<input type="text" id="searchText_pisi" class="form-control">
+
+	  	  							<table id="pisidian_table"  class="table table-striped table-hover table-bordered">
+									  <thead>
+										<tr>
+										  <th scope="col">#</th>
+										  <th scope="col">Text</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr><th scope='row'>0</th><td><span docid='0' langid='pisidian' >N 01 (Sofular)</span></td></tr><tr><th scope='row'>1</th><td><span docid='1' langid='pisidian' >N 02 (Sofular)</span></td></tr><tr><th scope='row'>2</th><td><span docid='2' langid='pisidian' >N 03 (Sofular)</span></td></tr><tr><th scope='row'>3</th><td><span docid='3' langid='pisidian' >N 04 (Sofular)</span></td></tr><tr><th scope='row'>4</th><td><span docid='4' langid='pisidian' >N 05 (Sofular)</span></td></tr><tr><th scope='row'>5</th><td><span docid='5' langid='pisidian' >N 06 (Sofular)</span></td></tr><tr><th scope='row'>6</th><td><span docid='6' langid='pisidian' >N 07 (Sofular)</span></td></tr><tr><th scope='row'>7</th><td><span docid='7' langid='pisidian' >N 08 (Sofular)</span></td></tr><tr><th scope='row'>8</th><td><span docid='8' langid='pisidian' >N 09 (Sofular)</span></td></tr><tr><th scope='row'>9</th><td><span docid='9' langid='pisidian' >N 10 (Sofular)</span></td></tr><tr><th scope='row'>10</th><td><span docid='10' langid='pisidian' >N 11 (Sofular)</span></td></tr><tr><th scope='row'>11</th><td><span docid='11' langid='pisidian' >N 12 (Sofular)</span></td></tr><tr><th scope='row'>12</th><td><span docid='12' langid='pisidian' >N 13 (Sofular)</span></td></tr><tr><th scope='row'>13</th><td><span docid='13' langid='pisidian' >N 14 (Sofular)</span></td></tr><tr><th scope='row'>14</th><td><span docid='14' langid='pisidian' >N 15 (Sofular)</span></td></tr><tr><th scope='row'>15</th><td><span docid='15' langid='pisidian' >N 16 (Sofular)</span></td></tr><tr><th scope='row'>16</th><td><span docid='16' langid='pisidian' >N 17 (Sofular)</span></td></tr><tr><th scope='row'>17</th><td><span docid='17' langid='pisidian' >N 18 (Collection Rahmi Koç)</span></td></tr><tr><th scope='row'>18</th><td><span docid='18' langid='pisidian' >N 19 (Collection Rahmi Koç)</span></td></tr><tr><th scope='row'>19</th><td><span docid='19' langid='pisidian' >N 20 (Collection Rahmi Koç)</span></td></tr><tr><th scope='row'>20</th><td><span docid='20' langid='pisidian' >N 21 (Collection Rahmi Koç)</span></td></tr><tr><th scope='row'>21</th><td><span docid='21' langid='pisidian' >N 22 (Collection Rahmi Koç)</span></td></tr><tr><th scope='row'>22</th><td><span docid='22' langid='pisidian' >N 23 (Sofular)</span></td></tr><tr><th scope='row'>23</th><td><span docid='23' langid='pisidian' >N 24 (Sofular)</span></td></tr><tr><th scope='row'>24</th><td><span docid='24' langid='pisidian' >N 25 (Sofular)</span></td></tr><tr><th scope='row'>25</th><td><span docid='25' langid='pisidian' >N 26 (Sofular)</span></td></tr><tr><th scope='row'>26</th><td><span docid='26' langid='pisidian' >N 27 (Sofular)</span></td></tr><tr><th scope='row'>27</th><td><span docid='27' langid='pisidian' >N 28 (Sofular)</span></td></tr><tr><th scope='row'>28</th><td><span docid='28' langid='pisidian' >N 29 (Zindan Mağarası)</span></td></tr><tr><th scope='row'>29</th><td><span docid='29' langid='pisidian' >N 30 (Zindan Mağarası)</span></td></tr><tr><th scope='row'>30</th><td><span docid='30' langid='pisidian' >N 31 (Zindan Mağarası)</span></td></tr><tr><th scope='row'>31</th><td><span docid='31' langid='pisidian' >N 32 (Zindan Mağarası)</span></td></tr><tr><th scope='row'>32</th><td><span docid='32' langid='pisidian' >N 33 (Sofular)</span></td></tr><tr><th scope='row'>33</th><td><span docid='33' langid='pisidian' >N 34 (Sofular)</span></td></tr><tr><th scope='row'>34</th><td><span docid='34' langid='pisidian' >N 35 (Zindan Mağarası)</span></td></tr><tr><th scope='row'>35</th><td><span docid='35' langid='pisidian' >N 35a (Sofular)</span></td></tr><tr><th scope='row'>36</th><td><span docid='36' langid='pisidian' >N 36 (Sofular)</span></td></tr><tr><th scope='row'>37</th><td><span docid='37' langid='pisidian' >N 37 (Yayla de Senitli)</span></td></tr><tr><th scope='row'>38</th><td><span docid='38' langid='pisidian' >N 38 (Yayla de Senitli)</span></td></tr><tr><th scope='row'>39</th><td><span docid='39' langid='pisidian' >N 39</span></td></tr><tr><th scope='row'>40</th><td><span docid='40' langid='pisidian' >N 40</span></td></tr><tr><th scope='row'>41</th><td><span docid='41' langid='pisidian' >N 41</span></td></tr><tr><th scope='row'>42</th><td><span docid='42' langid='pisidian' >N 42</span></td></tr><tr><th scope='row'>43</th><td><span docid='43' langid='pisidian' >N 43</span></td></tr><tr><th scope='row'>44</th><td><span docid='44' langid='pisidian' >N 44</span></td></tr><tr><th scope='row'>45</th><td><span docid='45' langid='pisidian' >N 45</span></td></tr><tr><th scope='row'>46</th><td><span docid='46' langid='pisidian' >N 46</span></td></tr><tr><th scope='row'>47</th><td><span docid='47' langid='pisidian' >N 47</span></td></tr><tr><th scope='row'>48</th><td><span docid='48' langid='pisidian' >N 48</span></td></tr><tr><th scope='row'>49</th><td><span docid='49' langid='pisidian' >N 49</span></td></tr><tr><th scope='row'>50</th><td><span docid='50' langid='pisidian' >S 01 (Kesme)</span></td></tr><tr><th scope='row'>51</th><td><span docid='51' langid='pisidian' >S 02 (Kesme)</span></td></tr><tr><th scope='row'>52</th><td><span docid='52' langid='pisidian' >S 03 (Değirmenözü)</span></td></tr><tr><th scope='row'>53</th><td><span docid='53' langid='pisidian' >S 04 (Değirmenözü)</span></td></tr>										</tbody>
+									</table>
+
+	
+	  </div>
+	  <div class="tab-pane" id="list-pala" role="tabpanel" aria-labelledby="list-2-list">
+	  		   						<label><i class="fas fa-search"></i> Search</label>
+     								<input type="text" id="searchText_pala" class="form-control">
+
+	  	  							<table id="palaic_table" class="table table-striped table-hover table-bordered">
+									  <thead>
+										<tr>
+										  <th scope="col">#</th>
+										  <th scope="col">Text</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr><th scope='row'>5</th><td><span docid='5' langid='palaic' >IBoT 2.36</span></td></tr><tr><th scope='row'>18</th><td><span docid='18' langid='palaic' >KBo 13.265</span></td></tr><tr><th scope='row'>11</th><td><span docid='11' langid='palaic' >KBo 13.267</span></td></tr><tr><th scope='row'>3</th><td><span docid='3' langid='palaic' >KBo 19.150 + IBoT 2.35</span></td></tr><tr><th scope='row'>4</th><td><span docid='4' langid='palaic' >KBo 19.151</span></td></tr><tr><th scope='row'>15</th><td><span docid='15' langid='palaic' >KBo 19.152</span></td></tr><tr><th scope='row'>12</th><td><span docid='12' langid='palaic' >KBo 19.153</span></td></tr><tr><th scope='row'>14</th><td><span docid='14' langid='palaic' >KBo 19.154 + KUB 35.166</span></td></tr><tr><th scope='row'>6</th><td><span docid='6' langid='palaic' >KBo 19.155</span></td></tr><tr><th scope='row'>19</th><td><span docid='19' langid='palaic' >KBo 19.157</span></td></tr><tr><th scope='row'>20</th><td><span docid='20' langid='palaic' >KBo 19.158</span></td></tr><tr><th scope='row'>21</th><td><span docid='21' langid='palaic' >KBo 19.159</span></td></tr><tr><th scope='row'>16</th><td><span docid='16' langid='palaic' >KBo 27.77</span></td></tr><tr><th scope='row'>0</th><td><span docid='0' langid='palaic' >KBo 48.178</span></td></tr><tr><th scope='row'>22</th><td><span docid='22' langid='palaic' >KBo 53.301</span></td></tr><tr><th scope='row'>23</th><td><span docid='23' langid='palaic' >KBo 64.179</span></td></tr><tr><th scope='row'>7</th><td><span docid='7' langid='palaic' >KUB 32.117+</span></td></tr><tr><th scope='row'>2</th><td><span docid='2' langid='palaic' >KUB 32.17 + KUB 35.167</span></td></tr><tr><th scope='row'>8</th><td><span docid='8' langid='palaic' >KUB 32.18</span></td></tr><tr><th scope='row'>13</th><td><span docid='13' langid='palaic' >KUB 35.159</span></td></tr><tr><th scope='row'>17</th><td><span docid='17' langid='palaic' >KUB 35.163</span></td></tr><tr><th scope='row'>9</th><td><span docid='9' langid='palaic' >KUB 35.164 + KBo 25.139 +  KBo 30.39</span></td></tr><tr><th scope='row'>1</th><td><span docid='1' langid='palaic' >KUB 35.165</span></td></tr><tr><th scope='row'>10</th><td><span docid='10' langid='palaic' >KUB 35.168</span></td></tr>										</tbody>
+									</table>
+
+	  </div>
+	   <div class="tab-pane show active" id="list-lycb" role="tabpanel" aria-labelledby="list-3-list">
+	   		   						<label><i class="fas fa-search"></i> Search</label>
+     								<input type="text" id="searchText_lycb" class="form-control">
+
+	  	  							<table id="b_lycian_table" class="table table-striped table-hover table-bordered">
+									  <thead>
+										<tr>
+										  <th scope="col">#</th>
+										  <th scope="col">Text</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr><th scope='row'>1</th><td><span docid='1' langid='milyan' >TL 44 (Xanthos)</span></td></tr><tr><th scope='row'>0</th><td><span docid='0' langid='milyan' >TL 55 (Antiphellos)</span></td></tr>										</tbody>
+									</table>
+	  
+	  
+	  </div>
+
+	   <div class="tab-pane show " id="list-side" role="tabpanel" aria-labelledby="list-4-list">
+	   								<label><i class="fas fa-search"></i> Search</label>
+    								<input type="text" id="searchText_sidetic" class="form-control">
+
+	  	  							<table id="sidetic_table" class="table table-striped table-hover table-bordered">
+									  <thead>
+										<tr>
+										  <th scope="col">#</th>
+										  <th scope="col">Text</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr><th scope='row'>300</th><td><span docid='300' langid='sidetic' > S1 (S.I.1.1)</span></td></tr><tr><th scope='row'>309</th><td><span docid='309' langid='sidetic' > S10 (S III)</span></td></tr><tr><th scope='row'>310</th><td><span docid='310' langid='sidetic' > S11 (“S13”, S I.2.6)</span></td></tr><tr><th scope='row'>301</th><td><span docid='301' langid='sidetic' > S2 (S.I.1.2)</span></td></tr><tr><th scope='row'>302</th><td><span docid='302' langid='sidetic' > S3 (S.I.2.1) (scriptio continua)</span></td></tr><tr><th scope='row'>303</th><td><span docid='303' langid='sidetic' > S4 (S.I.2.2) (scriptio continua)</span></td></tr><tr><th scope='row'>304</th><td><span docid='304' langid='sidetic' > S5 (S II.1.1) (scriptio continua)</span></td></tr><tr><th scope='row'>305</th><td><span docid='305' langid='sidetic' > S6 (S I.1.3) (scriptio continua)</span></td></tr><tr><th scope='row'>306</th><td><span docid='306' langid='sidetic' > S7 (S I.2.3) (scriptio continua)</span></td></tr><tr><th scope='row'>307</th><td><span docid='307' langid='sidetic' > S8 (S I.2.4) (scriptio continua)</span></td></tr><tr><th scope='row'>308</th><td><span docid='308' langid='sidetic' > S9 (S I.2.5) (scriptio continua)</span></td></tr>										</tbody>
+									</table>
+	  
+	  
+	  </div>
+
+	    <div class="tab-pane show " id="list-car" role="tabpanel" aria-labelledby="list-5-list">
+	   								<label><i class="fas fa-search"></i> Search</label>
+    								<input type="text" id="searchText_carian" class="form-control">
+
+	  	  							<table id="carian_table" class="table table-striped table-hover table-bordered">
+									  <thead>
+										<tr>
+										  <th scope="col">#</th>
+										  <th scope="col">Text</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr><th scope='row'>611</th><td><span docid='611' langid='carian' >C.Al 1</span></td></tr><tr><th scope='row'>623</th><td><span docid='623' langid='carian' >C.Di 1</span></td></tr><tr><th scope='row'>612</th><td><span docid='612' langid='carian' >C.Eu 1</span></td></tr><tr><th scope='row'>613</th><td><span docid='613' langid='carian' >C.Eu 2</span></td></tr><tr><th scope='row'>663</th><td><span docid='663' langid='carian' >C.Eu 3 (Kızıl & Adiego 2021)</span></td></tr><tr><th scope='row'>622</th><td><span docid='622' langid='carian' >C.Ha 1</span></td></tr><tr><th scope='row'>646</th><td><span docid='646' langid='carian' >C.Hd 1 (Türkteki & Tekoğlu 2012)</span></td></tr><tr><th scope='row'>615</th><td><span docid='615' langid='carian' >C.Hy 1 (scriptio continua)</span></td></tr><tr><th scope='row'>648</th><td><span docid='648' langid='carian' >C.I 1 + C.I 5 (Adiego 2019)</span></td></tr><tr><th scope='row'>649</th><td><span docid='649' langid='carian' >C.I 2 (Adiego 2019)</span></td></tr><tr><th scope='row'>650</th><td><span docid='650' langid='carian' >C.I 3 (Adiego 2019)</span></td></tr><tr><th scope='row'>651</th><td><span docid='651' langid='carian' >C.I 4 (Adiego 2019)</span></td></tr><tr><th scope='row'>652</th><td><span docid='652' langid='carian' >C.I 6 [reading direction unknown] (Adiego 2019)</span></td></tr><tr><th scope='row'>653</th><td><span docid='653' langid='carian' >C.I 7 (Adiego 2019)</span></td></tr><tr><th scope='row'>624</th><td><span docid='624' langid='carian' >C.Ia 1</span></td></tr><tr><th scope='row'>625</th><td><span docid='625' langid='carian' >C.Ia 2</span></td></tr><tr><th scope='row'>626</th><td><span docid='626' langid='carian' >C.Ia 3</span></td></tr><tr><th scope='row'>627</th><td><span docid='627' langid='carian' >C.Ia 4</span></td></tr><tr><th scope='row'>628</th><td><span docid='628' langid='carian' >C.Ia 5</span></td></tr><tr><th scope='row'>629</th><td><span docid='629' langid='carian' >C.Ia 6</span></td></tr><tr><th scope='row'>632</th><td><span docid='632' langid='carian' >C.Ka 1</span></td></tr><tr><th scope='row'>641</th><td><span docid='641' langid='carian' >C.Ka 10 (Kunnert & Schürr & Zingg 2010)</span></td></tr><tr><th scope='row'>642</th><td><span docid='642' langid='carian' >C.Ka 11 (Çörtük & Gander & Holler 2018)</span></td></tr><tr><th scope='row'>633</th><td><span docid='633' langid='carian' >C.Ka 2 (scriptio continua)</span></td></tr><tr><th scope='row'>634</th><td><span docid='634' langid='carian' >C.Ka 3 (scriptio continua)</span></td></tr><tr><th scope='row'>635</th><td><span docid='635' langid='carian' >C.Ka 4 (scriptio continua)</span></td></tr><tr><th scope='row'>636</th><td><span docid='636' langid='carian' >C.Ka 5 (scriptio continua)</span></td></tr><tr><th scope='row'>637</th><td><span docid='637' langid='carian' >C.Ka 6 [deleted – not a Carian text]</span></td></tr><tr><th scope='row'>638</th><td><span docid='638' langid='carian' >C.Ka 7</span></td></tr><tr><th scope='row'>639</th><td><span docid='639' langid='carian' >C.Ka 8</span></td></tr><tr><th scope='row'>640</th><td><span docid='640' langid='carian' >C.Ka 9</span></td></tr><tr><th scope='row'>647</th><td><span docid='647' langid='carian' >C.Kal 1 (Schürr 2019)</span></td></tr><tr><th scope='row'>630</th><td><span docid='630' langid='carian' >C.Ke 1</span></td></tr><tr><th scope='row'>631</th><td><span docid='631' langid='carian' >C.Ke 2</span></td></tr><tr><th scope='row'>619</th><td><span docid='619' langid='carian' >C.Ki 1 (scriptio continua)</span></td></tr><tr><th scope='row'>614</th><td><span docid='614' langid='carian' >C.Kn 1</span></td></tr><tr><th scope='row'>643</th><td><span docid='643' langid='carian' >C.Kr 1 (scriptio continua</span></td></tr><tr><th scope='row'>644</th><td><span docid='644' langid='carian' >C.La 1 (Karlsson & Henry 2008)</span></td></tr><tr><th scope='row'>645</th><td><span docid='645' langid='carian' >C.Mi 1 (Herda & Sauter 2009)</span></td></tr><tr><th scope='row'>616</th><td><span docid='616' langid='carian' >C.My 1 (partly scriptio continua)</span></td></tr><tr><th scope='row'>617</th><td><span docid='617' langid='carian' >C.Si 1</span></td></tr><tr><th scope='row'>618</th><td><span docid='618' langid='carian' >C.Si 2 (partly scriptio continua)</span></td></tr><tr><th scope='row'>620</th><td><span docid='620' langid='carian' >C.St 1 (scriptio continua)</span></td></tr><tr><th scope='row'>621</th><td><span docid='621' langid='carian' >C.St 2 (scriptio continua)</span></td></tr><tr><th scope='row'>609</th><td><span docid='609' langid='carian' >C.Tr 1</span></td></tr><tr><th scope='row'>610</th><td><span docid='610' langid='carian' >C.Tr 2</span></td></tr><tr><th scope='row'>654</th><td><span docid='654' langid='carian' >C.xx 1</span></td></tr><tr><th scope='row'>655</th><td><span docid='655' langid='carian' >C.xx 2</span></td></tr><tr><th scope='row'>656</th><td><span docid='656' langid='carian' >C.xx 3</span></td></tr><tr><th scope='row'>657</th><td><span docid='657' langid='carian' >C.xx 4</span></td></tr><tr><th scope='row'>658</th><td><span docid='658' langid='carian' >C.xx 5</span></td></tr><tr><th scope='row'>468</th><td><span docid='468' langid='carian' >E.Ab 1</span></td></tr><tr><th scope='row'>477</th><td><span docid='477' langid='carian' >E.Ab 10</span></td></tr><tr><th scope='row'>478</th><td><span docid='478' langid='carian' >E.Ab 11</span></td></tr><tr><th scope='row'>479</th><td><span docid='479' langid='carian' >E.Ab 12 (scriptio continua)</span></td></tr><tr><th scope='row'>480</th><td><span docid='480' langid='carian' >E.Ab 13</span></td></tr><tr><th scope='row'>481</th><td><span docid='481' langid='carian' >E.Ab 14</span></td></tr><tr><th scope='row'>482</th><td><span docid='482' langid='carian' >E.Ab 15 (scriptio continua)</span></td></tr><tr><th scope='row'>483</th><td><span docid='483' langid='carian' >E.Ab 16</span></td></tr><tr><th scope='row'>484</th><td><span docid='484' langid='carian' >E.Ab 17</span></td></tr><tr><th scope='row'>485</th><td><span docid='485' langid='carian' >E.Ab 18</span></td></tr><tr><th scope='row'>486</th><td><span docid='486' langid='carian' >E.Ab 19 (scriptio continua)</span></td></tr><tr><th scope='row'>469</th><td><span docid='469' langid='carian' >E.Ab 2</span></td></tr><tr><th scope='row'>487</th><td><span docid='487' langid='carian' >E.Ab 20</span></td></tr><tr><th scope='row'>488</th><td><span docid='488' langid='carian' >E.Ab 21 (scriptio continua)</span></td></tr><tr><th scope='row'>489</th><td><span docid='489' langid='carian' >E.Ab 22</span></td></tr><tr><th scope='row'>490</th><td><span docid='490' langid='carian' >E.Ab 23</span></td></tr><tr><th scope='row'>491</th><td><span docid='491' langid='carian' >E.Ab 24</span></td></tr><tr><th scope='row'>492</th><td><span docid='492' langid='carian' >E.Ab 25 (scriptio continua)</span></td></tr><tr><th scope='row'>493</th><td><span docid='493' langid='carian' >E.Ab 26</span></td></tr><tr><th scope='row'>494</th><td><span docid='494' langid='carian' >E.Ab 27</span></td></tr><tr><th scope='row'>495</th><td><span docid='495' langid='carian' >E.Ab 28 [reading direction uncertain]</span></td></tr><tr><th scope='row'>496</th><td><span docid='496' langid='carian' >E.Ab 29</span></td></tr><tr><th scope='row'>470</th><td><span docid='470' langid='carian' >E.Ab 3</span></td></tr><tr><th scope='row'>497</th><td><span docid='497' langid='carian' >E.Ab 30</span></td></tr><tr><th scope='row'>498</th><td><span docid='498' langid='carian' >E.Ab 31</span></td></tr><tr><th scope='row'>499</th><td><span docid='499' langid='carian' >E.Ab 32</span></td></tr><tr><th scope='row'>500</th><td><span docid='500' langid='carian' >E.Ab 33</span></td></tr><tr><th scope='row'>501</th><td><span docid='501' langid='carian' >E.Ab 34 (scriptio continua)</span></td></tr><tr><th scope='row'>502</th><td><span docid='502' langid='carian' >E.Ab 35</span></td></tr><tr><th scope='row'>503</th><td><span docid='503' langid='carian' >E.Ab 36</span></td></tr><tr><th scope='row'>504</th><td><span docid='504' langid='carian' >E.Ab 37</span></td></tr><tr><th scope='row'>505</th><td><span docid='505' langid='carian' >E.Ab 38</span></td></tr><tr><th scope='row'>506</th><td><span docid='506' langid='carian' >E.Ab 39</span></td></tr><tr><th scope='row'>471</th><td><span docid='471' langid='carian' >E.Ab 4 (scriptio continua)</span></td></tr><tr><th scope='row'>507</th><td><span docid='507' langid='carian' >E.Ab 40</span></td></tr><tr><th scope='row'>508</th><td><span docid='508' langid='carian' >E.Ab 41</span></td></tr><tr><th scope='row'>509</th><td><span docid='509' langid='carian' >E.Ab 42</span></td></tr><tr><th scope='row'>510</th><td><span docid='510' langid='carian' >E.Ab 43</span></td></tr><tr><th scope='row'>511</th><td><span docid='511' langid='carian' >E.Ab 44 (Bárta & Adiego 2021)</span></td></tr><tr><th scope='row'>472</th><td><span docid='472' langid='carian' >E.Ab 5 (scriptio continua)</span></td></tr><tr><th scope='row'>473</th><td><span docid='473' langid='carian' >E.Ab 6</span></td></tr><tr><th scope='row'>474</th><td><span docid='474' langid='carian' >E.Ab 7</span></td></tr><tr><th scope='row'>475</th><td><span docid='475' langid='carian' >E.Ab 8 (scriptio continua)</span></td></tr><tr><th scope='row'>476</th><td><span docid='476' langid='carian' >E.Ab 9 (scriptio continua)</span></td></tr><tr><th scope='row'>586</th><td><span docid='586' langid='carian' >E.AS 1</span></td></tr><tr><th scope='row'>587</th><td><span docid='587' langid='carian' >E.AS 2</span></td></tr><tr><th scope='row'>588</th><td><span docid='588' langid='carian' >E.AS 3</span></td></tr><tr><th scope='row'>589</th><td><span docid='589' langid='carian' >E.AS 4</span></td></tr><tr><th scope='row'>590</th><td><span docid='590' langid='carian' >E.AS 5</span></td></tr><tr><th scope='row'>591</th><td><span docid='591' langid='carian' >E.AS 6</span></td></tr><tr><th scope='row'>592</th><td><span docid='592' langid='carian' >E.AS 7</span></td></tr><tr><th scope='row'>593</th><td><span docid='593' langid='carian' >E.AS 8</span></td></tr><tr><th scope='row'>594</th><td><span docid='594' langid='carian' >E.AS 9</span></td></tr><tr><th scope='row'>595</th><td><span docid='595' langid='carian' >E.Bu 1</span></td></tr><tr><th scope='row'>596</th><td><span docid='596' langid='carian' >E.Bu 2</span></td></tr><tr><th scope='row'>597</th><td><span docid='597' langid='carian' >E.Bu 3</span></td></tr><tr><th scope='row'>598</th><td><span docid='598' langid='carian' >E.Bu 4</span></td></tr><tr><th scope='row'>599</th><td><span docid='599' langid='carian' >E.Bu 5</span></td></tr><tr><th scope='row'>600</th><td><span docid='600' langid='carian' >E.Bu 6</span></td></tr><tr><th scope='row'>567</th><td><span docid='567' langid='carian' >E.Lu 1</span></td></tr><tr><th scope='row'>568</th><td><span docid='568' langid='carian' >E.Lu 2</span></td></tr><tr><th scope='row'>569</th><td><span docid='569' langid='carian' >E.Lu 3</span></td></tr><tr><th scope='row'>570</th><td><span docid='570' langid='carian' >E.Lu 4</span></td></tr><tr><th scope='row'>571</th><td><span docid='571' langid='carian' >E.Lu 5</span></td></tr><tr><th scope='row'>572</th><td><span docid='572' langid='carian' >E.Lu 6</span></td></tr><tr><th scope='row'>573</th><td><span docid='573' langid='carian' >E.Lu 7</span></td></tr><tr><th scope='row'>402</th><td><span docid='402' langid='carian' >E.Me 1</span></td></tr><tr><th scope='row'>411</th><td><span docid='411' langid='carian' >E.Me 10</span></td></tr><tr><th scope='row'>412</th><td><span docid='412' langid='carian' >E.Me 11</span></td></tr><tr><th scope='row'>413</th><td><span docid='413' langid='carian' >E.Me 12</span></td></tr><tr><th scope='row'>414</th><td><span docid='414' langid='carian' >E.Me 13</span></td></tr><tr><th scope='row'>415</th><td><span docid='415' langid='carian' >E.Me 14</span></td></tr><tr><th scope='row'>416</th><td><span docid='416' langid='carian' >E.Me 15</span></td></tr><tr><th scope='row'>417</th><td><span docid='417' langid='carian' >E.Me 16</span></td></tr><tr><th scope='row'>418</th><td><span docid='418' langid='carian' >E.Me 17</span></td></tr><tr><th scope='row'>419</th><td><span docid='419' langid='carian' >E.Me 18</span></td></tr><tr><th scope='row'>420</th><td><span docid='420' langid='carian' >E.Me 19</span></td></tr><tr><th scope='row'>403</th><td><span docid='403' langid='carian' >E.Me 2</span></td></tr><tr><th scope='row'>421</th><td><span docid='421' langid='carian' >E.Me 20</span></td></tr><tr><th scope='row'>422</th><td><span docid='422' langid='carian' >E.Me 21</span></td></tr><tr><th scope='row'>423</th><td><span docid='423' langid='carian' >E.Me 22</span></td></tr><tr><th scope='row'>424</th><td><span docid='424' langid='carian' >E.Me 23</span></td></tr><tr><th scope='row'>425</th><td><span docid='425' langid='carian' >E.Me 24</span></td></tr><tr><th scope='row'>426</th><td><span docid='426' langid='carian' >E.Me 25</span></td></tr><tr><th scope='row'>427</th><td><span docid='427' langid='carian' >E.Me 26</span></td></tr><tr><th scope='row'>428</th><td><span docid='428' langid='carian' >E.Me 27</span></td></tr><tr><th scope='row'>429</th><td><span docid='429' langid='carian' >E.Me 28</span></td></tr><tr><th scope='row'>430</th><td><span docid='430' langid='carian' >E.Me 29</span></td></tr><tr><th scope='row'>404</th><td><span docid='404' langid='carian' >E.Me 3</span></td></tr><tr><th scope='row'>431</th><td><span docid='431' langid='carian' >E.Me 30</span></td></tr><tr><th scope='row'>432</th><td><span docid='432' langid='carian' >E.Me 31</span></td></tr><tr><th scope='row'>433</th><td><span docid='433' langid='carian' >E.Me 32</span></td></tr><tr><th scope='row'>434</th><td><span docid='434' langid='carian' >E.Me 33</span></td></tr><tr><th scope='row'>435</th><td><span docid='435' langid='carian' >E.Me 34</span></td></tr><tr><th scope='row'>436</th><td><span docid='436' langid='carian' >E.Me 35</span></td></tr><tr><th scope='row'>437</th><td><span docid='437' langid='carian' >E.Me 36</span></td></tr><tr><th scope='row'>438</th><td><span docid='438' langid='carian' >E.Me 37</span></td></tr><tr><th scope='row'>439</th><td><span docid='439' langid='carian' >E.Me 38</span></td></tr><tr><th scope='row'>440</th><td><span docid='440' langid='carian' >E.Me 39</span></td></tr><tr><th scope='row'>405</th><td><span docid='405' langid='carian' >E.Me 4</span></td></tr><tr><th scope='row'>441</th><td><span docid='441' langid='carian' >E.Me 40</span></td></tr><tr><th scope='row'>442</th><td><span docid='442' langid='carian' >E.Me 41</span></td></tr><tr><th scope='row'>443</th><td><span docid='443' langid='carian' >E.Me 42</span></td></tr><tr><th scope='row'>444</th><td><span docid='444' langid='carian' >E.Me 43</span></td></tr><tr><th scope='row'>445</th><td><span docid='445' langid='carian' >E.Me 44</span></td></tr><tr><th scope='row'>446</th><td><span docid='446' langid='carian' >E.Me 45</span></td></tr><tr><th scope='row'>447</th><td><span docid='447' langid='carian' >E.Me 46</span></td></tr><tr><th scope='row'>448</th><td><span docid='448' langid='carian' >E.Me 47</span></td></tr><tr><th scope='row'>449</th><td><span docid='449' langid='carian' >E.Me 48</span></td></tr><tr><th scope='row'>450</th><td><span docid='450' langid='carian' >E.Me 49</span></td></tr><tr><th scope='row'>406</th><td><span docid='406' langid='carian' >E.Me 5</span></td></tr><tr><th scope='row'>451</th><td><span docid='451' langid='carian' >E.Me 50</span></td></tr><tr><th scope='row'>452</th><td><span docid='452' langid='carian' >E.Me 51</span></td></tr><tr><th scope='row'>453</th><td><span docid='453' langid='carian' >E.Me 52</span></td></tr><tr><th scope='row'>454</th><td><span docid='454' langid='carian' >E.Me 53</span></td></tr><tr><th scope='row'>455</th><td><span docid='455' langid='carian' >E.Me 54</span></td></tr><tr><th scope='row'>456</th><td><span docid='456' langid='carian' >E.Me 55</span></td></tr><tr><th scope='row'>457</th><td><span docid='457' langid='carian' >E.Me 56</span></td></tr><tr><th scope='row'>458</th><td><span docid='458' langid='carian' >E.Me 57</span></td></tr><tr><th scope='row'>459</th><td><span docid='459' langid='carian' >E.Me 58</span></td></tr><tr><th scope='row'>460</th><td><span docid='460' langid='carian' >E.Me 59</span></td></tr><tr><th scope='row'>407</th><td><span docid='407' langid='carian' >E.Me 6</span></td></tr><tr><th scope='row'>461</th><td><span docid='461' langid='carian' >E.Me 60</span></td></tr><tr><th scope='row'>462</th><td><span docid='462' langid='carian' >E.Me 61</span></td></tr><tr><th scope='row'>463</th><td><span docid='463' langid='carian' >E.Me 62</span></td></tr><tr><th scope='row'>464</th><td><span docid='464' langid='carian' >E.Me 63</span></td></tr><tr><th scope='row'>465</th><td><span docid='465' langid='carian' >E.Me 64</span></td></tr><tr><th scope='row'>466</th><td><span docid='466' langid='carian' >E.Me 65</span></td></tr><tr><th scope='row'>467</th><td><span docid='467' langid='carian' >E.Me 66</span></td></tr><tr><th scope='row'>408</th><td><span docid='408' langid='carian' >E.Me 7 (scriptio continua)</span></td></tr><tr><th scope='row'>409</th><td><span docid='409' langid='carian' >E.Me 8</span></td></tr><tr><th scope='row'>410</th><td><span docid='410' langid='carian' >E.Me 9</span></td></tr><tr><th scope='row'>574</th><td><span docid='574' langid='carian' >E.Mu 1</span></td></tr><tr><th scope='row'>400</th><td><span docid='400' langid='carian' >E.Sa 1</span></td></tr><tr><th scope='row'>401</th><td><span docid='401' langid='carian' >E.Sa 2</span></td></tr><tr><th scope='row'>575</th><td><span docid='575' langid='carian' >E.Si 1</span></td></tr><tr><th scope='row'>584</th><td><span docid='584' langid='carian' >E.Si 10</span></td></tr><tr><th scope='row'>585</th><td><span docid='585' langid='carian' >E.Si 11</span></td></tr><tr><th scope='row'>576</th><td><span docid='576' langid='carian' >E.Si 2</span></td></tr><tr><th scope='row'>577</th><td><span docid='577' langid='carian' >E.Si 3</span></td></tr><tr><th scope='row'>578</th><td><span docid='578' langid='carian' >E.Si 4</span></td></tr><tr><th scope='row'>579</th><td><span docid='579' langid='carian' >E.Si 5</span></td></tr><tr><th scope='row'>580</th><td><span docid='580' langid='carian' >E.Si 6</span></td></tr><tr><th scope='row'>581</th><td><span docid='581' langid='carian' >E.Si 7</span></td></tr><tr><th scope='row'>582</th><td><span docid='582' langid='carian' >E.Si 8</span></td></tr><tr><th scope='row'>583</th><td><span docid='583' langid='carian' >E.Si 9</span></td></tr><tr><th scope='row'>601</th><td><span docid='601' langid='carian' >E.SS 1</span></td></tr><tr><th scope='row'>512</th><td><span docid='512' langid='carian' >E.Th 1</span></td></tr><tr><th scope='row'>521</th><td><span docid='521' langid='carian' >E.Th 10 (scriptio continua)</span></td></tr><tr><th scope='row'>522</th><td><span docid='522' langid='carian' >E.Th 11</span></td></tr><tr><th scope='row'>523</th><td><span docid='523' langid='carian' >E.Th 12 (partly scriptio continua)</span></td></tr><tr><th scope='row'>524</th><td><span docid='524' langid='carian' >E.Th 13</span></td></tr><tr><th scope='row'>525</th><td><span docid='525' langid='carian' >E.Th 14</span></td></tr><tr><th scope='row'>526</th><td><span docid='526' langid='carian' >E.Th 15 [reading very uncertain]</span></td></tr><tr><th scope='row'>527</th><td><span docid='527' langid='carian' >E.Th 16</span></td></tr><tr><th scope='row'>528</th><td><span docid='528' langid='carian' >E.Th 17</span></td></tr><tr><th scope='row'>529</th><td><span docid='529' langid='carian' >E.Th 18</span></td></tr><tr><th scope='row'>530</th><td><span docid='530' langid='carian' >E.Th 19</span></td></tr><tr><th scope='row'>513</th><td><span docid='513' langid='carian' >E.Th 2</span></td></tr><tr><th scope='row'>531</th><td><span docid='531' langid='carian' >E.Th 20</span></td></tr><tr><th scope='row'>532</th><td><span docid='532' langid='carian' >E.Th 21 [reading direction uncertain]</span></td></tr><tr><th scope='row'>533</th><td><span docid='533' langid='carian' >E.Th 22</span></td></tr><tr><th scope='row'>534</th><td><span docid='534' langid='carian' >E.Th 23</span></td></tr><tr><th scope='row'>535</th><td><span docid='535' langid='carian' >E.Th 24</span></td></tr><tr><th scope='row'>536</th><td><span docid='536' langid='carian' >E.Th 25</span></td></tr><tr><th scope='row'>537</th><td><span docid='537' langid='carian' >E.Th 26</span></td></tr><tr><th scope='row'>538</th><td><span docid='538' langid='carian' >E.Th 27</span></td></tr><tr><th scope='row'>539</th><td><span docid='539' langid='carian' >E.Th 28</span></td></tr><tr><th scope='row'>540</th><td><span docid='540' langid='carian' >E.Th 29</span></td></tr><tr><th scope='row'>514</th><td><span docid='514' langid='carian' >E.Th 3</span></td></tr><tr><th scope='row'>541</th><td><span docid='541' langid='carian' >E.Th 30</span></td></tr><tr><th scope='row'>542</th><td><span docid='542' langid='carian' >E.Th 31 [very uncertain reading]</span></td></tr><tr><th scope='row'>543</th><td><span docid='543' langid='carian' >E.Th 32 [reading direction uncertain]</span></td></tr><tr><th scope='row'>544</th><td><span docid='544' langid='carian' >E.Th 33</span></td></tr><tr><th scope='row'>545</th><td><span docid='545' langid='carian' >E.Th 34</span></td></tr><tr><th scope='row'>546</th><td><span docid='546' langid='carian' >E.Th 35</span></td></tr><tr><th scope='row'>547</th><td><span docid='547' langid='carian' >E.Th 36</span></td></tr><tr><th scope='row'>548</th><td><span docid='548' langid='carian' >E.Th 37</span></td></tr><tr><th scope='row'>549</th><td><span docid='549' langid='carian' >E.Th 38</span></td></tr><tr><th scope='row'>550</th><td><span docid='550' langid='carian' >E.Th 39</span></td></tr><tr><th scope='row'>515</th><td><span docid='515' langid='carian' >E.Th 4</span></td></tr><tr><th scope='row'>551</th><td><span docid='551' langid='carian' >E.Th 40</span></td></tr><tr><th scope='row'>552</th><td><span docid='552' langid='carian' >E.Th 41</span></td></tr><tr><th scope='row'>553</th><td><span docid='553' langid='carian' >E.Th 42</span></td></tr><tr><th scope='row'>554</th><td><span docid='554' langid='carian' >E.Th 43</span></td></tr><tr><th scope='row'>555</th><td><span docid='555' langid='carian' >E.Th 44</span></td></tr><tr><th scope='row'>556</th><td><span docid='556' langid='carian' >E.Th 45</span></td></tr><tr><th scope='row'>557</th><td><span docid='557' langid='carian' >E.Th 46</span></td></tr><tr><th scope='row'>558</th><td><span docid='558' langid='carian' >E.Th 47</span></td></tr><tr><th scope='row'>559</th><td><span docid='559' langid='carian' >E.Th 48</span></td></tr><tr><th scope='row'>560</th><td><span docid='560' langid='carian' >E.Th 49</span></td></tr><tr><th scope='row'>516</th><td><span docid='516' langid='carian' >E.Th 5</span></td></tr><tr><th scope='row'>561</th><td><span docid='561' langid='carian' >E.Th 50</span></td></tr><tr><th scope='row'>562</th><td><span docid='562' langid='carian' >E.Th 51</span></td></tr><tr><th scope='row'>563</th><td><span docid='563' langid='carian' >E.Th 52</span></td></tr><tr><th scope='row'>564</th><td><span docid='564' langid='carian' >E.Th 53</span></td></tr><tr><th scope='row'>565</th><td><span docid='565' langid='carian' >E.Th 54 (Villalba Varneda 2007:No. 17)</span></td></tr><tr><th scope='row'>566</th><td><span docid='566' langid='carian' >E.Th 55 (Villalba Varneda 2007:No. 26)</span></td></tr><tr><th scope='row'>517</th><td><span docid='517' langid='carian' >E.Th 6</span></td></tr><tr><th scope='row'>518</th><td><span docid='518' langid='carian' >E.Th 7</span></td></tr><tr><th scope='row'>519</th><td><span docid='519' langid='carian' >E.Th 8</span></td></tr><tr><th scope='row'>520</th><td><span docid='520' langid='carian' >E.Th 9</span></td></tr><tr><th scope='row'>602</th><td><span docid='602' langid='carian' >E.xx 1</span></td></tr><tr><th scope='row'>603</th><td><span docid='603' langid='carian' >E.xx 2</span></td></tr><tr><th scope='row'>604</th><td><span docid='604' langid='carian' >E.xx 3</span></td></tr><tr><th scope='row'>605</th><td><span docid='605' langid='carian' >E.xx 4</span></td></tr><tr><th scope='row'>606</th><td><span docid='606' langid='carian' >E.xx 5</span></td></tr><tr><th scope='row'>607</th><td><span docid='607' langid='carian' >E.xx 6</span></td></tr><tr><th scope='row'>608</th><td><span docid='608' langid='carian' >E.xx 7</span></td></tr><tr><th scope='row'>659</th><td><span docid='659' langid='carian' >G1</span></td></tr><tr><th scope='row'>660</th><td><span docid='660' langid='carian' >G2</span></td></tr><tr><th scope='row'>661</th><td><span docid='661' langid='carian' >G3 (Adiego & Tiverios & Manakidou & Tsiafakis 2012)</span></td></tr><tr><th scope='row'>662</th><td><span docid='662' langid='carian' >G4 (Adiego & Tiverios & Manakidou & Tsiafakis 2012)</span></td></tr>										</tbody>
+									</table>
+	  
+	  
+	  </div>
+
+
+	  </div>
+
+
+  </div>
+  <div class="col-md-9" id ="right-col">
+
+<div id="loading-div2" class="loading-parent2" style=" display: none; ">
+      <div class="loading-text-parent">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="loading-text" style="font-size: 1.5rem; opacity: 0. 10px;">Loading...</div>
+          </div>
+        </div>
+    </div>
+
+ 
+    <div class="search-result">
+		<div class="alert alert-primary" role="alert">Please select a search term or a corpus text first.</div>
+	</div>
+	
+  
+</div>
+
+
+  </div>
+
+</div>
+
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+
+	setTimeout(function() {
+		 	$('.loading-parent').fadeOut(
+		 		function(){
+		 		});
+
+	}, 1000);
+
+		var url = new URL(window.location.href);
+		    var corpus_name_url = url.searchParams.get("corpus");
+		    var docid_url = url.searchParams.get("docid");
+		    var sentno_url = url.searchParams.get("sentno");
+			let params = new URLSearchParams(url.search);
+		    if (corpus_name_url!=null){
+
+		    var corpustab = $('#list-tab').find("a[language='"+corpus_name_url+"']");
+		    corpustab.click();
+
+		    var doc = $('#nav-tabContent .active').find("span[docid='"+docid_url+"']");
+		    		    // console.log(doc.parent().parent());
+
+			    setTimeout(function() {
+			     doc.parent().parent().click();
+
+			    }, 60); // to do use callback instead of timeout
+
+
+			}
+
+
+	
+
+	
+			var button_toggle = 0;
+			$( "#collapse-btn" ).click(function(e) {
+				   e.preventDefault();
+
+                $('#module .collapse').collapse('toggle');
+				if(button_toggle==0){
+				$(this).html("<i class='fa fa-chevron-up'></i> Close");
+				button_toggle = 1;
+				}
+				else{
+				$(this).html("<i class='fa fa-chevron-down'></i> Read More");
+				button_toggle = 0;
+				}
+			})
+
+			  
+
+			$('#searchText_cuneluw').keyup(function(){
+			      c_luwian_table.search($(this).val()).draw() ;
+			});
+			$('#searchText_hierluw').keyup(function(){
+			      h_luwian_table.search($(this).val()).draw() ;
+			})
+			$('#searchText_lyc').keyup(function(){
+			      a_lycian_table.search($(this).val()).draw() ;
+			})
+			$('#searchText_lyd').keyup(function(){
+			      lydian_table.search($(this).val()).draw() ;
+			})
+			$('#searchText_pisi').keyup(function(){
+			      pisidian_table.search($(this).val()).draw() ;
+			})
+			$('#searchText_pala').keyup(function(){
+			      palaic_table.search($(this).val()).draw() ;
+			})
+			$('#searchText_lycb').keyup(function(){
+			      b_lycian_table.search($(this).val()).draw() ;
+			})
+			$('#searchText_sidetic').keyup(function(){
+			      sidetic_table.search($(this).val()).draw() ;
+			})
+			$('#searchText_carian').keyup(function(){
+			      carian_table.search($(this).val()).draw() ;
+			})
+
+		function searchCorpus (mode){
+
+	
+		var searchterms = {}
+
+
+		$('.corpus_input').each(function(){
+
+			if(mode=="texts_only"){
+				searchterms[$(this).attr('column')] = "";
+			}
+			else{
+				searchterms[$(this).attr('column')] = $(this).attr('searchterm');
+			}
+
+
+		});
+
+		
+
+		// console.log(searchterms);
+
+ 		$('#loading-div2').show();
+ 		$('#loading-div3').show();
+ 		$('.search-result').hide();
+
+        var language = $('.list-group-item.active').attr('language');
+        var ref_table = $('.list-group-item.active').attr('ref_table');
+
+    
+
+ 		 var docids = "";
+        var d = "";
+        $("#"+ref_table).find("tr .active span").each(function(){
+
+        	docids+=d+$(this).attr('docid');
+        	d = ",";
+        });
+
+
+        var data = {searchterms:searchterms,corpus_text:true,language:language,docids:docids};
+
+        $.ajax({      
+            type: "POST",
+            url: "includes/api.php",
+            data: data,
+            success: function(result) 
+                {
+                 result = JSON.parse(result);
+
+                 console.log(result)
+
+                 $('.search-result').empty();
+
+                 if(result.length==0){
+
+                 		if(docids!=""){
+                 		  $('.search-result').append('<div class="alert alert-primary" role="alert">Sorry, no results found.</div>');
+                 		}
+                 		else{
+                 		  $('.search-result').append('<div class="alert alert-primary" role="alert">Sorry, the whole corpus cannot be displayed.</div>');
+                 		}
+
+                 }
+
+                   else {
+
+                   	var cnt = 0;
+                
+		             for (key in result){
+
+
+		                 	var text = result[key];
+
+		                 	var accordion = $('<div class="accordion" style="margin-bottom:15px;" role="tablist">');
+
+
+			                 	var last_line = 0;
+
+
+			                 for (var i=0;i<text.length;i++){
+
+			                 	var sentence = "";
+
+			                 	if (text[i]['sentence']!=undefined){
+			                 		sentence = text[i]['sentence'];
+			                 	}
+
+								if(/^· \d.*/.test(text[i]['word']) || /· *\d*.*$/.test(text[i]['word'])){
+			                 		linehead = "";
+			                 		accordion.append('<div class="card"><div class="card-header" role="tab" id="heading' + i+ "_" + cnt +  '"><h6 class="mb-0"> '+linehead+' '+text[i]['word']+' <a data-toggle="collapse" href="#collapse'+ i +  "_" + cnt + '" aria-expanded="false" aria-controls="collapse' + i+ "_" + cnt +   '">'+ sentence +'</a></h6></div><div id="collapse'+ i+ "_" + cnt +   '" class="collapse" role="tabpanel" aria-labelledby="heading' + i+ "_" + cnt +   '" ><div class="card-body" style="overflow-x: auto;"><table class="table table-sm table-bordered">'+text[i]['sentence_total']+ '</table></div></div></div>');
+
+			                 			last_line = i;
+			                 	}
+
+			                 	else if(/^· §.*/.test(text[i]['word'])){
+			                 	    linehead = "";
+			                 		var word = text[i]['word'].replace("·","");
+
+			                 		accordion.append('<div class="card"><div class="card-header" role="tab" id="heading' + i+ "_" + cnt +  '"><h6 class="mb-0"> '+linehead+' · '+last_line+" "+word+' <a data-toggle="collapse" href="#collapse'+ i +  "_" + cnt + '" aria-expanded="false" aria-controls="collapse' + i+ "_" + cnt +   '">'+ sentence +'</a></h6></div><div id="collapse'+ i+ "_" + cnt +   '" class="collapse" role="tabpanel" aria-labelledby="heading' + i+ "_" + cnt +   '" ><div class="card-body" style="overflow-x: auto;"><table class="table table-sm table-bordered">'+text[i]['sentence_total']+ '</table></div></div></div>');
+			                 	}
+			                 	else {
+			                 		linehead = "";
+			                 		var word = text[i]['word'].replace("·","");
+			                 		accordion.append('<div class="card"><div class="card-header" role="tab" id="heading' + i+ "_" + cnt +  '"><h6 class="mb-0"> '+linehead+' '+word+ " "+ sentence +'</h6></div><div id="collapse'+ i+ "_" + cnt +   '" class="collapse" role="tabpanel" aria-labelledby="heading' + i+ "_" + cnt +   '" ><div class="card-body" style="overflow-x: auto;"><table class="table table-sm table-bordered">'+text[i]['sentence_total']+ '</table></div></div></div>');
+			                 	}
+
+			                 	 
+			                 }
+			                 var metahl = $("<h4 class='text-hl'>"+key+" <span class='badge badge-primary js-whole-text' style='float:right;margin-right:4px;' title='Show complete Text'><i class='fa fa-book-reader' ></i></span></h4>");
+			                 var principal_edition = $("<span>Principal Edition: "+text[0]['ref']+"</span>");
+			                 var meta_info = $("<div style='margin-bottom: 10px;'></div>");
+			                 meta_info.append(metahl);
+			                 meta_info.append(principal_edition);
+
+			                 if(text[0]['issue']!=""){
+			                 	var hpm_link = $("<a href='http://www.hethport.uni-wuerzburg.de/hetkonk/hetkonk_abfrage.php?iv="+text[0]['issue']+"' target='_blank'> HPM Link <i class='fas fa-external-link-alt'></i></a>");
+			                 	hpm_link.css("float","right").css("margin-top","-2px").css("margin-right","4px");
+
+			                 	meta_info.append(hpm_link);
+
+			                 }
+
+			                 $('.search-result').append(meta_info).append(accordion);
+			                cnt ++;
+		             	}
+		                 var left_height1 = $('#list-tab').height();
+		                 var left_height2 = $('.tab-content').height();
+
+		                 var left_height = left_height1 + left_height2 + 15;
+
+
+		                 $("#accordion").css("max-height",left_height+"px").css('overflow-y',"scroll");
+
+
+			                 $('.js-whole-text').click(function(){
+
+
+									var hl_text = $(this).parent().clone().children().remove().end().text().trim();
+
+									// console.log(hl_text)
+								$(".dataTables_scroll tbody td").each(function(){
+
+								var td_content = $(this).text();
+
+								if(hl_text==td_content){
+
+									$(this).parent().find("td").each(function(){
+										$(this).addClass("active")
+										searchCorpus("texts_only");
+
+									});
+
+								}
+
+								});
+
+
+								});
+
+							var url = new URL(window.location.href);
+								  
+							 var sentno_url = url.searchParams.get("sentno");
+
+			                 if(sentno_url!=undefined){
+
+			                 	var cards = $('.accordion').find('.card');
+
+			                 	$(cards[sentno_url-1]).find("a").click();
+			                 	console.log($(cards[sentno_url-1]))
+window.scrollTo(0, 0);
+			                 	setTimeout(function() {
+			                 			 $([document.body]).animate({
+								        scrollTop: $(cards[sentno_url-1]).offset().top 
+
+								    }, 1000);
+
+			                 	}, 1000);
+
+			                 
+			                 	 window.history.replaceState(null, null, window.location.pathname);
+
+							 }
+
+						}
+		 				 $('#loading-div2').fadeOut();
+		 				 $('#loading-div3').fadeOut();
+ 						 $('.search-result').show();
+
+ 					
+
+                }       
+        });
+
+
+		}
+
+
+		  var c_luwian_table = $('#c_luwian_table').DataTable({
+       		info:false,
+       	   "lengthChange": false,
+     	   "scrollY":        "400px",
+           "scrollCollapse": true,
+       		"paging" :false,
+       		// "searching":false,
+       		   "columnDefs": [
+			            {
+			                "targets": [ 0 ],
+			                "visible":false
+			             }
+			        ],
+			        "order": [[ 0, "asc" ]]
+       });
+
+		  var h_luwian_table = $('#h_luwian_table').DataTable({
+       		info:false,
+       		"lengthChange": false,
+     	   "scrollY":        "400px",
+  			"paging" :false,
+       		// "searching":false,
+       		   "columnDefs": [
+			            {
+			                "targets": [ 0 ],
+			                "visible":false
+			             }
+			        ],
+			        "order": [[ 0, "asc" ]]
+       });  
+
+	  var a_lycian_table = $('#a_lycian_table').DataTable({
+       		info:false,
+       		"lengthChange": false,
+    	   "scrollY":        "400px",
+   			"paging" :false,
+       		// "searching":false,
+       		   "columnDefs": [
+			            {
+			                "targets": [ 0 ],
+			                "visible":false
+			             }
+			        ],
+			        "order": [[ 0, "asc" ]]
+       });  
+
+	  var b_lycian_table = $('#b_lycian_table').DataTable({
+       		info:false,
+       		"lengthChange": false,
+    	   "scrollY":        "400px",
+   			"paging" :false,
+       		// "searching":false,
+       		   "columnDefs": [
+			            {
+			                "targets": [ 0 ],
+			                "visible":false
+			             }
+			        ],
+			        "order": [[ 0, "asc" ]]
+       });  
+
+  var lydian_table = $('#lydian_table').DataTable({
+       		info:false,
+       		"lengthChange": false,
+     	   "scrollY":        "400px",
+  			"paging" :false,
+       		// "searching":false,
+       		   "columnDefs": [
+			            {
+			                "targets": [ 0 ],
+			                "visible":false
+			             }
+			        ],
+			        "order": [[ 0, "asc" ]]
+       });  
+
+var palaic_table = $('#palaic_table').DataTable({
+       		info:false,
+       		"lengthChange": false,
+     	   "scrollY":        "400px",
+
+   			"paging" :false,
+       		// "searching":false,
+       		   "columnDefs": [
+			            {
+			                "targets": [ 0 ],
+			                "visible":false
+			             }
+			        ],
+			        "order": [[ 0, "asc" ]]
+       });  
+
+
+var pisidian_table = $('#pisidian_table').DataTable({
+       		info:false,
+       		"lengthChange": false,
+     	   "scrollY":        "400px",
+
+   			"paging" :false,
+       		// "searching":false,
+       		   "columnDefs": [
+			            {
+			                "targets": [ 0 ],
+			                "visible":false
+			             }
+			        ],
+			        "order": [[ 0, "asc" ]]
+       });  
+
+var sidetic_table = $('#sidetic_table').DataTable({
+       		info:false,
+       		"lengthChange": false,
+     	   "scrollY":        "400px",
+
+   			"paging" :false,
+       		// "searching":false,
+       		   "columnDefs": [
+			            {
+			                "targets": [ 0 ],
+			                "visible":false
+			             }
+			        ],
+			        "order": [[ 0, "asc" ]]
+       });  
+
+var carian_table = $('#carian_table').DataTable({
+       		info:false,
+       		"lengthChange": false,
+     	   "scrollY":        "400px",
+
+   			"paging" :false,
+       		// "searching":false,
+       		   "columnDefs": [
+			            {
+			                "targets": [ 0 ],
+			                "visible":false
+			             }
+			        ],
+			        "order": [[ 0, "asc" ]]
+       });  
+
+
+ // corpus selection
+$('.list-group-item').on('click', function () {
+
+
+var tabhref = $(this).attr("ref_table");
+var language =  $(this).attr('language');
+
+console.log(language)
+console.log(tabhref)
+
+$('#'+tabhref).DataTable().destroy();
+
+
+ var table = $('#'+tabhref).DataTable({
+       		info:false,
+       		"lengthChange": false,
+   			"paging" :false,
+       		"searching":false,
+     	   "scrollY":        "400px",
+       		   "columnDefs": [
+			            {
+			                "targets": [ 0 ],
+			                "visible":false
+			             }
+			        ],
+			        "order": [[ 0, "asc" ]]
+       });  
+		table.draw();
+
+setTimeout(function() {
+		table.draw();
+
+	}, 10);
+
+$('#corpus_FLS').val("");
+$('.search-result').empty();
+
+
+$('.search-result').append('<div class="alert alert-primary" role="alert">Please select a search term or a corpus text first.</div>');
+
+
+$(".dataTables_scroll tbody td").removeClass("active");
+$(".dataTables_scroll tbody th").removeClass("active");
+
+});
+
+
+
+var url = new URL(window.location.href);
+
+
+$(".corpus_input").keyup(
+        function(){
+        
+
+        pattern = $(this).val();
+
+        var language = $('#list-tab .active').attr('language');
+        var ref_table = $('#list-tab .active').attr('ref_table');
+
+        var docids = "";
+        var d = "";
+        $("#"+ref_table).find("tr .active span").each(function(){
+
+        	docids+=d+$(this).attr('docid');
+        	d = ",";
+        });
+
+
+          $(this).attr("searchterm","");
+
+        var id = $(this).attr('id');
+
+        if(pattern==""){
+
+          $("#"+id+"_suggestions").empty().hide();
+          searchCorpus();
+          return;
+        }
+
+
+        var searchcolumn = $(this).attr('column');
+
+
+
+        var data = {query:pattern,get_corpus_suggestions:true,language:language,docids:docids,column:searchcolumn};
+
+        $.ajax({      
+            type: "POST",
+            url: "includes/api.php",
+            data: data,
+            success: function(result) 
+                {
+                 result = JSON.parse(result);
+
+                 if(result.length==0){
+                     $("#"+id+"_suggestions").empty().show();
+                     $("#"+id+"_suggestions").append("<a class='dropdown-item'><span class='titus_span'>No suggestions found</a>");                  
+
+                 }
+                 else{
+                    $("#"+id+"_suggestions").empty().show();
+
+                    for(var i=0;i<result.length;i++){
+                         $("#"+id+"_suggestions").append("<a class='dropdown-item corpus_exec' "+searchcolumn+"='" + result[i][searchcolumn] + "'><span class='titus_span'>" + result[i][searchcolumn] + "</span></a>");                  
+                    }
+
+
+                   
+                    $("#"+id+"_suggestions a").off().click(function(){
+                    	                    $("#"+id).val( $(this).text());
+
+                    	                    $("#"+id).attr('searchterm',$(this).attr(searchcolumn));
+                  							searchCorpus();
+                     });
+
+
+
+                 }
+
+                }       
+        });
+    });
+
+
+// text selection
+$(".dataTables_scroll tbody tr").click(function(e){
+
+
+e.preventDefault();
+
+
+docid = $(this).attr('docid');
+
+first_td = $(this).find("td")[0];
+
+if($(first_td).hasClass("active")){
+
+$(this).find("td").each(function(){
+
+$(this).removeClass("active");
+
+});
+
+$(this).find("th").each(function(){
+$(this).removeClass("active");
+});
+
+}
+
+else {
+
+$(this).find("td").each(function(){
+$(this).addClass("active");
+})
+
+$(this).find("th").each(function(){
+$(this).addClass("active");
+})
+
+
+}
+
+
+ searchCorpus();
+
+
+});
+
+
+
+
+ 	});
+
+
+
+</script>
+	
+	
+
+
+</div><!-- /. content-wrap -->
+
+<footer class="footer" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="http://www.uni-muenchen.de/index.html" target="_blank"><img src="assets/images/lmu_logo.svg" alt="Responsive image" width="130" height="190" 
+                 class="img-fluid rounded mx-auto d-block"></a>
+            </div>
+             <div class="col-sm-3">
+                <a href="http://www.uni-marburg.de/de" target="_blank"><img src="assets/images/logo-MAR.gif" alt="Responsive image" width="150" height="190" class="img-fluid rounded mx-auto d-block"></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://www.dfg.de/" target="_blank"><img src="assets/images/dfg_blau.gif" alt="Responsive image" width="200" height="190" class="img-fluid rounded mx-auto d-block"></a>
+            </div>
+            <div class="col-sm-1">
+                <p class="text-muted foot">
+                       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <p class="text-muted foot">
+                    <a href="impressum.php">Imprint</a><br>
+                    <a href="privacy.php">Privacy Statement</a><br>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div> <!-- page_container -->
+
+
+</body>
+</html>
+	

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite this release and the original sources listed in NOTICE."
+title: "Lycian-and-Carian source-attributed corpus and research toolkit"
+version: 1.0.0
+date-released: 2026-10-02
+license: CC-BY-SA-4.0
+url: "https://github.com/hawkinsnick/Lycian-and-Carian"
+authors:
+  - name: "hawkinsnick corpus project contributors"

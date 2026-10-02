@@ -1,0 +1,74 @@
+[
+  {
+    "target_repository": "hawkinsnick/Linear-A",
+    "url": "https://github.com/hawkinsnick/Linear-A",
+    "kind": "research_comparison",
+    "implies_language_identity": false,
+    "implies_sign_equivalence": false,
+    "creates_independent_witnesses": 0
+  },
+  {
+    "target_repository": "hawkinsnick/Linear-B",
+    "url": "https://github.com/hawkinsnick/Linear-B",
+    "kind": "research_comparison",
+    "implies_language_identity": false,
+    "implies_sign_equivalence": false,
+    "creates_independent_witnesses": 0
+  },
+  {
+    "target_repository": "hawkinsnick/Cypro-Minoan",
+    "url": "https://github.com/hawkinsnick/Cypro-Minoan",
+    "kind": "research_comparison",
+    "implies_language_identity": false,
+    "implies_sign_equivalence": false,
+    "creates_independent_witnesses": 0
+  },
+  {
+    "target_repository": "hawkinsnick/Cretan-hieroglpyhs",
+    "url": "https://github.com/hawkinsnick/Cretan-hieroglpyhs",
+    "kind": "research_comparison",
+    "implies_language_identity": false,
+    "implies_sign_equivalence": false,
+    "creates_independent_witnesses": 0
+  },
+  {
+    "target_repository": "hawkinsnick/Phaistos-Disc",
+    "url": "https://github.com/hawkinsnick/Phaistos-Disc",
+    "kind": "research_comparison",
+    "implies_language_identity": false,
+    "implies_sign_equivalence": false,
+    "creates_independent_witnesses": 0
+  },
+  {
+    "target_repository": "hawkinsnick/Byblos-syllabary",
+    "url": "https://github.com/hawkinsnick/Byblos-syllabary",
+    "kind": "research_comparison",
+    "implies_language_identity": false,
+    "implies_sign_equivalence": false,
+    "creates_independent_witnesses": 0
+  },
+  {
+    "target_repository": "hawkinsnick/Cypriot-syllabic-Greek",
+    "url": "https://github.com/hawkinsnick/Cypriot-syllabic-Greek",
+    "kind": "research_comparison",
+    "implies_language_identity": false,
+    "implies_sign_equivalence": false,
+    "creates_independent_witnesses": 0
+  },
+  {
+    "target_repository": "hawkinsnick/Eteocypriot",
+    "url": "https://github.com/hawkinsnick/Eteocypriot",
+    "kind": "research_comparison",
+    "implies_language_identity": false,
+    "implies_sign_equivalence": false,
+    "creates_independent_witnesses": 0
+  },
+  {
+    "target_repository": "hawkinsnick/Eteocretan",
+    "url": "https://github.com/hawkinsnick/Eteocretan",
+    "kind": "research_comparison",
+    "implies_language_identity": false,
+    "implies_sign_equivalence": false,
+    "creates_independent_witnesses": 0
+  }
+]

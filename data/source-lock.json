@@ -1,0 +1,157 @@
+{
+  "scope": "Source snapshot and curated admission inputs; validate against committed checksums. Checksums ensure integrity, not epigraphic correctness.",
+  "files": [
+    {
+      "path": "data/raw/ediana/carian-405-453.json",
+      "sha256": "d7e4b1ec9a03345eb397057bad46355de1486100bd1192325759a43bd670d3f8"
+    },
+    {
+      "path": "data/raw/ediana/carian-408-581.json",
+      "sha256": "a422a3954599ab9fe47f0ba20000f9e24d067a9651065d0c78f41b9381189817"
+    },
+    {
+      "path": "data/raw/ediana/carian-413-426.json",
+      "sha256": "796bc432d32e58f9219f9d1c7fb962552fd80f0e58f623f8bb97f25dcc586f40"
+    },
+    {
+      "path": "data/raw/ediana/carian-427-440.json",
+      "sha256": "8655dd406026cb4138b6cb343c808bab0d13e27bc13eeddced635ea8b33893a9"
+    },
+    {
+      "path": "data/raw/ediana/carian-454-467.json",
+      "sha256": "70f8b19aa048a0ab8883380d728daf0ae24c214b192fe4a620bf984d1089a772"
+    },
+    {
+      "path": "data/raw/ediana/carian-472-595.json",
+      "sha256": "8f5e021846a8f4681df9bf5d63f5319f602665d9896c6ab59a4d8a9c41a9343f"
+    },
+    {
+      "path": "data/raw/ediana/carian-485-497.json",
+      "sha256": "c57821645b3e577acd3bf7e73297fdeb93d60d10b439ed04b874bc05a72349b6"
+    },
+    {
+      "path": "data/raw/ediana/carian-498-511.json",
+      "sha256": "e671fdd8184e6ad58b71d1c0c23b8f599fde74ac572a290f4888909f08521294"
+    },
+    {
+      "path": "data/raw/ediana/carian-531-544.json",
+      "sha256": "b2f765f388f145dc41af1f821df696c35ecced5cc1c4778e08b593ddc94ffa0a"
+    },
+    {
+      "path": "data/raw/ediana/carian-545-558.json",
+      "sha256": "91ae9ec41817c96e2eadeae8fa77c54eb3ecd68666ea1d0e28ff1b5e75614a4e"
+    },
+    {
+      "path": "data/raw/ediana/carian-559-603.json",
+      "sha256": "7ade51308cbe69dd50f7011fdf7f6c8a2844acf2f4fc32cec6ca1f86fcaf3c12"
+    },
+    {
+      "path": "data/raw/ediana/carian-582-513.json",
+      "sha256": "6a5e635b347d03a3346b338e94fe7a81e456d4c1a572ea0b46ab566e2354c7c7"
+    },
+    {
+      "path": "data/raw/ediana/carian-596-412.json",
+      "sha256": "1701765361615a9cd8525a71d8cfffc7a61d890ccfda0885d497f01004325a35"
+    },
+    {
+      "path": "data/raw/ediana/carian-604-662.json",
+      "sha256": "8f4fc9df4cf9c947c3ab965548c22d19786e50d2be5063c0b81b14dd12b9fd83"
+    },
+    {
+      "path": "data/raw/ediana/carian-610-484.json",
+      "sha256": "8cd53f9921a632d2129ae4b7043c171df0a4c475b969d894ef73613e35d43217"
+    },
+    {
+      "path": "data/raw/ediana/carian-611-624.json",
+      "sha256": "1e1c80e74ed349852700d404cab16b2600709a7ac005dd7d72b67a21b1e91f77"
+    },
+    {
+      "path": "data/raw/ediana/carian-625-639.json",
+      "sha256": "1fe2d41d8b624bfdcaa126a2ca69e92dac52461cf51dc1252aa7b93c934272e9"
+    },
+    {
+      "path": "data/raw/ediana/carian-640-609.json",
+      "sha256": "464f9fe0a41e81c549c8d1e4c939384b8433c48dd6a8ced9574260fe95d4c4b9"
+    },
+    {
+      "path": "data/raw/ediana/corpus-index.html",
+      "sha256": "af008c0689726e877f68cae61da4ea59763dc37f447ec17f09e0cd2a23f3fa1f"
+    },
+    {
+      "path": "data/raw/ediana/lycian-140-154.json",
+      "sha256": "ca18351df025c18b23021fd9dc45ea22b464ff33923b12c454cd40c4efe033e5"
+    },
+    {
+      "path": "data/raw/ediana/lycian-147-42.json",
+      "sha256": "264604989a41381b145aaecc6ff51ca94b91f70372d82fae10df7bd909624052"
+    },
+    {
+      "path": "data/raw/ediana/lycian-152-97.json",
+      "sha256": "874f20c1f6cf131a8055dc59e992511f4990305e4f51e2d7b7ae7f21b4e9ea51"
+    },
+    {
+      "path": "data/raw/ediana/lycian-155-135.json",
+      "sha256": "00130a08b36cecb2518eddf1d0f25d4c730d3434d6519432d926f2dccb20d78d"
+    },
+    {
+      "path": "data/raw/ediana/lycian-168-16.json",
+      "sha256": "7d01522f3093bdf386642c3fc3fe25e4d8f1444a47db18275f2df77ce9e141ba"
+    },
+    {
+      "path": "data/raw/ediana/lycian-17-151.json",
+      "sha256": "edc921583fea083d3f94997553b5193e17c485313d0ea9a6eb9e823146f9b1b6"
+    },
+    {
+      "path": "data/raw/ediana/lycian-182-172.json",
+      "sha256": "ec2d517a84b93d18656052e4faa9ef41622524991778af268da24f7db84bc508"
+    },
+    {
+      "path": "data/raw/ediana/lycian-30-183.json",
+      "sha256": "826ac509b3d41f03b3d8cfb41c2b4c562d60dca514445564312e0ac0822aceb7"
+    },
+    {
+      "path": "data/raw/ediana/lycian-43-56.json",
+      "sha256": "454da34ff80608c94dce81ef64c1c5ade6b6eb6968874dc50ba7484b9573c4dd"
+    },
+    {
+      "path": "data/raw/ediana/lycian-57-69.json",
+      "sha256": "430e1ed0d808bafbb78786ce3da055b950ab1b02c74628a1e7b6a7e741ec102c"
+    },
+    {
+      "path": "data/raw/ediana/lycian-70-83.json",
+      "sha256": "ea44c75f052e04b10d15cc939057ffd3c99eb1e503d0196613d9b0b651060c73"
+    },
+    {
+      "path": "data/raw/ediana/lycian-84-139.json",
+      "sha256": "ebf5a7577c924a95fdf21724cb3e75872f75168c7d54c8f91df3c285fdadff46"
+    },
+    {
+      "path": "data/raw/ediana/lycian-98-37.json",
+      "sha256": "2196616511ddffacb686bb630186341ac95a96096f7c3f6c8ddde10d8e0e2863"
+    },
+    {
+      "path": "data/raw/ediana/milyan-1-0.json",
+      "sha256": "e53dca3df71f06af95c0091646ee0d1b20fe6c78c1a24ac0f9b9e49cadd425a0"
+    },
+    {
+      "path": "data/source-evidence/corpus-overview.html",
+      "sha256": "af008c0689726e877f68cae61da4ea59763dc37f447ec17f09e0cd2a23f3fa1f"
+    },
+    {
+      "path": "data/source-evidence/license.json",
+      "sha256": "75ffe962ebb08084315cb1b59f4f1ca0f4e83c5d651f8a509ac3dc8cbf98988c"
+    },
+    {
+      "path": "data/source-index.json",
+      "sha256": "db9a489bcc8124b83e2b52320045291865b21cc3498af77f21f4277031eb8c13"
+    },
+    {
+      "path": "data/acquisition.json",
+      "sha256": "a08a50a12bd313f21390f80f5e4a05c305e0f25cac6c72948f6880d72dbb2111"
+    },
+    {
+      "path": "project.json",
+      "sha256": "663d26505e8eb8755ddb5872a8e1d374c98a6308b972b43112023a284e2f8bcb"
+    }
+  ]
+}
