@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "corpus": "Lycian-and-Carian",
+  "required_authorities": [
+    {
+      "role": "audit",
+      "path": "exports/audit.json",
+      "required": true
+    },
+    {
+      "role": "corpus",
+      "path": "exports/corpus.json",
+      "required": true
+    },
+    {
+      "role": "notice",
+      "path": "NOTICE",
+      "required": true
+    },
+    {
+      "role": "method",
+      "path": "docs/METHOD.md",
+      "required": true
+    }
+  ],
+  "behavioral_gates": [
+    "Lycian, Carian and Milyan remain separate analytical partitions",
+    "Digital catalogue entries are not verified physical monument counts",
+    "Source annotation columns and duplicated clitic columns are not independent occurrences",
+    "Frequency counts source strings, not phonemes, native signs or reconstructed words",
+    "Upstream lemmata, translations, POS and morphology remain attributed source assertions"
+  ]
+}
