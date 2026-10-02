@@ -1,5 +1,14 @@
 # Lycian, Carian and Milyan source corpus
 
+
+## AI research skill
+
+This corpus project includes a vendor-neutral, evidence-first AI research skill in [`ai-skill/`](ai-skill/). The corpus remains the scholarly source of truth; the skill is an interface, not a second corpus or independent authority.
+
+Researchers can give a capable AI this repository or its AI-ready bundle together with [`ai-skill/SKILL.md`](ai-skill/SKILL.md). The skill preserves provenance, uncertainty, exclusions, source dependence, rights and this project's scientific gates. Check [`ai-skill/generated/source-state.json`](ai-skill/generated/source-state.json) and the generated research-bundle index before substantive use.
+
+For questions spanning corpus projects, use the **Combined Corpus Research AI** in [`combined-ai-skill/`](https://github.com/hawkinsnick/Linear-A/tree/ai-skill-v0.1/combined-ai-skill). It orchestrates registered individual skills without merging their evidence. Membership does not imply linguistic relationship, sign equivalence, chronology, decipherment or independent replication.
+
 **1.0.0 — a reproducible eDiAna source snapshot and research toolkit.**
 
 A free, attributed dataset for examining inscriptions, preserving source
