@@ -1,7 +1,7 @@
 ---
 name: lycian-and-carian-research
 description: Evidence-first AI research skill for the Lycian and Carian corpus.
-version: 0.1.0
+version: 0.3.1
 ---
 
 # Lycian and Carian Research Skill
@@ -26,3 +26,10 @@ Give the direct answer, followed as relevant by Evidence; Evidentiary status; Un
 
 ## Synchronization
 Read `ai-skill/generated/source-state.json` before substantive work. It records the corpus commit from which the AI-facing package was synchronized. Generated files are rebuildable views; canonical corpus files govern if a discrepancy is found.
+
+## Academic-scrutiny gates
+- Lycian, Carian and Milyan remain separate analytical partitions
+- Digital catalogue entries are not verified physical monument counts
+- Source annotation columns and duplicated clitic columns are not independent occurrences
+- Frequency counts source strings, not phonemes, native signs or reconstructed words
+- Upstream lemmata, translations, POS and morphology remain attributed source assertions
