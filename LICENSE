@@ -1,5 +1,9 @@
-# Licence by material
+# License by material
 
-Code in `corpuskit`, `scripts` and `tests`: MIT, see LICENSE-CODE.
+Project-original software: PolyForm Noncommercial 1.0.0 (`LICENSE-CODE`).
 
-Project metadata, documentation and derived datasets: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0), https://creativecommons.org/licenses/by-sa/4.0/. You may share and adapt, including commercially, with attribution, a licence link, indicated changes and ShareAlike. See NOTICE for original source credits and exceptions. Public-domain originals retain their public-domain status. Linked external materials are not relicensed.
+Project-original corpus data, metadata, documentation and project-authored research outputs: CC BY-NC 4.0 (`LICENSE-CONTENT.md`), to the extent contributors own the applicable rights.
+
+Third-party/source-derived material retains upstream terms. Public-domain material remains public domain. See `LICENSING.md` and `NOTICE`.
+
+Noncommercial sharing/reuse with attribution is encouraged. Project-original licenses do not grant commercial bundling or use in commercial products/services.
