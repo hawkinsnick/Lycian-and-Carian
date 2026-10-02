@@ -5,14 +5,11 @@ import subprocess
 import sys
 ROOT = Path(__file__).resolve().parents[1]
 
-# Shared interoperability contract: fail releases if the machine-readable
-# semantics required by sibling corpora are missing or drift structurally.
-contract_path = ROOT / 'schemas' / 'interoperability-contract.json'
-contract = json.loads(contract_path.read_text(encoding='utf-8'))
-if contract.get('contract') != 'hawkinsnick-epigraphic-corpus-interoperability':
-    raise SystemExit('Invalid interoperability contract identifier')
-if contract.get('version') != '1.0.0':
-    raise SystemExit('Unsupported interoperability contract version')
+# Collection interoperability contract: common epistemic safeguards with a
+# corpus-specific record profile. This does not equate native evidence units.
+contract = json.loads((ROOT / 'schemas' / 'interoperability-contract.json').read_text(encoding='utf-8'))
+if contract.get('contract') != 'hawkinsnick-epigraphic-corpus-interoperability' or contract.get('version') != '1.1.0':
+    raise SystemExit('Unsupported interoperability contract')
 required = {
     'source_attribution_required': True,
     'source_integrity_hash_required': True,
@@ -23,8 +20,9 @@ required = {
     'language_or_script_identity_inferred_from_links': False,
     'decipherment_claimed': False,
 }
-if contract.get('principles') != required:
-    raise SystemExit('Interoperability principles drifted from contract 1.0.0')
+if contract.get('principles') != required or not contract.get('profile'):
+    raise SystemExit('Interoperability contract safeguards/profile invalid')
+
 
 for args in [['-m','corpuskit','validate'], ['-m','unittest','discover','-s','tests','-v'], ['-m','corpuskit','verify-export','exports']]:
     result = subprocess.run([sys.executable,*args],cwd=ROOT)
