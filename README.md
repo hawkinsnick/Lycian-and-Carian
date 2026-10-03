@@ -61,3 +61,8 @@ The eDiAna-derived upstream snapshot retains **CC BY-SA 4.0** and its commercial
 A 1.0 release means this source snapshot, adapters, exclusions and exports
 are tested and reproducible. Current readings, object identities, completeness
 beyond this catalogue and independent epigraphic review remain separate gates.
+
+
+## Fleet admission
+
+This corpus participates in the Combined Corpus Research AI fleet. Fleet admission requires the repository's component-specific licensing architecture, its individual `ai-skill` research contract and generated bundle, explicit master-registry membership, and passing member/master validation. Third-party material retains its upstream rights.
