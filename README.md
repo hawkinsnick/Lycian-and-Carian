@@ -56,8 +56,7 @@ phonemes or reconstructed words. It excludes damage and supplied readings.
 Read [the researcher workflow](docs/RESEARCHER_WORKFLOW.md),
 [method](docs/METHOD.md), [coverage and source policy](docs/COVERAGE.md),
 [source credits](NOTICE), and [family cross-references](research/family/README.md).
-Data and documentation are CC BY-SA 4.0; code is MIT. Academic and commercial
-reuse are permitted with the respective licence obligations.
+The eDiAna-derived upstream snapshot retains **CC BY-SA 4.0** and its commercial reuse rights under that upstream license. Current project-original software is **PolyForm Noncommercial 1.0.0** and project-owned documentation/annotations are **CC BY-NC 4.0**. Component-specific terms control; project restrictions do not remove upstream rights.
 
 A 1.0 release means this source snapshot, adapters, exclusions and exports
 are tested and reproducible. Current readings, object identities, completeness
