@@ -1,0 +1,23 @@
+{
+  "native_review_links": [
+    "LICENSING.md"
+  ],
+  "public_payload_rule": "Identifiers and source pointers only; no new transcriptions or source images. Restricted A/B derivatives stay local.",
+  "record_sets": [
+    {
+      "id_key": "record_id",
+      "name": "ediana-entries",
+      "path": "data/records.json",
+      "pointer": "",
+      "unit": "digital_catalogue_entry"
+    }
+  ],
+  "repository": "hawkinsnick/Lycian-and-Carian",
+  "schema_version": "1.0",
+  "scope_rule": "Every row in declared views is indexed; overlapping views are never summed as unique objects. Discovery outside these views remains open.",
+  "source_discovery_rule": "Declare new native source/task registers here so offline replay and the collection report include them.",
+  "source_files": [
+    "analysis/current-status.json",
+    "research/pre-expert-maximum.json"
+  ]
+}

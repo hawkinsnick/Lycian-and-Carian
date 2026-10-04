@@ -1,33 +1,4 @@
 {
-  "schema_version": "1.0",
-  "corpus": "Lycian-and-Carian",
-  "required_authorities": [
-    {
-      "role": "audit",
-      "path": "exports/audit.json",
-      "required": true
-    },
-    {
-      "role": "corpus",
-      "path": "exports/corpus.json",
-      "required": true
-    },
-    {
-      "role": "notice",
-      "path": "NOTICE",
-      "required": true
-    },
-    {
-      "role": "method",
-      "path": "docs/METHOD.md",
-      "required": true
-    },
-    {
-      "role": "ediana_lineage",
-      "path": "research/ediana-lineage-authority.json",
-      "required": true
-    }
-  ],
   "behavioral_gates": [
     "Lycian, Carian and Milyan remain separate analytical partitions",
     "Digital catalogue entries are not verified physical monument counts",
@@ -35,5 +6,44 @@
     "Frequency counts source strings, not phonemes, native signs or reconstructed words",
     "Upstream lemmata, translations, POS and morphology remain attributed source assertions",
     "Edition ancestry recorded by eDiAna is source dependence, not independent epigraphic replication."
-  ]
+  ],
+  "corpus": "Lycian-and-Carian",
+  "required_authorities": [
+    {
+      "path": "exports/audit.json",
+      "required": true,
+      "role": "audit"
+    },
+    {
+      "path": "exports/corpus.json",
+      "required": true,
+      "role": "corpus"
+    },
+    {
+      "path": "NOTICE",
+      "required": true,
+      "role": "notice"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "required": true,
+      "role": "method"
+    },
+    {
+      "path": "research/ediana-lineage-authority.json",
+      "required": true,
+      "role": "ediana_lineage"
+    },
+    {
+      "path": "research/collection-work-ledger.json",
+      "required": true,
+      "role": "collection_work_ledger"
+    },
+    {
+      "path": "review/collection-packet.json",
+      "required": true,
+      "role": "collection_review_packet"
+    }
+  ],
+  "schema_version": "1.0"
 }
