@@ -55,5 +55,10 @@
     "scripts/export_research_layer.py",
     "scripts/test_preexpert_parity.py",
     "docs/RIGHTS-ONLY-READINESS.md"
-  ]
+  ],
+  "gt9_assessment": {
+    "status": "REQUIRES_EXTERNAL_EVIDENCE",
+    "reason": "A >9 evidence-depth assessment requires direct critical-edition and object concordance beyond the 453-entry dependent eDiAna layer, especially Carian Adiego and modern Lycian edition evidence.",
+    "rule": "Software completeness alone does not raise the scholarly score."
+  }
 }
