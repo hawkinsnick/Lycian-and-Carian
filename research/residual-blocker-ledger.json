@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "corpus": "Lycian-Carian-Milyan",
+  "target": "LINEAR_A_METHOD_PARITY_PRE_EXPERT_MAXIMUM",
+  "checked": "2026-10-06",
+  "assessment": "OPEN_ENGINEERING_AND_RIGHTS_FRONTIER",
+  "blockers": [
+    {
+      "id": "LC-BLK-001",
+      "class": "RIGHTS_ACCESS",
+      "status": "BLOCKED",
+      "scope": "Neumann/Melchert/TITUS and other modern Lycian critical evidence",
+      "needed": "rights/access sufficient for systematic record-level critical collation and redistribution"
+    },
+    {
+      "id": "LC-BLK-002",
+      "class": "RIGHTS_ACCESS",
+      "status": "BLOCKED",
+      "scope": "Adiego 2007 Carian critical corpus",
+      "needed": "rights/access sufficient for systematic structured critical-edition collation/public derivative"
+    },
+    {
+      "id": "LC-BLK-003",
+      "class": "OBJECT_CONCORDANCE",
+      "status": "RIGHTS_ACCESS_BOUND",
+      "needed": "object/catalogue evidence sufficient to reconcile 453 digital entries to physical monuments without inferring identity"
+    },
+    {
+      "id": "LC-BLK-004",
+      "class": "ENGINEERING",
+      "status": "OPEN",
+      "needed": "method-parity API, loss-aware exports, explicit lineage/disagreement/rights interfaces and parity validation"
+    },
+    {
+      "id": "LC-BLK-005",
+      "class": "SCIENTIFIC_REVIEW",
+      "status": "DOWNSTREAM",
+      "needed": "expert adjudication of readings, direction, object identity and linguistic annotations"
+    }
+  ],
+  "completion_rule": "Close engineering; do not reconstruct protected critical editions from dependent digital sources."
+}
