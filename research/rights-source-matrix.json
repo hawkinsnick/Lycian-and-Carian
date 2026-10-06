@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "corpus": "Lycian-Carian-Milyan",
+  "sources": [
+    {
+      "id": "eDiAna",
+      "rights": "CC-BY-SA-4.0",
+      "use": "453-entry public source snapshot and derived source-attributed data with attribution/share-alike"
+    },
+    {
+      "id": "Kalinka-1901",
+      "rights": "HISTORICAL_EDITION_PUBLIC_DOMAIN_STATUS_JURISDICTION_DEPENDENT",
+      "use": "bibliographic/edition lineage; verify scan/provider rights for images"
+    },
+    {
+      "id": "Friedrich-1932",
+      "rights": "COPYRIGHT_STATUS/SCAN_PROVIDER_TERMS_REQUIRE_REVIEW",
+      "use": "bibliographic lineage and lawful targeted inspection"
+    },
+    {
+      "id": "Neumann-1979",
+      "rights": "COPYRIGHTED_SYSTEMATIC_DERIVATIVE_RIGHTS_NOT_ESTABLISHED",
+      "use": "bibliographic/locator facts unless permission/clear terms"
+    },
+    {
+      "id": "Melchert-2001b",
+      "rights": "PUBLICLY_HOSTED_CORPUS_REUSE_TERMS_REQUIRE_VERIFICATION",
+      "use": "lineage/comparison subject to terms"
+    },
+    {
+      "id": "TITUS-Lycian",
+      "rights": "SYSTEMATIC_REDISTRIBUTION_TERMS_NOT_ESTABLISHED",
+      "use": "public inspection/locators; no wholesale republication until terms clear"
+    },
+    {
+      "id": "Adiego-2007",
+      "rights": "COPYRIGHTED_BOOK_SYSTEMATIC_DERIVATIVE_RIGHTS_NOT_ESTABLISHED",
+      "use": "Carian lineage; systematic critical-edition extraction/public derivative requires permission/clear terms"
+    }
+  ],
+  "rule": "eDiAna's license governs its layer; it does not automatically relicense underlying editions, scans, photographs or third-party facsimiles."
+}
