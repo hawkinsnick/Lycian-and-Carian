@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "corpus": "Lycian, Carian and Milyan",
-  "target": "PRE_EXPERT_MAXIMUM",
-  "checked": "2026-10-02",
+  "target": "LINEAR_A_METHOD_PARITY_PRE_EXPERT_MAXIMUM",
+  "checked": "2026-10-06",
   "established": [
     {
       "gate": "public_eDiAna_snapshot",
@@ -25,22 +25,10 @@
   ],
   "remaining_nonexpert_work": [
     {
-      "id": "LC-PRE-001",
-      "scope": "453 catalogue entries",
-      "action": "Build document-level physical-object concordance and aliases.",
-      "blocked_by": "catalogue_access"
-    },
-    {
-      "id": "LC-PRE-002",
-      "scope": "Lycian editions",
-      "action": "Compare newer source-attributed editions and record differences.",
-      "blocked_by": "edition_access"
-    },
-    {
-      "id": "LC-PRE-003",
-      "scope": "script inventories",
-      "action": "Build authority-cited inventories preserving uncertainty.",
-      "blocked_by": "source_access"
+      "id": "LC-PRE-RIGHTS",
+      "scope": "critical editions/object concordance",
+      "action": "Resume systematic record-level collation when rights-compatible source access is established.",
+      "blocked_by": "rights_access"
     }
   ],
   "human_only_boundary": [
@@ -57,5 +45,15 @@
       "decision": "validate linguistic benchmark annotations"
     }
   ],
-  "completion_rule": "Catalogue completeness is not world-corpus completeness; machine-reconcilable work is completed or explicitly blocked before human adjudication."
+  "completion_rule": "Catalogue completeness is not world-corpus completeness; machine-reconcilable work is completed or explicitly blocked before human adjudication.",
+  "parity_controls": [
+    "research/source-lineage-register.json",
+    "research/disagreement-register.json",
+    "research/rights-source-matrix.json",
+    "research/residual-blocker-ledger.json",
+    "scripts/research_api.py",
+    "scripts/export_research_layer.py",
+    "scripts/test_preexpert_parity.py",
+    "docs/RIGHTS-ONLY-READINESS.md"
+  ]
 }
