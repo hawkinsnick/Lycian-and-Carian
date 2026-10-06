@@ -33,3 +33,7 @@ Read `ai-skill/generated/source-state.json` before substantive work. It records 
 - Source annotation columns and duplicated clitic columns are not independent occurrences
 - Frequency counts source strings, not phonemes, native signs or reconstructed words
 - Upstream lemmata, translations, POS and morphology remain attributed source assertions
+
+
+## Offline corpus browser
+Run `python scripts/build_corpus_browser.py` to generate `workbench/corpus-browser.html`. It searches only files explicitly admitted by `research/browser-sources.json`. Browser admission requires rights/provenance review; never recursively ingest restricted or raw upstream material. Display does not establish decipherment, source independence, or expert validation.
