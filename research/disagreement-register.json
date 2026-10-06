@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "corpus": "Lycian-Carian-Milyan",
+  "items": [
+    {
+      "id": "LC-DIS-001",
+      "scope": "Carian uncertain-direction records",
+      "kind": "reading_direction",
+      "status": "SOURCE_MARKED_UNCERTAINTY",
+      "boundary": "Preserve uncertainty; exclude where configured from default analytical counts."
+    },
+    {
+      "id": "LC-DIS-002",
+      "scope": "TITUS Lycian 1-150",
+      "kind": "editorial_reading",
+      "status": "KNOWN_EDITORIAL_SELECTION",
+      "boundary": "TITUS reports adopting Friedrich and sometimes alternatives from critical apparatus; direct edition checks required."
+    },
+    {
+      "id": "LC-DIS-003",
+      "scope": "453 eDiAna entries",
+      "kind": "identity_count",
+      "status": "CONTROLLED",
+      "boundary": "Digital catalogue entry count is not a unique physical-monument total."
+    },
+    {
+      "id": "LC-DIS-004",
+      "scope": "Lycian versus Milyan",
+      "kind": "language_partition",
+      "status": "CONTROLLED",
+      "boundary": "Milyan/Lycian B remains separate; no merged frequency or linguistic claims without explicit comparison design."
+    },
+    {
+      "id": "LC-DIS-005",
+      "scope": "later Carian/Lycian publications",
+      "kind": "coverage",
+      "status": "OPEN_PUBLICATION_FRONTIER",
+      "boundary": "New published inscriptions require explicit concordance and source rights; do not force legacy numbering."
+    }
+  ]
+}
