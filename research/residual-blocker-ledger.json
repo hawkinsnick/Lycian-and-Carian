@@ -3,7 +3,7 @@
   "corpus": "Lycian-Carian-Milyan",
   "target": "LINEAR_A_METHOD_PARITY_PRE_EXPERT_MAXIMUM",
   "checked": "2026-10-06",
-  "assessment": "OPEN_ENGINEERING_AND_RIGHTS_FRONTIER",
+  "assessment": "RIGHTS_ACCESS_DOMINANT_PRE_EXPERT_ENGINEERING_COMPLETE",
   "blockers": [
     {
       "id": "LC-BLK-001",
@@ -28,7 +28,7 @@
     {
       "id": "LC-BLK-004",
       "class": "ENGINEERING",
-      "status": "OPEN",
+      "status": "COMPLETE",
       "needed": "method-parity API, loss-aware exports, explicit lineage/disagreement/rights interfaces and parity validation"
     },
     {
