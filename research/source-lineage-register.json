@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "corpus": "Lycian-Carian-Milyan",
+  "lineages": [
+    {
+      "id": "LC-LIN-LYCIAN",
+      "partition": "lycian",
+      "chain": [
+        "Kalinka 1901",
+        "Friedrich 1932",
+        "Neumann 1979",
+        "Melchert 2001b",
+        "eDiAna 2017"
+      ],
+      "boundary": "Web/digital repetition along this chain is dependent unless record-specific independent collation is shown."
+    },
+    {
+      "id": "LC-LIN-MILYAN",
+      "partition": "milyan",
+      "chain": [
+        "Lycian/Milyan primary editions",
+        "Melchert/TITUS/eDiAna"
+      ],
+      "boundary": "Milyan remains a separate partition; do not merge into Lycian A statistics."
+    },
+    {
+      "id": "LC-LIN-CARIAN",
+      "partition": "carian",
+      "chain": [
+        "Adiego 2007",
+        "eDiAna 2022"
+      ],
+      "boundary": "eDiAna states numbering/transliteration are based on Adiego, with later published inscriptions added."
+    },
+    {
+      "id": "LC-LIN-TITUS",
+      "partition": "lycian",
+      "chain": [
+        "Kalinka/Friedrich/Neumann/Letoon editions",
+        "Melchert re-editing",
+        "TITUS"
+      ],
+      "boundary": "TITUS explicitly warns readings should be checked and includes editorial selections; not independent by default."
+    }
+  ],
+  "rules": [
+    "Catalogue entries are not physical monuments.",
+    "Keep Lycian, Milyan and Carian partitions separate.",
+    "Do not transfer phonetic/sign equivalence across scripts merely because languages are related.",
+    "Later eDiAna additions are source-attributed additions, not retroactive validation of foundational editions."
+  ]
+}
