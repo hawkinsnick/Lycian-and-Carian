@@ -38,5 +38,11 @@
       "needed": "expert adjudication of readings, direction, object identity and linguistic annotations"
     }
   ],
-  "completion_rule": "Close engineering; do not reconstruct protected critical editions from dependent digital sources."
+  "completion_rule": "Close engineering; do not reconstruct protected critical editions from dependent digital sources.",
+  "collection_gt9_program": {
+    "status": "ACTIVE",
+    "target": "DEFENSIBLE_SCORE_GT_9",
+    "rule": "Do not graduate by version, tooling, or file count. Continue lawful evidence acquisition/reconciliation until evidence depth supports >9 or a concrete rights/access/expert dependency blocks further material progress.",
+    "checked": "2026-10-06"
+  }
 }
