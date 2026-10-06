@@ -21,3 +21,11 @@ jobs:
           python -m corpuskit build
           python -m corpuskit export --output exports
           git diff --exit-code -- data/records.json analysis/current-status.json exports
+      - name: Validate method-parity interfaces
+        run: |
+          python scripts/test_preexpert_parity.py
+          python scripts/build_corpus_browser.py
+          test -s workbench/corpus-browser.html
+          python scripts/research_api.py records --language lycian --limit 2 > /tmp/lc-api.json
+          python scripts/export_research_layer.py json /tmp/lc.json
+          test -s /tmp/lc.json.manifest.json
