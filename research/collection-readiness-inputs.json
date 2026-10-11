@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "repository": "hawkinsnick/Lycian-and-Carian",
+  "record_sets": [
+    {
+      "name": "ediana-reference",
+      "path": "data/records.json",
+      "id_key": "record_id",
+      "unit": "digital_catalogue_entry"
+    }
+  ],
+  "source_files": [
+    "analysis/current-status.json",
+    "research/pre-expert-maximum.json"
+  ],
+  "native_review_links": [],
+  "scope_rule": "Every row in declared views is indexed; overlapping views are never summed as unique physical objects. Discovery outside these views remains open.",
+  "public_payload_rule": "Identifiers, hashes and pointers only; no new source transcriptions or images. Restricted derivatives remain local.",
+  "source_discovery_rule": "Declare new source/task registers here for offline replay."
+}
