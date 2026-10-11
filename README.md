@@ -74,3 +74,7 @@ Run `python scripts/build_corpus_browser.py` to generate `workbench/corpus-brows
 
 ## Linear A method-parity gate
 This corpus has reached the machine-resolvable method-parity baseline for its current lawful eDiAna evidence layer. Source lineage, partition boundaries, disagreements, component rights, browser/API/exports, validation and review boundaries are explicit. Read `docs/RIGHTS-ONLY-READINESS.md` and `research/residual-blocker-ledger.json`. Do not treat 453 catalogue entries as 453 physical monuments, merge Milyan into Lycian, or count dependent editions as independent confirmation. Further systematic critical collation is rights/access bound.
+
+## AI integrity checkpoint — 2026-10-11
+
+[AI integrity controls](docs/AI-INTEGRITY.md) document source-bound bundle publication and checked cross-corpus dependency safeguards. Reading coverage and scholarly acceptance are unchanged.

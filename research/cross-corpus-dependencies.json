@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "repository": "hawkinsnick/Lycian-and-Carian",
+  "master_repository": "hawkinsnick/Linear-A",
+  "master_registry_path": "corpus-factory/cross-corpus-dependencies.json",
+  "scope": "Known source-supported cross-repository dependencies only. Absence from this register is not proof of independence or physical uniqueness.",
+  "dependency_groups": [
+    {
+      "physical_identity_certified": false,
+      "independent_witnesses_established": false,
+      "classification_transfer_allowed": false,
+      "group_id": "EDIANA-MILYAN-0",
+      "relation": "SHARED_DIGITAL_SOURCE_ENTRY",
+      "authority": "Both native records explicitly name the same eDiAna corpus/document URL. They are repeated digital evidence, not independent witnesses.",
+      "participants": [
+        {
+          "repository": "hawkinsnick/Milyan-Lycian-B",
+          "record_id": "EDIANA-MILYAN-0",
+          "evidence": [
+            {
+              "path": "data/reference/records.json",
+              "sha256": "315d64c998b380d84616e217c79636979f5576f8814dabeb815cbd07758c1565",
+              "pointer": "/0/id",
+              "expected": "EDIANA-MILYAN-0"
+            },
+            {
+              "path": "data/reference/records.json",
+              "sha256": "315d64c998b380d84616e217c79636979f5576f8814dabeb815cbd07758c1565",
+              "pointer": "/0/source_url",
+              "expected": "https://www.ediana.gwi.uni-muenchen.de/corpus.php?corpus=milyan&docid=0"
+            }
+          ]
+        },
+        {
+          "repository": "hawkinsnick/Lycian-and-Carian",
+          "record_id": "EDIANA-MILYAN-0",
+          "evidence": [
+            {
+              "path": "data/records.json",
+              "sha256": "8695b36b906fad403330eb8c1c79a1e4938723d69ff56ec4929d6691f06ac247",
+              "pointer": "/451/record_id",
+              "expected": "EDIANA-MILYAN-0"
+            },
+            {
+              "path": "data/records.json",
+              "sha256": "8695b36b906fad403330eb8c1c79a1e4938723d69ff56ec4929d6691f06ac247",
+              "pointer": "/451/source/url",
+              "expected": "https://www.ediana.gwi.uni-muenchen.de/corpus.php?corpus=milyan&docid=0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "physical_identity_certified": false,
+      "independent_witnesses_established": false,
+      "classification_transfer_allowed": false,
+      "group_id": "EDIANA-MILYAN-1",
+      "relation": "SHARED_DIGITAL_SOURCE_ENTRY",
+      "authority": "Both native records explicitly name the same eDiAna corpus/document URL. They are repeated digital evidence, not independent witnesses.",
+      "participants": [
+        {
+          "repository": "hawkinsnick/Milyan-Lycian-B",
+          "record_id": "EDIANA-MILYAN-1",
+          "evidence": [
+            {
+              "path": "data/reference/records.json",
+              "sha256": "315d64c998b380d84616e217c79636979f5576f8814dabeb815cbd07758c1565",
+              "pointer": "/1/id",
+              "expected": "EDIANA-MILYAN-1"
+            },
+            {
+              "path": "data/reference/records.json",
+              "sha256": "315d64c998b380d84616e217c79636979f5576f8814dabeb815cbd07758c1565",
+              "pointer": "/1/source_url",
+              "expected": "https://www.ediana.gwi.uni-muenchen.de/corpus.php?corpus=milyan&docid=1"
+            }
+          ]
+        },
+        {
+          "repository": "hawkinsnick/Lycian-and-Carian",
+          "record_id": "EDIANA-MILYAN-1",
+          "evidence": [
+            {
+              "path": "data/records.json",
+              "sha256": "8695b36b906fad403330eb8c1c79a1e4938723d69ff56ec4929d6691f06ac247",
+              "pointer": "/452/record_id",
+              "expected": "EDIANA-MILYAN-1"
+            },
+            {
+              "path": "data/records.json",
+              "sha256": "8695b36b906fad403330eb8c1c79a1e4938723d69ff56ec4929d6691f06ac247",
+              "pointer": "/452/source/url",
+              "expected": "https://www.ediana.gwi.uni-muenchen.de/corpus.php?corpus=milyan&docid=1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "physical_identity_certified": false,
+  "independence_established": false
+}
