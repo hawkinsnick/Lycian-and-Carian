@@ -9,7 +9,7 @@
     "uncertainty": "Retain damage, restorations, unreadable signs and competing segmentations; do not silently normalize them."
   },
   "enumerated_record_keys": 453,
-  "evidence_fingerprint": "f19806624fdb43d2a068285c81882f75fecaf5ae71f2b1779846c0f3cfe43fc9",
+  "evidence_fingerprint": "06bb4c32cd774a0baed0096cca0e2d85bc22824f769b04b2162ae212012f16c7",
   "ledger_path": "research/collection-work-ledger.json",
   "native_review_links": [],
   "repository": "hawkinsnick/Lycian-and-Carian",
