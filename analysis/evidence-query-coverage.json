@@ -1,7 +1,7 @@
 {
   "format": "corpus-native-evidence-query-coverage-v1",
   "repository": "hawkinsnick/Lycian-and-Carian",
-  "profile_sha256": "03059ba8d1d85fdcc93a0a9c59c96e503550c33c275c09f4327a3a73e5a041a7",
+  "profile_sha256": "80ddb4edc3256addaae6f2b5f917d838445a50abef4184f9e9119590b893d522",
   "implementation_sha256": "70aa6686802122667b369811fa569c45c407847ed8965b917f58130c5a685550",
   "collections": [
     {
@@ -18,7 +18,7 @@
         "path": "data/records.json",
         "sha256": "8695b36b906fad403330eb8c1c79a1e4938723d69ff56ec4929d6691f06ac247",
         "pointer": "",
-        "native_artifacts_snapshot_commit": "88a0346c7a4530bd45ef25c062f06c345f7cc812",
+        "native_artifacts_snapshot_commit": null,
         "role": "digital-entries",
         "encoding": "json"
       }
@@ -37,8 +37,27 @@
         "path": "research/disagreement-register.json",
         "sha256": "b2f3be56ddd2759570fa885bbe205f771464119c6f2016232068fdc044b91418",
         "pointer": "/items",
-        "native_artifacts_snapshot_commit": "88a0346c7a4530bd45ef25c062f06c345f7cc812",
+        "native_artifacts_snapshot_commit": null,
         "role": "disagreement-register",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "attribution-review",
+      "native_unit": "bounded documentary attribution review task",
+      "record_count": 5,
+      "scope": "All five controls retain partitions and source uncertainty. Global editorial-choice statements do not supply record-specific aligned variants.",
+      "example_ids": [
+        "LC-DIS-001",
+        "LC-DIS-002",
+        "LC-DIS-003"
+      ],
+      "provenance": {
+        "path": "research/attribution-review.json",
+        "sha256": "9cdc66164e445bf9056a82878f16c6b5f13fec651b6b86d37d6183eb13a01f4e",
+        "pointer": "/cases",
+        "native_artifacts_snapshot_commit": null,
+        "role": "bounded attribution review",
         "encoding": "json"
       }
     }
@@ -48,7 +67,7 @@
       "path": "data/records.json",
       "sha256": "8695b36b906fad403330eb8c1c79a1e4938723d69ff56ec4929d6691f06ac247",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "88a0346c7a4530bd45ef25c062f06c345f7cc812",
+      "native_artifacts_snapshot_commit": null,
       "role": "digital-entries",
       "encoding": "json"
     },
@@ -56,7 +75,7 @@
       "path": "research/disagreement-register.json",
       "sha256": "b2f3be56ddd2759570fa885bbe205f771464119c6f2016232068fdc044b91418",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "88a0346c7a4530bd45ef25c062f06c345f7cc812",
+      "native_artifacts_snapshot_commit": null,
       "role": "disagreement-register",
       "encoding": "json"
     },
@@ -64,7 +83,7 @@
       "path": "research/source-lineage-register.json",
       "sha256": "8b342d8f00368b27b8a269ddc28eaecd17a01dab5cd924bd67977c8597376c80",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "88a0346c7a4530bd45ef25c062f06c345f7cc812",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "json"
     },
@@ -72,7 +91,7 @@
       "path": "research/rights-source-matrix.json",
       "sha256": "140667eeff39cdfaba590299f140318f86f268142e3bd11b1bdc280a8450cd56",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "88a0346c7a4530bd45ef25c062f06c345f7cc812",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "json"
     },
@@ -80,7 +99,7 @@
       "path": "data/source-lock.json",
       "sha256": "4761c0ef330d6c4852d939a33ce8b7ebf6386b2526295fca48c71ba09e026481",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "88a0346c7a4530bd45ef25c062f06c345f7cc812",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "json"
     },
@@ -88,7 +107,7 @@
       "path": "LICENSE-CONTENT.md",
       "sha256": "24b4bfcf2de2f729b7ebce80c8011e7d75f82f5626a63bdcf333b28f8a2a2802",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "88a0346c7a4530bd45ef25c062f06c345f7cc812",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "text"
     },
@@ -96,13 +115,22 @@
       "path": "NOTICE",
       "sha256": "eaee4c2a291fdbcc39e37e1d674962020cf904124db5c0b71d1215e9549bfc55",
       "pointer": "",
-      "native_artifacts_snapshot_commit": "88a0346c7a4530bd45ef25c062f06c345f7cc812",
+      "native_artifacts_snapshot_commit": null,
       "role": "corpus-level source/rights/context register",
       "encoding": "text"
+    },
+    {
+      "path": "research/attribution-review.json",
+      "sha256": "9cdc66164e445bf9056a82878f16c6b5f13fec651b6b86d37d6183eb13a01f4e",
+      "pointer": "",
+      "native_artifacts_snapshot_commit": null,
+      "role": "bounded attribution review",
+      "encoding": "json"
     }
   ],
   "scholarly_limits": [
-    "Lycian and Carian entries are distinct language populations. Source segmentation, lemma and translation annotations are attributed analyses, not independently verified readings or evidence of cross-language equivalence."
+    "Lycian and Carian entries are distinct language populations. Source segmentation, lemma and translation annotations are attributed analyses, not independently verified readings or evidence of cross-language equivalence.",
+    "Attribution review inspects pinned native packets, not underlying sources afresh. Its cases and apparatus notes are not independent witnesses or an alternative-pair total."
   ],
   "alternative_pair_count": null,
   "independent_witness_count": null,
