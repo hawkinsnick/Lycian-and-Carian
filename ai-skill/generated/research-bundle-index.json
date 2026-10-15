@@ -1,9 +1,9 @@
 {
   "schema_version": "0.3.1",
   "skill_version": "0.3.1",
-  "source_commit": "8c9df63774765c0990b95e43315072683c0cf7e2",
+  "source_commit": "845d536e1bb49f23c229376d7f9d37a9756111a0",
   "canonical_repository": true,
-  "generated_at_utc": "2026-10-12T00:31:03+00:00",
+  "generated_at_utc": "2026-10-15T01:48:24+00:00",
   "contract": {
     "corpus_is_authoritative": true,
     "missing_means_unknown": true,
@@ -13,6 +13,36 @@
     "preserve_rights": true
   },
   "artifacts": [
+    {
+      "role": "native_evidence_profile",
+      "path": "research/evidence-query-profile.json",
+      "sha256": "03059ba8d1d85fdcc93a0a9c59c96e503550c33c275c09f4327a3a73e5a041a7",
+      "bytes": 2564
+    },
+    {
+      "role": "native_evidence_coverage",
+      "path": "analysis/evidence-query-coverage.json",
+      "sha256": "3fd2a84cc0a3b6f6d0352afaeeb5531ac048d2ca45382dae7732089555b66668",
+      "bytes": 4656
+    },
+    {
+      "role": "native_evidence_query",
+      "path": "scripts/evidence_query.py",
+      "sha256": "70aa6686802122667b369811fa569c45c407847ed8965b917f58130c5a685550",
+      "bytes": 11289
+    },
+    {
+      "role": "native_evidence_query_tests",
+      "path": "scripts/test_native_evidence_query.py",
+      "sha256": "ddd2af2ce39904014c8a58122278e524e7ae9d504c47218e26f1ba581bb581f4",
+      "bytes": 6771
+    },
+    {
+      "role": "native_evidence_guide",
+      "path": "docs/EVIDENCE-AND-ALTERNATIVES.md",
+      "sha256": "15396e5f385ce3255bad97472455a42720b579a7ffbf70859edb630257b71b0e",
+      "bytes": 3841
+    },
     {
       "role": "collection_work_ledger",
       "path": "research/collection-work-ledger.json",
