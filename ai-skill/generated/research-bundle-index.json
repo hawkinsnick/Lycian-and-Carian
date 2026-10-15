@@ -1,9 +1,9 @@
 {
   "schema_version": "0.3.1",
   "skill_version": "0.3.1",
-  "source_commit": "845d536e1bb49f23c229376d7f9d37a9756111a0",
+  "source_commit": "f7ffddc4f1f62265a7351ec8687e4323ab3cad79",
   "canonical_repository": true,
-  "generated_at_utc": "2026-10-15T01:48:24+00:00",
+  "generated_at_utc": "2026-10-15T02:37:49+00:00",
   "contract": {
     "corpus_is_authoritative": true,
     "missing_means_unknown": true,
@@ -14,16 +14,46 @@
   },
   "artifacts": [
     {
+      "role": "attribution_review",
+      "path": "research/attribution-review.json",
+      "sha256": "9cdc66164e445bf9056a82878f16c6b5f13fec651b6b86d37d6183eb13a01f4e",
+      "bytes": 4750
+    },
+    {
+      "role": "attribution_review",
+      "path": "analysis/attribution-review-audit.json",
+      "sha256": "b1fa3bec910b6d12c2326529ef319121add4cce2d23a749c82b1241ae3f568d8",
+      "bytes": 973
+    },
+    {
+      "role": "attribution_review",
+      "path": "docs/ATTRIBUTION-REVIEW.md",
+      "sha256": "a9ddc2031c6163d1c3b6fb5b33b2e2cc03decd61ccaa758c544c72d8ed33dde7",
+      "bytes": 3046
+    },
+    {
+      "role": "attribution_review",
+      "path": "scripts/attribution_review.py",
+      "sha256": "29fd40045d96e9ee0d1d8f692b856a1b8a0631b9a5fa4fc86080d951c1236dbf",
+      "bytes": 6044
+    },
+    {
+      "role": "attribution_review",
+      "path": "scripts/test_attribution_review.py",
+      "sha256": "d81e1c610325e822a1e079db18a619defe57654d7318a13a8be336760b37cae0",
+      "bytes": 3274
+    },
+    {
       "role": "native_evidence_profile",
       "path": "research/evidence-query-profile.json",
-      "sha256": "03059ba8d1d85fdcc93a0a9c59c96e503550c33c275c09f4327a3a73e5a041a7",
-      "bytes": 2564
+      "sha256": "80ddb4edc3256addaae6f2b5f917d838445a50abef4184f9e9119590b893d522",
+      "bytes": 4079
     },
     {
       "role": "native_evidence_coverage",
       "path": "analysis/evidence-query-coverage.json",
-      "sha256": "3fd2a84cc0a3b6f6d0352afaeeb5531ac048d2ca45382dae7732089555b66668",
-      "bytes": 4656
+      "sha256": "b281afb8690cba6ae5cf8662b3118c2e7e584186b9cd2d60884718484c78f4af",
+      "bytes": 5498
     },
     {
       "role": "native_evidence_query",
@@ -40,8 +70,8 @@
     {
       "role": "native_evidence_guide",
       "path": "docs/EVIDENCE-AND-ALTERNATIVES.md",
-      "sha256": "15396e5f385ce3255bad97472455a42720b579a7ffbf70859edb630257b71b0e",
-      "bytes": 3841
+      "sha256": "1e752641a1552196526df84f7ad8d26b4b601cafded2da39ff9668e85dfab9c0",
+      "bytes": 4798
     },
     {
       "role": "collection_work_ledger",
