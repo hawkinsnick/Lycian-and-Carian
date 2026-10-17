@@ -1,0 +1,171 @@
+{
+  "format": "native-research-delivery-v1",
+  "repository": "hawkinsnick/Lycian-and-Carian",
+  "status": "PASS_DELIVERY_CONTROLS_ONLY",
+  "source_attribution_completeness": "NOT_CERTIFIED_BY_FILE_POINTERS",
+  "facts_hypotheses_policy": "PRESERVE_NATIVE_CATEGORIES_NO_AUTOMATIC_PROMOTION",
+  "scholarly_completeness": false,
+  "expert_acceptance_added": false,
+  "model_behavior_empirically_validated": false,
+  "collections": [
+    {
+      "name": "digital-entries",
+      "native_unit": "digital catalogue entry",
+      "record_count": 453,
+      "scope": "Language partitions and raw source annotations remain separate.",
+      "example_ids": [
+        "EDIANA-CARIAN-400",
+        "EDIANA-CARIAN-401",
+        "EDIANA-CARIAN-402"
+      ],
+      "provenance": {
+        "path": "data/records.json",
+        "sha256": "8695b36b906fad403330eb8c1c79a1e4938723d69ff56ec4929d6691f06ac247",
+        "pointer": "",
+        "native_artifacts_snapshot_commit": null,
+        "role": "digital-entries",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "disagreement-register",
+      "native_unit": "research disagreement/control item",
+      "record_count": 5,
+      "scope": "Register scopes are not automatic record-level links.",
+      "example_ids": [
+        "LC-DIS-001",
+        "LC-DIS-002",
+        "LC-DIS-003"
+      ],
+      "provenance": {
+        "path": "research/disagreement-register.json",
+        "sha256": "b2f3be56ddd2759570fa885bbe205f771464119c6f2016232068fdc044b91418",
+        "pointer": "/items",
+        "native_artifacts_snapshot_commit": null,
+        "role": "disagreement-register",
+        "encoding": "json"
+      }
+    },
+    {
+      "name": "attribution-review",
+      "native_unit": "bounded documentary attribution review task",
+      "record_count": 5,
+      "scope": "All five controls retain partitions and source uncertainty. Global editorial-choice statements do not supply record-specific aligned variants.",
+      "example_ids": [
+        "LC-DIS-001",
+        "LC-DIS-002",
+        "LC-DIS-003"
+      ],
+      "provenance": {
+        "path": "research/attribution-review.json",
+        "sha256": "9cdc66164e445bf9056a82878f16c6b5f13fec651b6b86d37d6183eb13a01f4e",
+        "pointer": "/cases",
+        "native_artifacts_snapshot_commit": null,
+        "role": "bounded attribution review",
+        "encoding": "json"
+      }
+    }
+  ],
+  "scholarly_limits": [
+    "Lycian and Carian entries are distinct language populations. Source segmentation, lemma and translation annotations are attributed analyses, not independently verified readings or evidence of cross-language equivalence.",
+    "Attribution review inspects pinned native packets, not underlying sources afresh. Its cases and apparatus notes are not independent witnesses or an alternative-pair total."
+  ],
+  "inputs": [
+    {
+      "path": "LICENSE",
+      "sha256": "a6483079a3962d57e0174a735f70813ce644e4371869e1108114dfee6cfd5674",
+      "bytes": 582
+    },
+    {
+      "path": "LICENSE-CODE",
+      "sha256": "da0ea24fe99ee55dffa4fdcc54c2c533be08b240a37fcf093b6e5a716d5cd74a",
+      "bytes": 324
+    },
+    {
+      "path": "LICENSE-CONTENT.md",
+      "sha256": "24b4bfcf2de2f729b7ebce80c8011e7d75f82f5626a63bdcf333b28f8a2a2802",
+      "bytes": 762
+    },
+    {
+      "path": "LICENSING.md",
+      "sha256": "ab9b5ec64d32f4e987fa4081dec15853a6b87858a4a8dbb7162af4ab9a54c7e8",
+      "bytes": 2487
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "eaee4c2a291fdbcc39e37e1d674962020cf904124db5c0b71d1215e9549bfc55",
+      "bytes": 2733
+    },
+    {
+      "path": "ai-skill/SKILL.md",
+      "sha256": "6a7f56f88ffe839965e18dcbf078a023646f5e361a2fa9da39fbe16c6c47884d",
+      "bytes": 7848
+    },
+    {
+      "path": "data/records.json",
+      "sha256": "8695b36b906fad403330eb8c1c79a1e4938723d69ff56ec4929d6691f06ac247",
+      "bytes": 3947594
+    },
+    {
+      "path": "data/source-lock.json",
+      "sha256": "4761c0ef330d6c4852d939a33ce8b7ebf6386b2526295fca48c71ba09e026481",
+      "bytes": 5770
+    },
+    {
+      "path": "docs/RESEARCH-DELIVERY.md",
+      "sha256": "e745c98907a4134dc4c1e7b7b89aa584215482be81ceccd835495e84aa889189",
+      "bytes": 4065
+    },
+    {
+      "path": "research/attribution-review.json",
+      "sha256": "9cdc66164e445bf9056a82878f16c6b5f13fec651b6b86d37d6183eb13a01f4e",
+      "bytes": 4750
+    },
+    {
+      "path": "research/collection-work-ledger.json",
+      "sha256": "51da864d5f4e229687cd0cb5e5c6419695744a3105d38ff244c857f008e9b768",
+      "bytes": 646008
+    },
+    {
+      "path": "research/disagreement-register.json",
+      "sha256": "b2f3be56ddd2759570fa885bbe205f771464119c6f2016232068fdc044b91418",
+      "bytes": 1438
+    },
+    {
+      "path": "research/evidence-query-profile.json",
+      "sha256": "80ddb4edc3256addaae6f2b5f917d838445a50abef4184f9e9119590b893d522",
+      "bytes": 4079
+    },
+    {
+      "path": "research/rights-source-matrix.json",
+      "sha256": "140667eeff39cdfaba590299f140318f86f268142e3bd11b1bdc280a8450cd56",
+      "bytes": 1602
+    },
+    {
+      "path": "research/source-lineage-register.json",
+      "sha256": "8b342d8f00368b27b8a269ddc28eaecd17a01dab5cd924bd67977c8597376c80",
+      "bytes": 1640
+    },
+    {
+      "path": "review/collection-packet.json",
+      "sha256": "0a087a67b0d7afe5391ba9f56d9e3f65d7b394101f3f846d522d00cf465caa6e",
+      "bytes": 1798
+    },
+    {
+      "path": "scripts/evidence_query.py",
+      "sha256": "70aa6686802122667b369811fa569c45c407847ed8965b917f58130c5a685550",
+      "bytes": 11289
+    },
+    {
+      "path": "scripts/research_delivery.py",
+      "sha256": "2c113043ed51a459b82dc3959b7f56849bf1aa8c2223719ef3fdaa1321decf8d",
+      "bytes": 10075
+    },
+    {
+      "path": "scripts/test_research_delivery.py",
+      "sha256": "70d2149542b267fdd633d43dd925644dbeeb5d5e66f27675b28c77de7109464b",
+      "bytes": 5678
+    }
+  ],
+  "boundary": "Source assertions, hypotheses and review tasks retain their native categories. Retrieval and byte replay establish neither scholarly completeness nor expert acceptance. Missing source attribution, access, permission and independent review remain open where recorded."
+}
