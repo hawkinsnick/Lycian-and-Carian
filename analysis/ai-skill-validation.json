@@ -1,0 +1,58 @@
+{
+  "format": "corpus-ai-skill-function-check-v1",
+  "repository": "hawkinsnick/Lycian-and-Carian",
+  "status": "PASS_SCOPED_FUNCTIONAL_CHECKS",
+  "scope": "NATIVE_EVIDENCE_RETRIEVAL",
+  "skill_name": "lycian-and-carian-research",
+  "skill_version": "0.3.1",
+  "skill_sha256": "e7ab8e7ec4d446068dcc79276df6ad24a5d55145cad1e8557031f6ab19a73202",
+  "bundle_source_commit": "6d2e63c80b7a2c48ef171e42fdceb680d33445ae",
+  "bundle_sha256": "c6ae4071f2737d982dd44642e0a016eb6c9b257a7d74488c7f3d631a2d5165a1",
+  "indexed_artifact_entries_checked": 36,
+  "unique_indexed_paths_checked": 36,
+  "lookups": [
+    {
+      "collection": "digital-entries",
+      "id": "EDIANA-CARIAN-400",
+      "native_unit": "digital catalogue entry",
+      "provenance": {
+        "path": "data/records.json",
+        "sha256": "8695b36b906fad403330eb8c1c79a1e4938723d69ff56ec4929d6691f06ac247",
+        "pointer": "/0",
+        "native_artifacts_snapshot_commit": null,
+        "role": "digital-entries",
+        "encoding": "json"
+      }
+    },
+    {
+      "collection": "disagreement-register",
+      "id": "LC-DIS-001",
+      "native_unit": "research disagreement/control item",
+      "provenance": {
+        "path": "research/disagreement-register.json",
+        "sha256": "b2f3be56ddd2759570fa885bbe205f771464119c6f2016232068fdc044b91418",
+        "pointer": "/items/0",
+        "native_artifacts_snapshot_commit": null,
+        "role": "disagreement-register",
+        "encoding": "json"
+      }
+    },
+    {
+      "collection": "attribution-review",
+      "id": "LC-DIS-001",
+      "native_unit": "bounded documentary attribution review task",
+      "provenance": {
+        "path": "research/attribution-review.json",
+        "sha256": "9cdc66164e445bf9056a82878f16c6b5f13fec651b6b86d37d6183eb13a01f4e",
+        "pointer": "/cases/0",
+        "native_artifacts_snapshot_commit": null,
+        "role": "bounded attribution review",
+        "encoding": "json"
+      }
+    }
+  ],
+  "missing_id_rejected": true,
+  "scholarly_acceptance_granted": false,
+  "empirical_model_accuracy_established": false,
+  "limits": "Deterministic workflow checks only. Independent model usage exercises are recorded separately; no cross-platform accuracy or scholarly acceptance is inferred."
+}
