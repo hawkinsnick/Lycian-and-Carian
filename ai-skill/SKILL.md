@@ -96,3 +96,7 @@ Prepare bounded review drafts with `--review-template`; validate submissions wit
 and deterministic answer tests as engineering checks, not empirical LLM validation
 or completion of scholarly/source-permission work. Local packaging grants no new
 redistribution rights. Label any model-generated analysis separately and cite it.
+
+## Avoid duplicate Milyan evidence in combined studies
+
+Read `docs/MILYAN-SOURCE-UNION.md`. The two frozen Milyan caches are byte-identical, so their 114 nonempty digital source-text rows must not be added as 228 independent attestations. The master's `scripts/prepare_milyan_union.py` emits 114 groups with both source pointers, verifies exact bytes and rejects unit promotion. It neither adjudicates readings nor certifies physical identities or independent witnesses. Preserve source-specific attribution and upstream rights.
