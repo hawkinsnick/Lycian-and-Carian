@@ -100,3 +100,12 @@ redistribution rights. Label any model-generated analysis separately and cite it
 ## Avoid duplicate Milyan evidence in combined studies
 
 Read `docs/MILYAN-SOURCE-UNION.md`. The two frozen Milyan caches are byte-identical, so their 114 nonempty digital source-text rows must not be added as 228 independent attestations. The master's `scripts/prepare_milyan_union.py` emits 114 groups with both source pointers, verifies exact bytes and rejects unit promotion. It neither adjudicates readings nor certifies physical identities or independent witnesses. Preserve source-specific attribution and upstream rights.
+
+## Preserve review provenance
+
+Reject malformed JSON-pointer escapes and negative or leading-zero array indices
+when verifying source citations; literal object keys retain their own spelling.
+Read the [master hostile-review report](https://github.com/hawkinsnick/Master-Corpus-AI-Skill/blob/main/references/hostile-review-2026-10-25.md)
+for this member's pinned retrieval scope and the limits of the source-fidelity
+and development checks. Complete retrieval-view traversal does not certify
+corpus completeness, accepted readings, independent witnesses or expert review.
